@@ -22,6 +22,8 @@
   <browser:viewlet
       name="mpf.mandaareal.footer"
       manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       class="mpf.mandaareal.browser.viewlets.FooterViewlet"
       template="templates/footer.pt"
       permission="zope2.View"
@@ -30,6 +32,7 @@
   <browser:page
       name="capa_view"
       for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       class=".capa_view.CapaView"
       template="templates/capa_view.pt"
       permission="zope2.View"
@@ -38,6 +41,7 @@
   <browser:page
       name="oprojeto_view"
       for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       template="templates/oprojeto_view.pt"
       permission="zope2.View"
   />
@@ -45,6 +49,7 @@
   <browser:page
       name="sobre_view"
       for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       template="templates/sobre_view.pt"
       permission="zope2.View"
   />
@@ -52,6 +57,7 @@
   <browser:page
       name="dicas_view"
       for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       template="templates/dicas_view.pt"
       permission="zope2.View"
   />
@@ -59,6 +65,7 @@
   <browser:page
       name="noticias_view"
       for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       class=".noticias_view.ListaNoticiasView"
       template="templates/noticias_view.pt"
       permission="zope2.View"
@@ -67,6 +74,7 @@
   <browser:page
       name="comodenunciar_view"
       for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       template="templates/comodenunciar_view.pt"
       permission="zope2.View"
   />
@@ -74,6 +82,7 @@
   <browser:page
       name="vocabulario_view"
       for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       template="templates/vocabulario_view.pt"
       permission="zope2.View"
   />
@@ -81,6 +90,7 @@
   <browser:page
       name="meexplica_view"
       for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       template="templates/meexplica_view.pt"
       permission="zope2.View"
   />
@@ -88,6 +98,7 @@
   <browser:page
       name="referencias"
       for="*"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
       template="templates/referencias.pt"
       permission="zope2.View"
   />
