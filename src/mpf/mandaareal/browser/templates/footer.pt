@@ -1,0 +1,45 @@
+    <div id="portal-footer">
+
+<!--
+      <div class="botao-subir">
+        <a href="#top">
+          <img src="seta-subir.png" alt="Subir ao topo"
+            tal:attributes="src string:${context/portal_url}/seta-subir.png">
+        </a>
+      </div>
+-->
+      <div class="pe-do-site">
+        <div id="rodape">
+          <span><a href="https://whatsapp.com/channel/0029VaSEPDHId7nRVXD6nV27" alt="Whatsapp" target="_blank">
+              <img src="imagens/icon-sm-whatsapp.png" alt="Canal Whatsapp"
+                tal:attributes="src string:${context/portal_url}/icon-sm-whatsapp.png"></a></span>
+          <span><a href="https://www.facebook.com/MPFederal" alt="Facebook" target="_blank">
+              <img src="imagens/icon-sm-facebook.png" alt="Facebook"
+                tal:attributes="src string:${context/portal_url}/icon-sm-facebook.png"></a></span>
+          <span><a href="https://www.flickr.com/photos/mpfederal/albums" alt="Flickr" target="_blank">
+              <img src="imagens/icon-sm-flickr.png" alt="Flickr"
+                tal:attributes="src string:${context/portal_url}/icon-sm-flickr.png"></a></span>
+          <span><a href="https://twitter.com/mpf_pgr" alt="X" target="_blank">
+              <img src="imagens/icon-sm-x-twitter.png" alt="X - Twitter"
+                tal:attributes="src string:${context/portal_url}/icon-sm-x-twitter.png"></a></span>
+          <span><a href="https://www.youtube.com/user/tvmpf" alt="Youtuube" target="_blank">
+              <img src="imagens/icon-sm-youtube.png" alt="Youtube"
+                tal:attributes="src string:${context/portal_url}/icon-sm-youtube.png"></a></span>
+          <span><a href="https://www.instagram.com/mpfederal/" alt="Instagram" target="_blank">
+              <img src="imagens/icon-sm-instagram.png" alt="Instagram"
+                tal:attributes="src string:${context/portal_url}/icon-sm-instagram.png"></a></span>
+          <span><a href="https://br.linkedin.com/company/mpf-oficial" alt="linkedin" target="_blank">
+              <img src="imagens/icon-sm-linkedin.png" alt="Linkedin"
+                tal:attributes="src string:${context/portal_url}/icon-sm-linkedin.png"></a></span>
+        </div>
+        <div id="footer-logo-mpf">
+          <span id="">
+            <a href="https://www.mpf.mp.br" alt="Site do MPF" target="_blank">
+              <img src="imagens/logo-mpf-branca.png" alt="Ministério Público Federal"
+                tal:attributes="src string:${context/portal_url}/logo-mpf-branca.png" />
+            </a>
+          </span>
+        </div>
+      </div>
+
+    </div>

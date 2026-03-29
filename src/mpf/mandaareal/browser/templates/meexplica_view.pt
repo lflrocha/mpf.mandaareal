@@ -1,0 +1,2033 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal" xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+<body metal:use-macro="here/main_template/macros/master">
+
+
+  <metal:styles fill-slot="style_slot">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+      @media (max-width: 767px) {
+        #globalnav-wrapper {
+          font-size: 70% !important;
+        }
+      }
+
+      body #visual-portal-wrapper #portal-columns {
+        background-color: #ffffff !important;
+        font-family: 'Inter', sans-serif !important;
+      }
+
+      h1 {
+        color: #5f2f7e;
+        margin-bottom: 2rem;
+        margin-left: 2rem !important;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+
+
+      .card {
+        max-width: 1000px !important;
+        margin: 0 auto !important;
+        border: 0 !important;
+      }
+
+      #accordion .card .card-header {
+        background-color: #5f2f7e;
+        padding: 0;
+      }
+
+      #accordion .card .card-header .btn-link {
+        color: white !important;
+        font-size: 22px;
+        text-align: left;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        width: 97%;
+        font-weight: bold !important;
+      }
+
+      #accordion .card .card-header .btn-link:hover {
+        color: white !important;
+        text-decoration: none;
+        background-color: #39174f5c;
+        cursor: pointer;
+      }
+
+      #accordion .card .card-header a:before {
+        content: url(imagens/setinha-accordion.png);
+        scale: 0.6;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      .card-body {
+        background-color: #f3f3f3 !important;
+        font-size: 20px !important;
+        color: #602f7e !important;
+      }
+
+      .collapse .card-body p {
+        font-size: 20px !important;
+        color: #602f7e !important;
+      }
+
+      .collapsing .card-body p {
+        font-size: 20px !important;
+        color: #602f7e !important;
+        animation: myAnim 0.1s ease;
+      }
+
+      .collapse.show {
+        opacity: 1 !important;
+      }
+
+      #content-core #parent-fieldname-text p {
+        margin-left: 1.5rem !important;
+      }
+
+      @keyframes myAnim {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .in {
+        display: block !important;
+      }
+
+      a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+      }
+
+    </style>
+
+
+
+
+  </metal:styles>
+
+
+
+
+
+  <metal:main fill-slot="main">
+
+
+        <div id="parent-fieldname-text" class="plain">
+          <div id="content-core">
+
+          <h1>
+            Me explica, MPF!
+          </h1>
+
+
+          <div class="conteudo_FAQ">
+
+
+
+            <div id="resultado_busca">
+
+
+              <div id="accordion">
+
+                <div class="card">
+
+                  <div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-existem-cotas-raciais-para-candidaturas-negras">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-existem-cotas-raciais-para-candidaturas-negras" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-existem-cotas-raciais-para-candidaturas-negras">
+
+                        Existem cotas raciais para candidaturas negras?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-existem-cotas-raciais-para-candidaturas-negras" class="collapse" aria-labelledby="acordeon-existem-cotas-raciais-para-candidaturas-negras" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Quando se fala em representatividade nas eleições, muitas pessoas se perguntam se existem cotas para candidaturas negras. Na política, porém, não há reserva de vagas. O que existem são regras para tornar a disputa
+                            mais equilibrada, como um patamar mínimo para o financiamento de campanha e distribuição proporcional do tempo de propaganda, buscando enfrentar desigualdades históricas e ampliar a representatividade.</span></p>
+                        <p><span><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-existem-cotas-raciais-para-candidaturas-negras" target="_self" title="">Saiba mais em: Me
+                              explica, MPF:  existem cotas raciais para candidaturas negras? </a></span></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-pre-candidato-as-eleicoes-2026-ja-pode-pedir-votos">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-pre-candidato-as-eleicoes-2026-ja-pode-pedir-votos" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-pre-candidato-as-eleicoes-2026-ja-pode-pedir-votos">
+
+                        Pré-candidato às Eleições 2026 já pode pedir votos?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-pre-candidato-as-eleicoes-2026-ja-pode-pedir-votos" class="collapse" aria-labelledby="acordeon-pre-candidato-as-eleicoes-2026-ja-pode-pedir-votos" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Em ano eleitoral, é normal que partidos e pessoas que pretendem se candidatar comecem a falar sobre ideias, projetos e propostas. Mas fazer propaganda eleitoral antes do lançamento oficial da candidatura é proibido e cabe
+                          ao Ministério Público (MP) Eleitoral fiscalizar o cumprimento dessa regra.</p>
+                        <p>A propaganda eleitoral é toda divulgação que busca conseguir votos, apresentar o currículo dos candidatos, suas propostas e mensagens ao eleitorado durante o período oficial de campanha. Segundo a Resolução 23.610/2019 do
+                          Tribunal Superior Eleitoral (TSE), que regulamenta a propaganda eleitoral, ela só pode ser veiculada a partir de 16 de agosto do ano da eleição.</p>
+                        <p>É considerado propaganda antecipada proibida na pré-campanha todo conteúdo com pedido explícito de voto. Isso pode gerar multa e outras sanções, como a retirada do conteúdo do ar.</p>
+                        <p>Mesmo não pedindo claramente voto, quem é pré-candidato não pode utilizar termos ou frases que expressem esse pedido, as chamadas “palavras mágicas”, conforme diversas decisões da Justiça Eleitoral. Ou seja, falar “elejam”
+                          ou “apoiem”, por exemplo.</p>
+                        <p>Portanto, quem pretende se candidatar às Eleições de 2026 pode participar de entrevistas, debates, programas, eventos, publicar opinião pessoal nas redes sociais, exaltar qualidades pessoais, por exemplo, desde que não haja
+                          pedido antecipado de voto.</p>
+                        <p><strong>Saiba mais em: <a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-pre-candidato-as-eleicoes-2026-ja-pode-pedir-votos-1" target="_self"
+                              title="">Me explica, MPF: pré-candidato às Eleições 2026 já pode pedir votos?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-infidelidade-partidaria">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-infidelidade-partidaria" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-e-infidelidade-partidaria">
+
+                        O que é infidelidade partidária?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-infidelidade-partidaria" class="collapse" aria-labelledby="acordeon-o-que-e-infidelidade-partidaria" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>No Brasil, para se candidatar, uma pessoa precisa estar filiada a um partido político. </span>O sistema utilizado para a eleição de deputados (eleições gerais) e vereadores (quando tem eleição municipal) chama-se
+                          proporcional. Isso porque ele contabiliza os votos dados ao partido ou à federação partidária. Por isso, a legislação eleitoral estabelece que esse mandato pertence ao partido, não à pessoa. </p>
+                        <p>Para continuar no cargo, esse político deve permanecer filiado ao partido político pelo qual foi eleito. Se ele decidir trocar de partido no curso do mandato, sem uma justificativa (justa causa) prevista em lei para isso,
+                          corre o risco de perder o mandato.</p>
+                        <p><span>Segundo a Lei dos Partidos Políticos (Lei nº 9.096/1995), os motivos considerados como justa causa para um deputado ou vereador deixar o partido sem perder o mandato são: mudança ou desvio reiterado do programa
+                            partidário, grave discriminação pessoal e a janela partidária. A troca de partido fora das hipóteses legais pode resultar na perda do cargo por infidelidade partidária. </span></p>
+                        <p><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-infidelidade-partidaria" target="_self" title="">Saiba mais em: Me explica, MPF: o que
+                            é infidelidade partidária?</a></p>
+                        <p> </p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-assedio-eleitoral">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-assedio-eleitoral" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-e-assedio-eleitoral">
+
+                        O que é assédio eleitoral?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-assedio-eleitoral" class="collapse" aria-labelledby="acordeon-o-que-e-assedio-eleitoral" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Você conhece alguém que foi pressionado pelo chefe a apoiar um candidato ou a gravar vídeo de campanha para não perder o emprego? Saiba que isso tem nome e é crime: assédio eleitoral.</span></p>
+                        <p><span>A Constituição Federal garante que o voto é livre e secreto. Ninguém pode constranger, ameaçar ou pressionar o trabalhador por causa de política. Quando isso acontece, a lei é clara: há violação de direitos
+                            fundamentais e podem surgir consequências eleitorais, cíveis, trabalhistas e criminais. Ou seja: um único caso pode gerar processos judiciais em várias áreas diferentes, de forma autônoma e independente. </span></p>
+                        <p><span>O assédio eleitoral pode vir de chefes e superiores hierárquicos, gente que tem poder de decisão.</span><span> Isso vale para todo tipo de relação de trabalho: trabalhadores celetistas, terceirizados e
+                            estagiários. </span><span>A pressão pode até ser feita contra quem trabalha na administração pública!</span></p>
+                        <p><span>A prática de assédio eleitoral pode configurar crime previsto no </span><a
+                            href="https://www.tse.jus.br/legislacao/codigo-eleitoral/codigo-eleitoral-1/codigo-eleitoral-lei-nb0-4.737-de-15-de-julho-de-1965"><span>Código Eleitoral</span></a><span>, especialmente nos artigos 300 e 301, que tratam de
+                            condutas de coação de eleitores. As penas incluem prisão, multa e a perda do direito de concorrer nas eleições por prazo determinado. </span>Além disso, o uso da estrutura da empresa para constranger ou coagir
+                          trabalhadores caracteriza abuso de poder econômico. </p>
+                        <p><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-assedio-eleitoral" target="_self" title="">Saiba mais em: Me explica, MPF: o que é
+                            assédio eleitoral? </a></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-cota-de-genero-na-eleicao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-cota-de-genero-na-eleicao" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-e-cota-de-genero-na-eleicao">
+
+                        O que é cota de gênero na eleição?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-cota-de-genero-na-eleicao" class="collapse" aria-labelledby="acordeon-o-que-e-cota-de-genero-na-eleicao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span><span>Desde 1932, quando as mulheres conquistaram o direito de votar e de serem votadas no Brasil, houve avanços importantes na participação feminina na política. Uma dessas conquistas aconteceu quando a lei definiu
+                              que os partidos deveriam reservar vagas de candidaturas para mulheres nas eleições. O<span></span><a
+                                href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-quais-orgaos-fazem-parte-do-ministerio-publico-eleitoral"><span> Ministério Público
+                                  Eleitoral</span></a><span> fiscaliza o cumprimento das normas que pretendem garantir a presença das mulheres nos espaços de Poder. </span></span></span></p>
+                        <p><span>A cota de gênero é uma ação afirmativa. Ou seja, uma regra que busca corrigir exclusões históricas, direcionando recursos em benefício das pessoas vitimadas. Prevista na legislação eleitoral, essa cota tem o objetivo
+                            de garantir a participação de mais mulheres na política exigindo que os partidos lancem um mínimo de candidaturas femininas.</span></p>
+                        <p><span> A<span> lei eleitoral prevê que “d</span><i><span>o número de vagas resultante das regras previstas neste artigo, cada partido ou coligação preencherá o </span></i><b><i>mínimo de 30% </i></b><i><span>e
+                                o </span></i><b><i>máximo de 70% </i></b><i><span>para candidaturas de cada sexo”. </span></i></span></p>
+                        <p><span>A “candidatura laranja” ocorre quando o partido lança uma candidatura feminina falsa (fictícia) somente para cumprir a cota de gênero, sem a real e efetiva participação da mulher no pleito. O </span><a
+                            href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-quais-orgaos-fazem-parte-do-ministerio-publico-eleitoral">MP Eleitoral</a><span> também fiscaliza o cumprimento da cota
+                            de gênero e pede a condenação de partidos quando há esse tipo de fraude. </span></p>
+                        <p><span><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-cota-de-genero-na-eleicao" target="_self" title="">Saiba mais em: Me explica,
+                              MPF: o que é cota de gênero na eleição</a></span></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-ministerio-publico-pode-investigar">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-ministerio-publico-pode-investigar" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-ministerio-publico-pode-investigar">
+
+                        O Ministério Público pode investigar?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-ministerio-publico-pode-investigar" class="collapse" aria-labelledby="acordeon-o-ministerio-publico-pode-investigar" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Você já deve ter escutado por aí notícias sobre o Ministério Público (MP) investigar, por exemplo, uma denúncia de corrupção. Essa afirmação pode causar confusão, já que a atividade investigativa costuma ser associada à
+                          polícia. Mas o poder de investigação pelo MP está consolidado pelo Supremo Tribunal Federal (STF) desde 2015, tendo sido reafirmado em casos concretos depois.</p>
+                        <p>Os ministros do STF garantiram o direito do MP de realizar investigações penais utilizando o entendimento de que tal atribuição é amparada pela Constituição. O artigo 129 estabelece as funções institucionais do MP, em que
+                          está implícito o poder para realizar investigações penais. Já em decisão do STF de 2024, foram estabelecidas regras ao Ministério Público para instauração e tramitação dos procedimentos investigativos por iniciativa própria,
+                          de maneira a assegurar os direitos e garantias dos investigados.</p>
+                        <p>O Ministério Público não investiga por meio de inquérito policial e sim por um procedimento próprio, chamado de procedimento investigatório criminal (PIC), que precisa seguir algumas regras, como comunicar o Judiciário
+                          sobre o início e o término da investigação. Ele<span> pode atuar sem ser provocado, ao tomar conhecimento de um possível crime, por qualquer meio, mesmo que informal. </span></p>
+                        <p class=" "><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-ministerio-publico-pode-investigar" target="_self" title="">Saiba mais em:
+                              Me explica, MPF: o Ministério Público pode investigar?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-o-ministerio-publico-federal-combate-crimes-ciberneticos">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-o-ministerio-publico-federal-combate-crimes-ciberneticos" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-o-ministerio-publico-federal-combate-crimes-ciberneticos">
+
+                        Como o Ministério Público Federal combate crimes cibernéticos?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-o-ministerio-publico-federal-combate-crimes-ciberneticos" class="collapse" aria-labelledby="acordeon-como-o-ministerio-publico-federal-combate-crimes-ciberneticos" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>O Ministério Público Federal (MPF) tem a importante atribuição de investigar crimes no ambiente digital. </span>Crimes cibernéticos são aqueles praticados por meio da internet, utilizando computadores ou outros
+                          sistemas de dados interligados. Entre as formas mais comuns estão as fraudes bancárias, invasão de dispositivos (hacking), pornografia infantojuvenil, cyberbullying (intimidação, humilhação ou perseguição sistemática
+                          realizada por meios digitais), crimes de ódio e terrorismo cibernético.</p>
+                        <p><span>C</span><span>omo os criminosos digitais são muito rápidos e usam tecnologias complexas, o MPF precisou se especializar para não ficar para trás. Desde 2011, o MPF atua no combate aos delitos cometidos no ambiente
+                            virtual por meio de um grupo de trabalho vinculado à Câmara Criminal (2CCR). Em 2024, a iniciativa foi fortalecida com a criação do Grupo de Atuação Especial no Combate aos Crimes Cibernéticos e aos Crimes praticados
+                            mediante o uso de Tecnologias de Informação (Gaccti).  </span></p>
+                        <p><span>Além disso, o MPF conta, ainda, com outros dois grupos exclusivos para o combate ao abuso sexual infantil on-line e crimes de ódio na internet. São eles: o Grupo de Combate aos Crimes Cibernéticos no MPF/SP e outro no
+                            MPF do Rio de Janeiro (MPF/RJ). </span></p>
+                        <p><span>O combate aos crimes digitais depende da cooperação entre órgãos públicos e a sociedade, com destaque para o trabalho conjunto com a Polícia Federal. </span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-ministerio-publico-federal-combate-crimes-ciberneticos" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: como o Ministério Público Federal combate crimes cibernéticos?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-me-explica-mpf-o-que-e-o-gaeco-nacional">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-me-explica-mpf-o-que-e-o-gaeco-nacional" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-me-explica-mpf-o-que-e-o-gaeco-nacional">
+
+                        O que é o Gaeco Nacional?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-me-explica-mpf-o-que-e-o-gaeco-nacional" class="collapse" aria-labelledby="acordeon-me-explica-mpf-o-que-e-o-gaeco-nacional" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">Em outro momento, explicamos que os <a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-sao-gaecos" target="_self" title="">Grupos
+                            de Atuação Especial de Combate ao Crime Organizado (Gaecos) do Ministério Público Federal (MPF)</a> são equipes permanentes e especializadas formadas por servidores e procuradores da República para atuar em investigações
+                          mais complexas, principalmente contra o crime organizado, e que colocam a segurança da população em risco, como o tráfico de drogas. O Gaeco Nacional é um deles.</p>
+                        <p dir="ltr">O <a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/mpf-institui-grupo-nacional-de-combate-ao-crime-organizado" target="_self" title="">Gaeco Nacional
+                            foi criado em fevereiro de 2025</a>, pelo <a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-quem-fiscaliza-o-ministerio-publico-brasileiro"
+                            target="_self" title="">Conselho Superior do Ministério Público Federal (CSMPF)</a>, para fortalecer o combate a organizações criminosas que atuam em diferentes estados ou até fora do Brasil, exigindo ações coordenadas e
+                          investigações mais complexas. Os casos envolvem tráfico de pessoas, lavagem de dinheiro, organizações criminosas e outros crimes de grande impacto.</p>
+                        <p dir="ltr">O Gaeco Nacional presta suporte especializado aos procuradores responsáveis pelo caso nas unidades, na condução de investigações e de ações penais, além de atuar em parceria e consolidar dados de todos os 27
+                          Gaecos estaduais do MPF espalhados em todo o país. O auxílio ocorre após solicitação formal e deve ser justificado com base na complexidade e repercussão do caso. </p>
+                        <p class=" "><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-o-gaeco-nacional" target="_self" title=""> Saiba mais em: Me explica,
+                              MPF: o que é o Gaeco Nacional?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-me-explica-mpf-para-que-serve-a-sala-de-atendimento-ao-cidadao-sac">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-me-explica-mpf-para-que-serve-a-sala-de-atendimento-ao-cidadao-sac" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-me-explica-mpf-para-que-serve-a-sala-de-atendimento-ao-cidadao-sac">
+
+                        Para que serve a Sala de Atendimento ao Cidadão (SAC)?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-me-explica-mpf-para-que-serve-a-sala-de-atendimento-ao-cidadao-sac" class="collapse" aria-labelledby="acordeon-me-explica-mpf-para-que-serve-a-sala-de-atendimento-ao-cidadao-sac" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>A Sala de Atendimento ao Cidadão (SAC) é um importante canal de contato entre a sociedade e o Ministério Público Federal (MPF). No “Me explica, MPF” de hoje, saiba como utilizar as SACs para registrar
+                            denúncias e pedidos de informações e entenda como essas demandas são recebidas, analisadas e encaminhadas.</span></p>
+                        <p dir="ltr"><span>💡 A SAC está disponível na plataforma </span><a class="external-link" href="https://www.mpf.mp.br/servicos/mpf-servicos" target="_self" title="">MPF Serviços</a><span>, clicando na opção “Denúncias e
+                            Pedidos de Informação”. A SAC também realiza atendimento presencial em unidades do Ministério Público Federal espalhadas por todo o país. </span><a class="external-link"
+                            href="https://www.mpf.mp.br/servicos/salas-de-atendimento-ao-cidadao" target="_self" title="">Confira os endereços.</a> No atendimento presencial, os pedidos que não são de atribuição da SAC são registrados e enviados para
+                          as áreas responsáveis.  </p>
+                        <p dir="ltr"><span>O registro da denúncia ou pedido de informação é gratuito e o serviço funciona 24 horas por dia, por meio de</span><span> </span><a class="external-link"
+                            href="https://www.mpf.mp.br/servicos/mpf-servicos-internas/denuncias" target="_self" title="">formulário eletrônico</a><span>. </span>Em outro texto,<a class="external-link"
+                            href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-fazer-solicitacoes-ao-mpf-de-forma-simples-e-online" target="_self" title=""> já falamos do MPF
+                            Serviços.</a><span> É possível acessar pelo computador, tablet ou celular. </span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-para-que-serve-a-sala-de-atendimento-ao-cidadao-sac" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: para que serve a Sala de Atendimento ao Cidadão (SAC)?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-uma-liminar">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-uma-liminar" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-e-uma-liminar">
+
+                        O que é uma liminar?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-uma-liminar" class="collapse" aria-labelledby="acordeon-o-que-e-uma-liminar" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>A liminar é uma decisão provisória concedida em caráter urgente, geralmente analisada logo no início do processo. Em situações de urgência, o juiz pode concedê-la antes de ouvir a outra parte; em outros casos, pode
+                            determinar que a parte contrária se manifeste primeiro. A liminar é pedida quando a espera pelo julgamento final pode causar prejuízos graves ou danos difíceis de reparar.</span></p>
+                        <p><span><span>As liminares são frequentes no Judiciário porque muitos conflitos não podem esperar o fim do processo para serem resolvidos. É o caso, por exemplo, de uma obra iniciada em área considerada de preservação
+                              permanente. Se o processo demorar a ser julgado, a área pode já ter sido desmatada, tornando o dano mais difícil de reparar. Ou quando alguém precisa de um medicamento essencial e pode piorar de saúde ou até falecer caso
+                              não consiga a tempo.</span></span></p>
+                        <p dir="ltr">👥Qualquer pessoa ou instituição envolvida no processo pode pedir uma liminar à Justiça. isso não é exclusivo do Ministério Público.</p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-uma-liminar" target="_self" title=""> Saiba mais em: Me explica, MPF: o que é
+                              uma liminar?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-o-mpf-impacta-o-dia-a-dia-do-brasileiro">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-o-mpf-impacta-o-dia-a-dia-do-brasileiro" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-o-mpf-impacta-o-dia-a-dia-do-brasileiro">
+
+                        Como o MPF impacta o dia a dia do brasileiro?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-o-mpf-impacta-o-dia-a-dia-do-brasileiro" class="collapse" aria-labelledby="acordeon-como-o-mpf-impacta-o-dia-a-dia-do-brasileiro" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>O MPF tem atuação bastante ampla e, por isso, se organiza em áreas temáticas. São 7 Câmaras de Coordenação e Revisão (CCR) com foco em diferentes desafios do país. </span></p>
+                        <p dir="ltr"><span>💡 Vale relembrar que a instituição atua somente em casos de interesse da União.</span></p>
+                        <p dir="ltr"><span>E como funciona na prática? Em novembro de 2025, por exemplo, o MPF ajuizou uma </span><a class="external-link"
+                            href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-acao-civil-publica" target="_self" title="">ação civil pública</a><span> contra a </span><a
+                            class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/pr-se/noticias/acao-do-mpf-busca-garantir-fornecimento-imediato-de-medicamento-para-pacientes-com-osteoporose-pelo-sus" target="_self" title="">União para
+                            obrigar o Ministério da Saúde (MS) a adotar as medidas necessárias para o fornecimento do medicamento Romosozumabe para pacientes com osteoporose grave e de alto risco</a><span>. A falta de abastecimento desse remédio
+                            coloca em risco a vida de centenas de pacientes que necessitam urgentemente do fármaco para prevenir fraturas e sequelas incapacitantes, o que configura uma grave violação à dignidade humana. </span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-mpf-impacta-o-dia-a-dia-do-brasileiro" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: como o MPF impacta o dia a dia do brasileiro?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-o-ministerio-publico-federal-combate-a-corrupcao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-o-ministerio-publico-federal-combate-a-corrupcao" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-o-ministerio-publico-federal-combate-a-corrupcao">
+
+                        Como o Ministério Público Federal combate a corrupção?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-o-ministerio-publico-federal-combate-a-corrupcao" class="collapse" aria-labelledby="acordeon-como-o-ministerio-publico-federal-combate-a-corrupcao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>Em 9 de dezembro é celebrado o Dia Internacional contra a Corrupção. A data faz referência à assinatura da Convenção das Nações Unidas contra a Corrupção, que tem o objetivo de fortalecer a cooperação
+                            internacional para ampliar a prevenção e o combate à corrupção. </span>A 5ª Câmara de Coordenação e Revisão (5CCR) do MPF é a unidade dedicada ao combate à corrupção e à improbidade administrativa. Mas você sabe o que é
+                          corrupção? </p>
+                        <p dir="ltr"><span>A corrupção envolve abuso de cargo público, de poder e de influência para obter uma vantagem. A definição é bastante ampla e pode se encaixar em diversas situações como corrupção de menores, nos esportes ou
+                            eleitoral, por exemplo. O MPF atua somente nos casos que envolvem interesses, recursos ou competências da União.</span></p>
+                        <ul>
+                          <li><span id="docs-internal-guid-63748647-7fff-56bb-84f7-4cb08fcf78be">A corrupção ativa acontece quando uma pessoa comum, ou seja, que não ocupa cargo ou função pública, oferece ou promete uma vantagem indevida a um
+                              funcionário público para que ele pratique, omita ou atrase tarefas inerentes ao cargo. Este crime está previsto no <a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm">artigo 333 do Código
+                                Penal</a>, com pena de dois a 12 anos de prisão e multa. </span><span> <br /><br /></span></li>
+                          <li><span>Já a corrupção passiva tem o servidor público como protagonista. O </span><a href="https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm"><span>artigo 317 do Código Penal</span></a><span> define
+                              que este crime ocorre quando o funcionário público solicita ou recebe, para si ou para outra pessoa, de forma direta ou indireta, vantagem indevida. Aceitar a promessa de tal vantagem também configura ato
+                              ilícito. <br /><br /></span></li>
+                          <li><span><span id="docs-internal-guid-55add38c-7fff-cebd-5da5-7097e51ae524"><span>A improbidade administrativa envolve atos desonestos que violam os deveres do cargo ou causam prejuízo aos recursos públicos, mesmo sem
+                                  propina. Leva a sanções cíveis, como multa, ressarcimento e proibição de contratar com o poder público.<br /><br /></span></span></span></li>
+                        </ul>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-ministerio-publico-federal-combate-a-corrupcao" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: como o Ministério Público Federal combate a corrupção?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-adi">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-adi" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-e-adi">
+
+                        O que é ADI?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-adi" class="collapse" aria-labelledby="acordeon-o-que-e-adi" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>A Ação Direta de Inconstitucionalidade, ou ADI, é fundamental para garantir que a Constituição Federal seja respeitada.</span></p>
+                        <p><span>A ADI pede ao Supremo Tribunal Federal (STF) que declare que uma lei estadual ou federal ou um ato do governo é contrária à Constituição Federal. Quando o problema for com normas estaduais ou municipais em relação à
+                            Constituição Estadual, a ação é apresentada no Tribunal de Justiça do Estado.</span></p>
+                        <p><span>Se for reconhecida a inconstitucionalidade, a norma deixa de valer (para todos). Agora, caso o tribunal que esteja julgando o caso entenda que a lei ou ato obedece à Constituição, é declarada a
+                            constitucionalidade. </span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-acao-direta-de-inconstitucionalidade-adi" target="_self" title="">Saiba mais
+                              em: Me explica, MPF: o que é Ação Direta de Inconstitucionalidade (ADI)</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-a-justica-e-obrigada-a-aceitar-a-denuncia-do-ministerio-publico">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-a-justica-e-obrigada-a-aceitar-a-denuncia-do-ministerio-publico" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-a-justica-e-obrigada-a-aceitar-a-denuncia-do-ministerio-publico">
+
+                        A Justiça é obrigada a aceitar a denúncia do Ministério Público?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-a-justica-e-obrigada-a-aceitar-a-denuncia-do-ministerio-publico" class="collapse" aria-labelledby="acordeon-a-justica-e-obrigada-a-aceitar-a-denuncia-do-ministerio-publico" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>O Ministério Público exerce função essencial junto ao Judiciário: defende as leis e a democracia, protege direitos coletivos e apresenta denúncias à Justiça, acusando formalmente empresas ou indivíduos que cometeram
+                            crimes. Muita gente acha que, quando o MP apresenta uma denúncia à Justiça, o processo já começa, mas não é assim.</span></p>
+                        <p><span><span>Após a investigação, se houver prova de crime, o Ministério Público deve apresentar a denúncia, que é a acusação formal, ao juiz ou juíza da instância adequada. Como a Justiça não é obrigada a aceitá-la somente
+                              pela mera apresentação, o Código de Processo Penal (CPP) prevê os requisitos que deverão ser preenchidos para a denúncia ser aceita e o processo judicial ser iniciado. </span></span></p>
+                        <p><span><span><span>Para que a Justiça aceite uma denúncia, ela precisa apresentar elementos que indiquem a ocorrência do crime, com base nas provas reunidas pela polícia ou pelo Ministério Público durante a investigação.
+                                Esse conjunto de provas é chamado de materialidade.</span></span></span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-a-justica-e-obrigada-a-aceitar-a-denuncia-do-ministerio-publico" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: a Justiça é obrigada a aceitar a denúncia do Ministério Público?</a></strong></p>
+                        <p> </p>
+                        <p> </p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-faz-um-procurador-da-republica">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-faz-um-procurador-da-republica" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-faz-um-procurador-da-republica">
+
+                        O que faz um procurador da República?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-faz-um-procurador-da-republica" class="collapse" aria-labelledby="acordeon-o-que-faz-um-procurador-da-republica" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>No MPF, a atuação principal começa com o cargo de procurador da República. São servidores públicos e representam o MPF junto à Justiça Federal</span><span>, atuando</span><span> em processos de impacto nacional, que
+                            envolvem interesses da União. </span></p>
+                        <p dir="ltr"><span>Entre as atribuições centrais de um procurador da República estão:</span></p>
+                        <ul>
+                          <li dir="ltr">
+                            <p dir="ltr"><span>Apresentar denúncia à Justiça Federal em casos de crimes contra a União, autarquias ou bens federais.</span></p>
+                          </li>
+                          <li dir="ltr">
+                            <p dir="ltr"><span></span>Propor ações civis públicas para proteger os interesses de grupos de pessoas ou de toda a sociedade, quando há, por exemplo, danos ao meio ambiente, patrimônio público, direitos do consumidor ou
+                              ordem econômica.</p>
+                          </li>
+                          <li dir="ltr">
+                            <p dir="ltr">Fiscalizar o cumprimento da lei e a proteção dos direitos fundamentais. </p>
+                          </li>
+                          <li dir="ltr">
+                            <p dir="ltr"><span>Acompanhar investigações e inquéritos federais, solicitar a realização de buscas, perícias ou outras provas, e examinar denúncias. </span></p>
+                          </li>
+                        </ul>
+                        <p><span>Dos três níveis da carreira, existe ainda o procurador regional da República, no segundo nível, que atua junto aos Tribunais Regionais Federais. No terceiro e mais elevado nível da carreira está o subprocurador-geral
+                            da República, com atuação no Supremo Tribunal Federal (STF), no Tribunal Superior Eleitoral (TSE) e no Superior Tribunal de Justiça (STJ). Nos casos do STF e do TSE, os subprocuradores-gerais da República são designados
+                            por delegação do procurador‑geral da República.</span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-faz-um-procurador-da-republica" target="_self" title="">Saiba mais em: Me
+                              explica, MPF: o que faz um procurador da República? </a></strong></p>
+                        <p> </p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-funciona-o-processo-de-sabatina-ao-cargo-de-pgr">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-funciona-o-processo-de-sabatina-ao-cargo-de-pgr" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-funciona-o-processo-de-sabatina-ao-cargo-de-pgr">
+
+                        Como funciona o processo de sabatina ao cargo de PGR?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-funciona-o-processo-de-sabatina-ao-cargo-de-pgr" class="collapse" aria-labelledby="acordeon-como-funciona-o-processo-de-sabatina-ao-cargo-de-pgr" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Está previsto no artigo 128 da Constituição Federal que o PGR seja indicado pelo presidente da República. Contudo, somente a indicação não basta para a pessoa assumir o cargo. Antes, precisa passar por uma sabatina na
+                            Comissão de Constituição, Justiça e Cidadania (CCJ) no Senado e ter aprovação tanto pela comissão quanto por maioria absoluta do plenário.</span></p>
+                        <p><span><span>De acordo com o artigo 52 da Constituição, cabe ao Senado Federal aprovar a escolha do procurador-geral da República após arguição pública, ou seja, após uma sabatina. Este processo consiste em um debate com
+                              perguntas feitas pelos senadores. </span></span></p>
+                        <p><span>Quando o presidente da República faz a indicação, o regimento interno do Senado prevê que o primeiro passo é ler, em plenário, a mensagem da Presidência da República. </span><span>Posteriormente, o documento é
+                            encaminhado à comissão competente que, neste caso, é a CCJ. </span></p>
+                        <p><span><span>Já na comissão, é nomeado um relator, que fica responsável por um relatório. Em seguida, é concedida, automaticamente, vista coletiva para a comissão. Ou seja, os 27 parlamentares que compõem a CCJ fazem uma
+                              análise mais detalhada do conteúdo apresentado. </span></span></p>
+                        <p dir="ltr"><span>O relatório também é divulgado no portal do Senado para que a sociedade possa encaminhar informações ou perguntas sobre o candidato ao cargo. As perguntas feitas para o indicado são previamente debatidas
+                            entre o relator e demais membros da comissão e devem ser sobre assuntos pertinentes ao desempenho do cargo de procurador-geral da República. </span>A comissão convoca, então, o indicado para a sabatina. </p>
+                        <p dir="ltr"><span>Ao final da sabatina, os membros da comissão votam a favor ou contra a indicação da pessoa ao cargo. São necessários 14 votos favoráveis para que a votação siga para o plenário do Senado. Já no plenário, é
+                            necessário ter maioria absoluta, ou seja, ao menos 41 dos 81 senadores devem ser favoráveis à nomeação. Tanto na comissão quanto no plenário, os votos são secretos. </span></p>
+                        <p dir="ltr"><span><span>Finalizado este processo, a decisão é comunicada ao presidente da República e pode ser marcada a posse. Se o candidato não for aprovado no Senado, o presidente da República preciso indicar outra
+                              pessoa, que passará por todo o processo novamente.</span></span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-funciona-o-processo-de-sabatina-ao-cargo-de-pgr" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: como funciona o processo de sabatina ao cargo de PGR? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-a-cop30-e-por-que-o-mpf-vai-participar-do-evento">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-a-cop30-e-por-que-o-mpf-vai-participar-do-evento" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-e-a-cop30-e-por-que-o-mpf-vai-participar-do-evento">
+
+                        O que é a COP30 e por que o MPF vai participar do evento?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-a-cop30-e-por-que-o-mpf-vai-participar-do-evento" class="collapse" aria-labelledby="acordeon-o-que-e-a-cop30-e-por-que-o-mpf-vai-participar-do-evento" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>A Convenção das Nações Unidas sobre Mudança do Clima, criada na Rio-92, estabeleceu um regime multilateral para responder ao aquecimento global. Para implementar os compromissos, foi criada a Conferência das Partes
+                            (COP vem da sigla em inglês - Conference of the Parties). A COP reúne, atualmente, 198 países, e é o principal fórum da ONU onde são firmados os acordos internacionais sobre o clima.</span></p>
+                        <p><span><span>O MPF vai participar da COP30 porque defende o meio ambiente, os povos tradicionais, os direitos das pessoas, inclusive, a um meio ambiente equilibrado. O foco será garantir que as decisões tomadas considerem a
+                              proteção de direitos fundamentais e o combate às desigualdades socioambientais, para que ninguém seja prejudicado na luta contra a crise climática. </span></span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-a-cop30-e-por-que-o-mpf-vai-participar-do-evento" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: o que é a COP30 e por que o MPF vai participar do evento? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-educacao-midiatica-e-o-que-o-mpf-faz-sobre-o-tema">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-educacao-midiatica-e-o-que-o-mpf-faz-sobre-o-tema" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-e-educacao-midiatica-e-o-que-o-mpf-faz-sobre-o-tema">
+
+                        O que é educação midiática e o que o MPF faz sobre o tema?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-educacao-midiatica-e-o-que-o-mpf-faz-sobre-o-tema" class="collapse" aria-labelledby="acordeon-o-que-e-educacao-midiatica-e-o-que-o-mpf-faz-sobre-o-tema" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Educação midiática são ações que promovem o aprimoramento do pensamento crítico e a habilidade de saber se expressar de forma consciente e equilibrada. </p>
+                        <p>Nesse sentido, <span> o Ministério Público Federal (MPF) lançou, no início deste ano, o projeto “</span><a href="../mandaareal/index.html"><span>Manda a Real</span></a><span>”, criado pela Secretaria de Comunicação Social
+                            (Secom/MPF). Por meio dele, o MPF leva ao público dicas simples e diretas para ajudar a identificar desinformações e a entender melhor o funcionamento do Ministério Público brasileiro. O intuito é que o cidadão entenda a
+                            atuação do Ministério Público e desenvolva o pensamento crítico para que não acredite em mentiras sobre a instituição. </span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-educacao-midiatica-e-o-que-o-mpf-faz-sobre-o-tema" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: o que é educação midiática e o que faz o MPF sobre o tema? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-qual-e-a-diferenca-entre-o-mpf-e-a-defensoria-publica-da-uniao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-qual-e-a-diferenca-entre-o-mpf-e-a-defensoria-publica-da-uniao" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-qual-e-a-diferenca-entre-o-mpf-e-a-defensoria-publica-da-uniao">
+
+                        Qual é a diferença entre o MPF e a Defensoria Pública da União?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-qual-e-a-diferenca-entre-o-mpf-e-a-defensoria-publica-da-uniao" class="collapse" aria-labelledby="acordeon-qual-e-a-diferenca-entre-o-mpf-e-a-defensoria-publica-da-uniao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Tanto o Ministério Público Federal (MPF) quanto a Defensoria Pública da União (DPU) são instituições essenciais à Justiça e atuam no âmbito federal. A principal diferença está no papel que cada uma exerce de forma
+                            independente e autônoma: o MPF é o fiscal da lei e defensor dos interesses sociais, enquanto a DPU defende o cidadão carente, ainda que seja em uma causa coletiva para proteger um grupo de pessoas.</span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-qual-e-a-diferenca-entre-o-mpf-e-a-defensoria-publica-da-uniao" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: qual é a diferença entre o MPF e a Defensoria Pública da União? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-mpf-e-um-dos-ministerios-do-governo-federal">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-mpf-e-um-dos-ministerios-do-governo-federal" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-mpf-e-um-dos-ministerios-do-governo-federal">
+
+                        O MPF é um dos ministérios do Governo Federal?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-mpf-e-um-dos-ministerios-do-governo-federal" class="collapse" aria-labelledby="acordeon-o-mpf-e-um-dos-ministerios-do-governo-federal" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>Por conta da palavra “ministério”, muita gente se confunde e acha que o Ministério Público Federal (MPF) faz parte do Governo Federal. Apesar do nome, o MPF não tem relação com os ministérios do Poder
+                            Executivo, como o Ministério da Justiça ou da Educação. Até porque o MPF não integra nenhum dos Três Poderes (Legislativo, Executivo ou Judiciário), não governa e não executa políticas públicas. Ele fiscaliza para garantir
+                            que o governo e os demais poderes cumpram a lei e respeitem os direitos da sociedade.</span></p>
+                        <p dir="ltr"><span><span>O Ministério Público Federal é um órgão independente, que não faz parte do governo. Ele é um dos ramos do Ministério Público da União (MPU). </span>Os procuradores da República, que fazem parte do MPF,
+                            podem investigar, propor ações à Justiça e fiscalizar o cumprimento da Constituição e demais normas. O chefe do MPF é o procurador-geral da República. </span></p>
+                        <p dir="ltr"><span>Já os</span> <a href="https://www.gov.br/pt-br/orgaos-do-governo">ministérios do Governo Federal</a> são órgãos do Poder Executivo, comandados por ministros escolhidos pelo presidente da República. Eles são
+                          responsáveis por executar políticas públicas e seguem as diretrizes do presidente da República, pois são subordinados a ele e ajudam na administração do país. Por exemplo, o Ministério da Educação cuida das ações ligadas às
+                          escolas e universidades.</p>
+                        <p dir="ltr"><span>💡 Ao contrário dos ministérios do Executivo, o Ministério Público Federal atua com autonomia, fiscalizando o cumprimento das leis, inclusive, por parte do próprio governo e seus ministérios. Inclusive, pode
+                            investigar e processar autoridades do próprio governo e demais poderes, se houver suspeita de irregularidades. O MPF atua junto ao Poder Judiciário, mas sem se subordinar a ele, conforme previsto na Constituição.</span>
+                        </p>
+                        <p class=" "><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-mpf-e-um-dos-ministerios-do-governo-federal" target="_self" title=""> Saiba
+                              mais em: Me explica, MPF: o MPF é um dos ministérios do Governo Federal?</a></strong></p>
+                        <p class=" "> </p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-mp-eleitoral-faz-parte-da-justica-eleitoral">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-mp-eleitoral-faz-parte-da-justica-eleitoral" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-mp-eleitoral-faz-parte-da-justica-eleitoral">
+
+                        O MP Eleitoral faz parte da Justiça Eleitoral?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-mp-eleitoral-faz-parte-da-justica-eleitoral" class="collapse" aria-labelledby="acordeon-o-mp-eleitoral-faz-parte-da-justica-eleitoral" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>Falta apenas um ano para as Eleições Gerais de 2026, que ocorrerão em outubro do ano que vem. Com isso, muitas pessoas se perguntam: o Ministério Público Eleitoral (MP Eleitoral) faz parte da Justiça
+                            Eleitoral? A resposta é não, mas está presente em todas as etapas do processo eleitoral: desde o cadastro de eleitores, passando pela realização das campanhas até a prestação de contas de candidatos e partidos, denunciando
+                            irregularidades e fiscalizando o cumprimento de regras. </span></p>
+                        <p dir="ltr"><span>O MP Eleitoral faz parte do Ministério Público brasileiro e emite manifestações sobre todas as ações judiciais que estão na Justiça Eleitoral, verifica a aplicação das leis e a imparcialidade nas decisões.
+                            Além disso, investiga e apresenta processos à Justiça Eleitoral contra partidos e candidatos que cometeram irregularidades. Em outras palavras, o MP Eleitoral não integra o Judiciário, mas exerce uma função institucional
+                            de fiscalização e defesa da legalidade dentro desse sistema.</span></p>
+                        <p dir="ltr"><span>🔍 A Justiça Eleitoral é um ramo especializado do Poder Judiciário, composta pelo Tribunal Superior Eleitoral (TSE) e pelos Tribunais Regionais Eleitorais (TREs), além dos juízes eleitorais nas zonas
+                            eleitorais. O MP Eleitoral atua em todas essas </span><a href="../vocabulario/instancia%3Fsearchterm=Instância.html">instâncias</a><span>.</span></p>
+                        <p class=" " dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-mp-eleitoral-faz-parte-da-justica-eleitoral" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: o MP Eleitoral faz parte da Justiça Eleitoral?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-a-lei-de-acesso-a-informacao-lai">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-a-lei-de-acesso-a-informacao-lai" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-e-a-lei-de-acesso-a-informacao-lai">
+
+                        O que é a Lei de Acesso à Informação (LAI)?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-a-lei-de-acesso-a-informacao-lai" class="collapse" aria-labelledby="acordeon-o-que-e-a-lei-de-acesso-a-informacao-lai" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Você sabia que qualquer pessoa pode solicitar informações a órgãos públicos? Esse direito está previsto na Constituição Federal e é garantido pela Lei de Acesso à Informação (LAI). </span><span>A Lei nº 12.527/11,
+                            conhecida como Lei de Acesso à Informação ou LAI, regula e garante o acesso a informações públicas definindo mecanismos, prazos e procedimentos para a entrega dos dados. Ela também prevê a transparência ativa, por meio da
+                            divulgação de informações básicas feitas nos ambientes digitais dos respectivos órgãos.</span></p>
+                        <p><span>Pessoas de qualquer idade e qualquer nacionalidade, empresas e organizações podem solicitar informações aos Três Poderes da União, dos estados, do Distrito Federal e dos municípios, inclusive para os Tribunais de
+                            Contas e o Ministério Público. Instituições privadas sem fins lucrativos também são obrigadas a dar publicidade ao uso de recursos públicos. </span></p>
+                        <p><span></span><span>A LAI permite que diversas informações de órgãos e entidades públicas sejam solicitadas, conforme previsto no artigo 7º da lei. <span>O pedido de informação não precisa ser justificado e deve ser
+                              fornecido gratuitamente, com exceção de eventuais custos de reprodução de documentos. Caso não seja possível fornecer o acesso imediato à informação disponível, o órgão ou entidade tem o prazo de 20 dias para atender à
+                              solicitação, podendo ser prorrogado por mais 10 dias, mediante justificativa. </span><span>Vale ressaltar que documentos sigilosos são exceção à regra e não são compartilhados, mesmo via LAI. </span></span></p>
+                        <p class=" "><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-a-lei-de-acesso-a-informacao-lai" target="_self" title="">Saiba mais
+                              em: Me explica, MPF: o que é a Lei de Acesso à Informação (LAI)?</a></strong></p>
+                        <p class=" "> </p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-o-mpf-defende-os-direitos-das-pessoas-com-deficiencia">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-o-mpf-defende-os-direitos-das-pessoas-com-deficiencia" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-o-mpf-defende-os-direitos-das-pessoas-com-deficiencia">
+
+                        Como o MPF defende os direitos das pessoas com deficiência?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-o-mpf-defende-os-direitos-das-pessoas-com-deficiencia" class="collapse" aria-labelledby="acordeon-como-o-mpf-defende-os-direitos-das-pessoas-com-deficiencia" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>O Brasil celebrou, no dia 21 de setembro, o Dia Nacional de Luta da Pessoa com Deficiência. A data, criada pela </span><a href="https://www.planalto.gov.br/ccivil_03/_ato2004-2006/2005/lei/l11133.htm">Lei nº
+                            11.133/2005</a><span>, busca reforçar a importância da inclusão e da garantia de direitos para milhares de brasileiros. Segundo o último Censo do Instituto Brasileiro de Geografia e Estatística (IBGE), são 14,4 milhões de
+                            cidadãos com deficiência em todo o país.</span></p>
+                        <p dir="ltr"><span></span>Um dos principais avanços nesta luta foi a criação da Lei Brasileira de Inclusão da Pessoa com Deficiência, a <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13146.htm">Lei nº
+                            13.146/2015</a>, também conhecida como Estatuto da Pessoa com Deficiência ou por LBI - Lei Brasileira de Inclusão. Ela estabelece direitos fundamentais como acessibilidade, mobilidade, educação, saúde, trabalho e
+                          participação plena na sociedade, assegurando a dignidade e a cidadania desse grupo da sociedade.</p>
+                        <p dir="ltr"><span>O Ministério Público Federal (MPF) tem papel importante nessa luta: defende os interesses e direitos coletivos das pessoas com deficiência verificando o cumprimento de leis e direitos. Um exemplo dessa
+                            atuação, sem acionar a Justiça, é quando os membros do MPF realizam vistorias a prédios de instituições federais para verificar a acessibilidade a pessoas com deficiência. Em alguns casos, o MPF faz a recomendação para
+                            adoção de medidas, mas, quando não é atendido, o assunto é levado à Justiça, ou seja, é aberto um processo judicial.</span></p>
+                        <p class=" " dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-mpf-defende-os-direitos-das-pessoas-com-deficiencia"
+                              target="_self" title="">Saiba mais em: Me explica, MPF: como o MPF defende os direitos das pessoas com deficiência?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-significa-dizer-que-o-mpf-atua-em-nivel-federal">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-significa-dizer-que-o-mpf-atua-em-nivel-federal" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-significa-dizer-que-o-mpf-atua-em-nivel-federal">
+
+                        O que significa dizer que o MPF atua em nível federal?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-significa-dizer-que-o-mpf-atua-em-nivel-federal" class="collapse" aria-labelledby="acordeon-o-que-significa-dizer-que-o-mpf-atua-em-nivel-federal" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>A atuação do MPF na esfera federal diz respeito ao trabalho desenvolvido pelo órgão perante a Justiça Federal. Isso inclui causas que envolvem autarquias federais (como o INSS), empresas públicas federais
+                            (como a Caixa Econômica Federal) ou crimes que afetam bens, serviços ou interesses da União — como o tráfico internacional de drogas ou crimes contra o sistema financeiro nacional.</span></p>
+                        <p dir="ltr"><span>Os tipos de causas estão listados no art. 109 da </span><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm">Constituição Federal</a><span> e são protocolados perante as varas da
+                            Justiça Federal, os tribunais regionais federais, o Tribunal Superior Eleitoral (TSE), o Superior Tribunal de Justiça (STJ) e o Supremo Tribunal Federal (STF).</span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-significa-dizer-que-o-mpf-atua-em-nivel-federal" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: o que significa dizer que o MPF atua em nível federal? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-o-ministerio-publico-participa-da-cooperacao-internacional">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-o-ministerio-publico-participa-da-cooperacao-internacional" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-o-ministerio-publico-participa-da-cooperacao-internacional">
+
+                        Como o Ministério Público participa da Cooperação Internacional?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-o-ministerio-publico-participa-da-cooperacao-internacional" class="collapse" aria-labelledby="acordeon-como-o-ministerio-publico-participa-da-cooperacao-internacional" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>Em um cenário global cada vez mais conectado, o Ministério Público Federal (MPF) amplia sua atuação para além das fronteiras brasileiras por meio da Secretaria de Cooperação Internacional (SCI). Este ano, a
+                            SCI completou 20 anos e </span>tem a missão de auxiliar o procurador-geral da República e as unidades do MPF no relacionamento com autoridades estrangeiras, organismos internacionais e também com órgãos nacionais que atuam
+                          nesse campo, como o Ministério das Relações Exteriores e o Ministério da Justiça.</p>
+                        <p dir="ltr"><span>Imagine um processo na Justiça Federal brasileira que precisa de informações ou provas que estão em outro país. Pode ser o caso de um estrangeiro acusado de crime aqui e que já está em seu país de origem ou
+                            uma mulher brasileira que tem filho com estrangeiro e precisa pedir a guarda ou o pagamento de pensão alimentícia, por exemplo. </span></p>
+                        <p dir="ltr">Dentro do MPF, é a SCI que recebe esses pedidos, transmite ao Ministério da Justiça para formalizar a demanda ao exterior e acompanha a resposta. Quando o Brasil é o autor trata-se de um pedido de cooperação
+                          ativo. E quando recebe de outro país é um pedido de cooperação passivo. Na cooperação com países de língua portuguesa e Canadá, o MPF pode enviar os pedidos diretamente sem passar pelo Ministério da Justiça. Nesse caso, o
+                          MPF é a autoridade central para a tramitação de documentos. <span>E abrange tanto os processos penais quanto as ações cíveis.</span></p>
+                        <p class=" "><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-ministerio-publico-participa-da-cooperacao-internacional"
+                              target="_self" title=""> Saiba mais em: Me explica, MPF: como o Ministério Público participa da Cooperação Internacional?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-o-ministerio-publico-federal-faz-agora-para-proteger-o-futuro-do-meio-ambiente">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-o-ministerio-publico-federal-faz-agora-para-proteger-o-futuro-do-meio-ambiente" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-o-ministerio-publico-federal-faz-agora-para-proteger-o-futuro-do-meio-ambiente">
+
+                        O que o Ministério Público Federal faz agora para proteger o futuro do meio ambiente?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-o-ministerio-publico-federal-faz-agora-para-proteger-o-futuro-do-meio-ambiente" class="collapse"
+                      aria-labelledby="acordeon-o-que-o-ministerio-publico-federal-faz-agora-para-proteger-o-futuro-do-meio-ambiente" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>Muitas das iniciativas realizadas hoje pelo MPF ajudam a garantir um futuro mais seguro e saudável para todos nós? Parece algo distante, mas as pequenas atitudes de agora têm um grande impacto lá na frente,
+                            principalmente quando o assunto é meio ambiente. Confira os destaques dessa área no “Me explica, MPF”, entrando no clima da 30ª Conferência das Nações Unidas sobre Mudança do Clima (COP30), evento que acontece em novembro,
+                            em Belém (PA). </span></p>
+                        <p dir="ltr">A atuação da MPF ocorre por meio de <a class="external-link"
+                            href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-o-ministerio-publico-pode-fazer-sem-ir-a-justica" target="_self" title="">recomendações</a>, investigações,
+                          fiscalizações, levando casos à <a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-em-quais-casos-o-ministerio-publico-pode-apresentar-denuncia"
+                            target="_self" title="">Justiça</a>, e até de forma mais próxima da população, por meio de audiências públicas, por exemplo. Em resumo: o trabalho é cuidar para que as leis ambientais sejam respeitadas. Isso significa
+                          prevenir desastres ambientais, corrigir irregularidades, manter os biomas vivos e garantir qualidade de vida para todos. Por isso, destacamos algumas iniciativas do MPF em defesa do meio ambiente e dos povos tradicionais.
+                        </p>
+                        <p dir="ltr"><strong><a class="external-link"
+                              href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-o-ministerio-publico-federal-faz-agora-para-proteger-o-futuro-do-meio-ambiente" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: o que o Ministério Público Federal faz agora para proteger o futuro do meio ambiente?</a></strong><a class="external-link"
+                            href="https://www.mpf.mp.br/pgr/noticias-pgr2/2025/me-explica-mpf-como-fazer-uma-denuncia-ao-ministerio-publico-federal" target="_self" title=""></a></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-fazer-uma-denuncia-ao-ministerio-publico-federal">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-fazer-uma-denuncia-ao-ministerio-publico-federal" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-fazer-uma-denuncia-ao-ministerio-publico-federal">
+
+                        Como fazer uma denúncia ao Ministério Público Federal?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-fazer-uma-denuncia-ao-ministerio-publico-federal" class="collapse" aria-labelledby="acordeon-como-fazer-uma-denuncia-ao-ministerio-publico-federal" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span><span>As pessoas podem registrar denúncias (representações) sobre crimes que cabem ao Ministério Público Federal investigar e levar o caso à Justiça acessando o<a class="external-link"
+                                href="https://www.mpf.mp.br/servicos/mpf-servicos" target="_self" title=""> </a></span><span><a class="external-link" href="https://www.mpf.mp.br/servicos/mpf-servicos" target="_self" title="">MPF
+                                Serviços</a></span><span>, disponível no Portal do MPF, presencialmente em todas as unidades do órgão e por correspondência. </span></span><a class="external-link"
+                            href="https://www.mpf.mp.br/servicos/salas-de-atendimento-ao-cidadao" target="_self" title="">Confira os endereços e telefones das Salas de Atendimento ao Cidadão</a>.</p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-fazer-uma-denuncia-ao-ministerio-publico-federal" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: como fazer uma denúncia ao Ministério Público Federal? </a></strong></p>
+                        <p><span> </span></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-e-como-atua-o-ministerio-publico-de-contas">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-e-como-atua-o-ministerio-publico-de-contas" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-e-e-como-atua-o-ministerio-publico-de-contas">
+
+                        O que é e como atua o Ministério Público de Contas?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-e-como-atua-o-ministerio-publico-de-contas" class="collapse" aria-labelledby="acordeon-o-que-e-e-como-atua-o-ministerio-publico-de-contas" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Apesar do nome, o Ministério Público de Contas (MPC) não faz parte do </span><a class="external-link"
+                            href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-quais-orgaos-fazem-parte-do-ministerio-publico-brasileiro" target="_self" title="">Ministério Público da União (MPU)
+                            nem dos Ministérios Públicos Estaduais (MPEs)</a><span>. Ainda assim, exerce um papel fundamental na fiscalização do uso do dinheiro público. O</span> MPC é um órgão autônomo que atua junto aos Tribunais de Contas, como os
+                          Tribunais de Contas dos Estados (TCEs) e o Tribunal de Contas da União (TCU). Ele está previsto na <a class="external-link" href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm" target="_self"
+                            title="">Constituição Federal</a>, no artigo 130, mas não há integração ao MPU ou aos MPEs. Os MPs de Contas Estaduais estão previstos nas normas locais. </p>
+                        <p dir="ltr"><span>O MPC tem função semelhante à do MPF no sentido de fiscalizar e defender o interesse público, mas seu foco é específico: acompanhar e realizar a fiscalização contábil, financeira, orçamentária, operacional e
+                            patrimonial da Administração Pública e de todos aqueles que recebam recursos públicos. Isso significa que o MPC analisa a forma como o dinheiro público é gasto, emite pareceres e pode pedir a responsabilização de gestores
+                            quando identifica irregularidades nas contas.</span></p>
+                        <p dir="ltr">Ele atua perante o Tribunal de Contas, que pode aplicar penalidades como multas, devolução de valores vindos de recursos públicos ou emissão de declaração da falta de capacidade moral, ética ou técnica para
+                          exercício de cargo público. Já o MPF (e os MPEs, na esfera estadual) atua perante a Justiça, podendo mover ações civis e penais, pedir condenação por improbidade administrativa ou crimes como corrupção, e buscar a reparação
+                          de danos aos cofres públicos. Aqui, as punições podem incluir perda de função pública, suspensão de direitos políticos e até prisão.</p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-e-como-atua-o-ministerio-publico-de-contas" target="_self" title=""> Saiba mais
+                              em: Me explica, MPF: o que é e como atua o Ministério Público de Contas?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-e-a-atuacao-do-ministerio-publico-no-combate-a-violencia-contra-a-mulher">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-e-a-atuacao-do-ministerio-publico-no-combate-a-violencia-contra-a-mulher" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-e-a-atuacao-do-ministerio-publico-no-combate-a-violencia-contra-a-mulher">
+
+                        Como é a atuação do Ministério Público no combate à violência contra a mulher?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-e-a-atuacao-do-ministerio-publico-no-combate-a-violencia-contra-a-mulher" class="collapse" aria-labelledby="acordeon-como-e-a-atuacao-do-ministerio-publico-no-combate-a-violencia-contra-a-mulher"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>O Ministério Público (MP) tem um papel central na proteção das mulheres em situação de violência doméstica e familiar, com respaldo nos artigos 25 e 26 da Lei Maria da Penha. Segundo o artigo 25, cabe ao
+                            Ministério Público intervir em todos os atos do processo, cível ou criminal, mesmo que a vítima não manifeste vontade de representar criminalmente o agressor. </span></p>
+                        <p dir="ltr"><span>Já o artigo 26 traz as atribuições do MP em casos de violência contra a mulher. O órgão pode requisitar força policial e serviços públicos como os de educação, de assistência social e de segurança. Também
+                            cabe ao MP cadastrar os casos de violência doméstica e familiar contra a mulher e fiscalizar estabelecimentos públicos e privados que atendem mulheres em situação de violência. Em caso de irregularidades nessas
+                            instituições, o Ministério Público deve adotar as medidas administrativas ou judiciais cabíveis. </span></p>
+                        <p dir="ltr"><span>Vale destacar que as instituições do MP brasileiro que atuam nesses casos são os Ministérios Públicos estaduais, pois agem onde os processos começam, nas varas.</span></p>
+                        <p dir="ltr"><strong><a class="external-link"
+                              href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-e-a-atuacao-do-ministerio-publico-no-combate-a-violencia-contra-a-mulher" target="_self" title="">Saiba mais em:
+                              Me explica, MPF: como é a atuação do Ministério Público no combate à violência contra a mulher?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-a-legislacao-brasileira-protege-o-clima-e-qual-o-papel-do-mpf">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-a-legislacao-brasileira-protege-o-clima-e-qual-o-papel-do-mpf" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-a-legislacao-brasileira-protege-o-clima-e-qual-o-papel-do-mpf">
+
+                        Como a legislação brasileira protege o clima - e qual o papel do MPF?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-a-legislacao-brasileira-protege-o-clima-e-qual-o-papel-do-mpf" class="collapse" aria-labelledby="acordeon-como-a-legislacao-brasileira-protege-o-clima-e-qual-o-papel-do-mpf" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>A Constituição Federal prevê, no artigo 225, que todos têm direito a um meio ambiente ecologicamente equilibrado e que cabe ao Poder Público e à coletividade protegê-lo e preservá-lo. Quando o tema é clima,
+                            o brasileiro conta com a </span><a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12187.htm">Lei nº 12.187/09</a><span>, que institui a Política Nacional sobre Mudança do Clima (PNMC). Ela tem como
+                            objetivo, por exemplo, a preservação, conservação e recuperação de grandes biomas, a redução de emissão de gases do efeito estufa e conciliar o desenvolvimento socioeconômico com a proteção do meio ambiente e do
+                            clima. </span></p>
+                        <p dir="ltr"><span>Ainda, há o Acordo de Paris, firmado em 2016, que entrou em vigor por meio do </span><a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/decreto/d9073.htm">Decreto nº 9.073/17</a><span>. Ele
+                            tem como meta abrangente manter o aumento da temperatura média global bem abaixo de 2ºC, com esforços para que não ultrapasse 1,5ºC. </span></p>
+                        <p dir="ltr"><span><span>O MPF tem atuação permanente para a proteção do meio ambiente e da população. </span></span>A<a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr4/copy_of_sobre" target="_self" title=""> 4ª
+                            Câmara de Coordenação e Revisão (4CCR)</a>, responsável por temas ambientais e patrimônio cultural, atua em conjunto com a <a class="external-link" href="https://www.mpf.mp.br/atuacao-tematica/ccr6" target="_self"
+                            title="">6ª Câmara (6CCR)</a>, que trata dos direitos de populações indígenas e comunidades tradicionais, e com a<a class="external-link" href="https://www.mpf.mp.br/atuacao/pfdc/copy_of_sobre" target="_self" title="">
+                            Procuradoria Federal dos Direitos do Cidadão (PFDC)</a>, que busca a proteção de direitos humanos. Essa articulação fortalece uma atuação transversal e coordenada, essencial para enfrentar os desafios socioambientais do
+                          país. </p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-a-legislacao-brasileira-protege-o-clima-e-qual-o-papel-do-mpf"
+                              target="_self" title="">Saiba mais em: Me explica, MPF: como a legislação brasileira protege o clima - e qual o papel do MPF? </a></strong></p>
+                        <p><span> </span></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-o-ministerio-publico-atua-no-combate-ao-trafico-internacional-de-pessoas">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-o-ministerio-publico-atua-no-combate-ao-trafico-internacional-de-pessoas" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-o-ministerio-publico-atua-no-combate-ao-trafico-internacional-de-pessoas">
+
+                        Como o Ministério Público atua no combate ao tráfico internacional de pessoas?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-o-ministerio-publico-atua-no-combate-ao-trafico-internacional-de-pessoas" class="collapse" aria-labelledby="acordeon-como-o-ministerio-publico-atua-no-combate-ao-trafico-internacional-de-pessoas"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>A Unidade Nacional de Enfrentamento do Tráfico Internacional de Pessoas e do Contrabando de Migrantes (UNTC) é a estrutura especializada do MPF responsável por identificar, prevenir e reprimir esses crimes,
+                            centralizando as investigações e ações judiciais relacionadas aos casos para garantir maior rapidez e efetividade. </span></p>
+                        <p><span>A unidade está vinculada à Secretaria de Cooperação Internacional (SCI), responsável por auxiliar o procurador-geral da República e as demais unidades do MPF no relacionamento com autoridades estrangeiras e pedidos de
+                            auxílio jurídico a outros países.</span></p>
+                        <p dir="ltr"><span> O MPF é o órgão brasileiro com competência para denunciar e pedir à Justiça a punição dos criminosos. </span></p>
+                        <p dir="ltr"><strong><a class="external-link"
+                              href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-ministerio-publico-atua-no-combate-ao-trafico-internacional-de-pessoas" target="_self" title="">Saiba mais em:
+                              Me explica, MPF: como o Ministério Público atua no combate ao tráfico internacional de pessoas? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-quais-orgao-fazem-parte-do-ministerio-publico-brasileiro">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-quais-orgao-fazem-parte-do-ministerio-publico-brasileiro" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-quais-orgao-fazem-parte-do-ministerio-publico-brasileiro">
+
+                        Quais órgãos fazem parte do Ministério Público brasileiro?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-quais-orgao-fazem-parte-do-ministerio-publico-brasileiro" class="collapse" aria-labelledby="acordeon-quais-orgao-fazem-parte-do-ministerio-publico-brasileiro" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>O Ministério Público (MP) é uma das instituições mais importantes do país, pois defende o cumprimento das leis e protege os interesses da sociedade. O MP está presente em todo o Brasil e atua tanto na esfera
+                            estadual quanto na federal. O objetivo é garantir o interesse público. É</span> uma instituição essencial à justiça e à democracia no Brasil. Ele atua na defesa da ordem jurídica, do regime democrático e dos direitos
+                          fundamentais dos cidadãos. Sua existência e funções estão garantidas pela <a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm">Constituição Federal</a>, que determina que o MP é independente dos Três
+                          Poderes (Executivo, Legislativo e Judiciário), ou seja, não está subordinado a nenhum deles. Isso garante sua autonomia funcional, administrativa e orçamentária.</p>
+                        <p dir="ltr"><span></span>O Ministério Público brasileiro é formado por dois grandes grupos: o Ministério Público da União (MPU) e os 26 ministérios públicos estaduais. </p>
+                        <p dir="ltr"><span>▶️ </span><strong>Ministério Público da União (MPU)</strong></p>
+                        <p dir="ltr"><span>O MPU reúne os ramos que atuam em assuntos federais. Ele é composto por quatro instituições:</span></p>
+                        <p dir="ltr">Ministério Público Federal (MPF) - é aqui que está a Procuradoria-Geral da República (PGR)<br />Ministério Público do Trabalho (MPT)<br />Ministério Público Militar (MPM)<br />Ministério Público do Distrito
+                          Federal e Territórios (MPDFT)</p>
+                        <p dir="ltr"><span>▶️</span><strong>Ministérios Públicos Estaduais (MPE)</strong></p>
+                        <p class=" " dir="ltr"><span>Cada estado tem o seu próprio Ministério Público, que atua perante o Poder Judiciário Estadual, ou seja, nas varas onde os processos começam. As funções são semelhantes às do MPU, mas voltadas para
+                            questões locais. Portanto, há 26 ministérios públicos estaduais. Já o DF é representado pelo MPDFT, que faz parte do MPU.</span></p>
+                        <p class=" " dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-quais-orgaos-fazem-parte-do-ministerio-publico-brasileiro"
+                              target="_self" title="">Saiba mais em: Me explica, MPF: quais órgãos fazem parte do Ministério Público brasileiro? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-a-crise-climatica-afeta-seu-cotidiano-2014-e-o-que-o-mpf-faz-a-respeito">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-a-crise-climatica-afeta-seu-cotidiano-2014-e-o-que-o-mpf-faz-a-respeito" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-a-crise-climatica-afeta-seu-cotidiano-2014-e-o-que-o-mpf-faz-a-respeito">
+
+                        Como a crise climática afeta seu cotidiano — e o que o MPF faz a respeito?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-a-crise-climatica-afeta-seu-cotidiano-2014-e-o-que-o-mpf-faz-a-respeito" class="collapse" aria-labelledby="acordeon-como-a-crise-climatica-afeta-seu-cotidiano-2014-e-o-que-o-mpf-faz-a-respeito"
+                      data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span><span id="docs-internal-guid-7b909458-7fff-e884-4901-f3a6486a1dcc"><span>Você já sentiu que o clima anda mais extremo? Calor fora de época, chuvas fortes, falta d’água ou alimentos mais caros? Isso não é
+                                coincidência — são efeitos reais das mudanças climáticas, que já fazem parte do nosso dia a dia. </span></span></span></p>
+                        <p dir="ltr"><span>Tempestades e enchentes, por exemplo, causam alagamentos, prejuízos materiais e deixam pessoas desabrigadas. Já as secas prolongadas levam à falta de água, encarecimento da energia e impactos na agricultura,
+                            entre outros problemas. O calor excessivo piora doenças respiratórias e pressiona os sistemas de saúde, além de afetar a qualidade de vida nas cidades. Esses efeitos são especialmente graves para as populações mais
+                            vulneráveis — como comunidades indígenas, ribeirinhas, quilombolas e pessoas em situação de pobreza — que muitas vezes vivem em áreas de risco e dependem diretamente dos recursos naturais para sobreviver.</span></p>
+                        <p><span><span><span>O MPF tem atuação permanente para a proteção do meio ambiente e da população. </span></span></span>A <a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr4/copy_of_sobre" target="_self"
+                            title="">4ª Câmara de Coordenação e Revisão (4CCR)</a>, responsável por temas ambientais e patrimônio cultural, atua em conjunto com a <a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr6/copy_of_sobre"
+                            target="_self" title="">6ª Câmara (6CCR)</a>, que trata dos direitos de populações indígenas e comunidades tradicionais, e com a <a class="external-link" href="https://www.mpf.mp.br/atuacao/pfdc/copy_of_sobre"
+                            target="_self" title="">Procuradoria Federal dos Direitos do Cidadão (PFDC)</a>, que busca a proteção de direitos humanos. Essa articulação fortalece uma atuação transversal e coordenada, essencial para enfrentar os
+                          desafios socioambientais do país. </p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-a-crise-climatica-afeta-seu-cotidiano-2014-e-o-que-o-mpf-faz-a-respeito"
+                              target="_self" title=""> Saiba mais em: Me explica, MPF: como a crise climática afeta seu cotidiano - e o que o MPF faz a respeito?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-acordo-de-nao-persecucao-penal">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-acordo-de-nao-persecucao-penal" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-e-acordo-de-nao-persecucao-penal">
+
+                        O que é Acordo de Não Persecução Penal (ANPP)?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-acordo-de-nao-persecucao-penal" class="collapse" aria-labelledby="acordeon-o-que-e-acordo-de-nao-persecucao-penal" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>O acordo de não persecução penal, também conhecido como ANPP, é um instrumento jurídico que possibilita a resolução de conflitos criminais cometidos sem violência ou grave ameaça, de forma mais rápida. Foi
+                            i</span>ncluído no Código de Processo Penal (CPP) em 2019, com a aprovação da <a href="https://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2019/Lei/L13964.htm">Lei nº 13.964/19</a>, conhecida como Pacote Anticrime. O ANPP
+                          é uma medida alternativa que o membro do Ministério Público brasileiro pode propor ao investigado ou denunciado e à sua defesa. </p>
+                        <p dir="ltr"><span>Nesse tipo de acordo, pessoas acusadas de crimes sem violência ou grave ameaça podem reconhecer a culpa e cumprir condições para não serem presas. Em geral, o ANPP deve ser proposto pelo Ministério Público
+                            antes do oferecimento da denúncia ao juiz. Se o juiz confirmar o acordo, não será aberto o processo na Justiça. Se a pessoa descumprir o acordo, o MP informará à Justiça para que seja cancelado e oferecerá a denúncia. Em
+                            caso de cumprimento, ao final, haverá a extinção da punição e a infração não constará em certidão de antecedentes criminais.</span></p>
+                        <p dir="ltr"><span>Existem requisitos e condições específicas para que o acordo seja firmado. Por exemplo, se o crime for de violência doméstica ou familiar, ou praticado contra a mulher por razões do gênero, o acordo não pode
+                            ser aplicado. Nos casos em que é possível firmar o acordo, o investigado tem a obrigação de comprovar, periodicamente, que está cumprindo as condições impostas, entre outras.</span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-acordo-de-nao-persecucao-penal" target="_self" title="">Saiba mais
+                              em: Me explica, MPF: o que é Acordo de Não Persecução Penal? </a></strong></p>
+                        <p> </p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-noticia-e-queixa-crime-sao-a-mesma-coisa-que-denuncia">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-noticia-e-queixa-crime-sao-a-mesma-coisa-que-denuncia" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-noticia-e-queixa-crime-sao-a-mesma-coisa-que-denuncia">
+
+                        Notícia e queixa-crime são a mesma coisa que denúncia?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-noticia-e-queixa-crime-sao-a-mesma-coisa-que-denuncia" class="collapse" aria-labelledby="acordeon-noticia-e-queixa-crime-sao-a-mesma-coisa-que-denuncia" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>No dia a dia, as pessoas costumam falar que vão denunciar um crime ou “dar queixa” de alguém à polícia. Não está errado, segundo a linguagem popular. Entretanto, no mundo do Direito, há uma grande diferença
+                            entre esses três termos.  </span></p>
+                        <p dir="ltr"><span>Quando uma pessoa vai à delegacia para registrar um boletim de ocorrência (o B.O.), ela está fazendo uma notícia-crime. Esse é o primeiro passo: comunicar à polícia um suposto crime. A partir daí, a polícia
+                            pode investigar para saber se o fato realmente foi um crime e quem o cometeu. É, portanto, a<span> informação de que algo ilegal pode ter acontecido e chega ao conhecimento da autoridade competente para investigá-lo (a
+                              polícia ou o Ministério Público, por exemplo). É um ato administrativo, não um processo. </span></span></p>
+                        <p dir="ltr"><span>Já a queixa-crime é um processo apresentado à Justiça, iniciado pela própria vítima (por meio de seu advogado), nos casos em que a lei diz que só ela pode pedir a punição. Isso acontece em crimes como
+                            calúnia, difamação, injúria e danos simples, por exemplo. <span>Essa queixa é levada diretamente ao juiz e não depende da polícia ou do Ministério Público (MP).</span></span></p>
+                        <p>A denúncia, em termos jurídicos, não tem o mesmo sentido quando a pessoa fala que vai à delegacia denunciar algo. Na verdade, a denúncia é um documento feito pelo Ministério Público para começar um processo criminal. Quando
+                          o MP entende que há provas suficientes de que alguém cometeu um crime, ele apresenta uma denúncia à Justiça. Se o juiz aceitá-la, o acusado vira réu e começa a ação penal (processo para examinar a ocorrência de crime ou
+                          contravenção).</p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-noticia-e-queixa-crime-sao-a-mesma-coisa-que-denuncia" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: notícia e queixa-crime são a mesma coisa que denúncia?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-sao-gaecos">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-sao-gaecos" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-sao-gaecos">
+
+                        O que são Gaecos?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-sao-gaecos" class="collapse" aria-labelledby="acordeon-o-que-sao-gaecos" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">Os Grupos de Atuação Especial de Combate ao Crime Organizado (Gaecos) do MPF são equipes permanentes e especializadas formadas por servidores e procuradores da República para atuar em investigações mais complexas,
+                          principalmente contra o crime organizado, e que colocam a segurança da população em risco, como o tráfico de drogas.</p>
+                        <p dir="ltr">Os Gaecos também atuam em: investigações que envolvam improbidade administrativa; casos de grande impacto, como organizações criminosas especializadas em <span>corrupção; no </span><span>acompanhamento da
+                            atividade policial nas operações realizadas pelo grupo; e, além disso, no período eleitoral,</span><span> os Gaecos também trabalham para proteger o processo democrático combatendo a influência de facções criminosas nas
+                            eleições. </span></p>
+                        <p dir="ltr">Foram criados oficialmente no MPF em 2013, pela <a class="external-link" href="https://biblioteca.mpf.mp.br/server/api/core/bitstreams/69ede532-d33b-40be-982a-41efcbe6fbdb/content" target="_self" title="">Portaria
+                            146</a>, inspirados em modelos estaduais que já existiam. Entretanto, começaram a funcionar de fato a partir de 2020.</p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-sao-gaecos" target="_self" title="">Saiba mais em: Me explica, MPF: o
+                              que são Gaecos? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-qual-e-a-diferenca-entre-promotor-e-procurador">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-qual-e-a-diferenca-entre-promotor-e-procurador" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-qual-e-a-diferenca-entre-promotor-e-procurador">
+
+                        Qual é a diferença entre promotor e procurador?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-qual-e-a-diferenca-entre-promotor-e-procurador" class="collapse" aria-labelledby="acordeon-qual-e-a-diferenca-entre-promotor-e-procurador" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">Segundo a <a href="https://www.planalto.gov.br/ccivil_03/leis/l8625.htm">Lei nº 8.625/93</a>, que organiza o Ministério Público dos Estados (MPE), o promotor de Justiça atua na primeira instância do Poder
+                          Judiciário Estadual, ou seja, nas <a title="" href="../vocabulario/vara.html" class="external-link" target="_self">varas</a> onde os processos têm início. Sua principal função é representar o Ministério Público em ações
+                          penais públicas, propondo denúncias contra pessoas e empresas, e fiscalizando o cumprimento das leis.</p>
+                        <p dir="ltr">Ainda dentro da estrutura do MPE, existe o cargo de procurador de Justiça. Essas pessoas atuam na segunda instância do Poder Judiciário, ou seja, nos Tribunais de Justiça, onde são julgados os recursos contra
+                          decisões das varas. São responsáveis, ainda, por revisar e acompanhar os processos que já passaram pela primeira instância, garantindo que as decisões estejam em conformidade com a lei e os direitos da sociedade sejam
+                          preservados, além de propor ações e apresentar recursos. Ainda na estrutura do MPE, há o cargo de procurador-geral de Justiça, que é o chefe do Ministério Público do estado. </p>
+                        <p class=" " dir="ltr">De acordo com a <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm">Lei Complementar de 75/93</a>, que organiza o Ministério Público da União (MPU), o Ministério Público Federal (MPF) atua
+                          somente na esfera federal. O trabalho é desenvolvido perante a Justiça Federal. O MPF atua em crimes contra a União, autarquias ou bens federais, casos que estão previstos no <a
+                            href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm">artigo 109 da Constituição Federal</a>. Alguns exemplos são os crimes contra a administração pública (como corrupção ativa) e contra a organização
+                          do trabalho (trabalho escravo).</p>
+                        <p class=" " dir="ltr">Os cargos para membros no MPF são de procuradores, procuradores regionais e subprocuradores-gerais da República, de forma ampla. Eles são responsáveis também por promover ações civis e penais públicas e
+                          apresentar pareceres em casos que são de suas competências. </p>
+                        <p class=" " dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-qual-e-a-diferenca-entre-promotor-e-procurador" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: qual é a diferença entre promotor e procurador? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-justica-climatica-e-qual-o-papel-do-mpf-nessa-agenda">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-justica-climatica-e-qual-o-papel-do-mpf-nessa-agenda" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-e-justica-climatica-e-qual-o-papel-do-mpf-nessa-agenda">
+
+                        O que é justiça climática e qual o papel do MPF nessa agenda?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-justica-climatica-e-qual-o-papel-do-mpf-nessa-agenda" class="collapse" aria-labelledby="acordeon-o-que-e-justica-climatica-e-qual-o-papel-do-mpf-nessa-agenda" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>A justiça climática é um conceito que relaciona a crise ambiental aos direitos das populações mais vulneráveis. Ela </span>parte do princípio de que os impactos das mudanças do clima não afetam a todos da mesma forma.
+                          Em geral, comunidades vulneráveis — povos indígenas, populações ribeirinhas, quilombolas e pessoas em situação de pobreza — sofrem mais intensamente os efeitos da crise ambiental, como enchentes, secas, perda de territórios
+                          e insegurança alimentar. Por isso, a justiça climática não trata apenas do meio ambiente, mas também de equidade social, econômica e de direitos humanos.</p>
+                        <p dir="ltr"><span>O MPF atua diretamente na defesa do meio ambiente e dos direitos de populações vulneráveis, por isso, a justiça climática está no centro de muitas das suas ações. </span>A 4ª Câmara de Coordenação e Revisão
+                          - Meio Ambiente e Patrimônio Cultural (4CCR) trata desse tema, que abrange a proteção da fauna e da flora, das reservas legais, dos recursos hídricos, das áreas de preservação permanente, da zona costeira, da atividade
+                          minerária. A 4CCR cuida ainda de temas relacionados ao meio ambiente em <span>áreas urbanas, como poluição sonora e visual, qualidade do ar e saneamento básico. Além disso, a <span>6ª Câmara (6CCR) - Populações Indígenas e
+                              Comunidades Tradicionais</span><span> e a </span><span>Procuradoria Federal dos Direitos do Cidadão (PFDC) também atuam nessas áreas. </span><span><br /></span></span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-justica-climatica-e-qual-o-papel-do-mpf-nessa-agenda" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: o que é justiça climática e qual o papel do MPF nessa agenda?</a></strong></p>
+                        <p dir="ltr"> </p>
+                        <p dir="ltr"> </p>
+                        <p dir="ltr"> </p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-o-mpf-defende-o-meio-ambiente">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-o-mpf-defende-o-meio-ambiente" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-como-o-mpf-defende-o-meio-ambiente">
+
+                        Como o MPF defende o meio ambiente?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-o-mpf-defende-o-meio-ambiente" class="collapse" aria-labelledby="acordeon-como-o-mpf-defende-o-meio-ambiente" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>No MPF, a defesa do meio ambiente abrange a proteção da fauna e da flora, das reservas legais, dos recursos hídricos, das áreas de preservação permanente, da zona costeira, da atividade minerária, entre
+                            outros temas. Essa atuação tem sido ainda mais recorrente por causa dos graves impactos das mudanças climáticas sobre o planeta.</span></p>
+                        <p dir="ltr"><span>O objetivo é assegurar a preservação dos principais biomas brasileiros, como a Amazônia, o Cerrado e a Mata Atlântica, bem como proteger os direitos das populações mais vulneráveis aos danos
+                            ambientais.</span></p>
+                        <p dir="ltr"><span>Essa atuação também se dá em relação ao meio ambiente em áreas urbanas, como licenciamento ambiental para empreendimentos turísticos, poluição sonora e visual, qualidade do ar e saneamento básico. </span>
+                        </p>
+                        <p dir="ltr"><span>Para enfrentar essas ameaças, o MPF, por meio da 4ª Câmara <span id="docs-internal-guid-d45a0990-7fff-4c6c-f113-989141daff1b"><span>de Coordenação e Revisão (4CCR) - Meio Ambiente e Patrimônio Cultural
+                                - </span></span>adota diversas providências nas esferas cível, penal e extrajudicial para combater crimes ambientais.</span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-mpf-defende-o-meio-ambiente" target="_self" title="">Saiba mais em: Me explica,
+                              MPF: como o MPF defende o meio ambiente?  </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-acao-civil-publica">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-acao-civil-publica" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-e-acao-civil-publica">
+
+                        O que é ação civil pública?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-acao-civil-publica" class="collapse" aria-labelledby="acordeon-o-que-e-acao-civil-publica" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">A ação civil pública, conhecida pela sigla ACP, é apresentada na Justiça para proteger os interesses de grupos de pessoas ou de toda a sociedade, especialmente quando há danos ao meio ambiente, à saúde, à
+                          educação, ao consumidor, ao patrimônio público ou à dignidade humana.</p>
+                        <p dir="ltr">Com a ação civil pública, pede-se que a Justiça obrigue quem causou o dano a fazer algo (como fornecer um remédio, por exemplo) ou deixar de fazer algo que esteja prejudicando as pessoas ou o meio ambiente (como
+                          queimadas). Pode haver o pagamento de indenizações ou a devolução de valores. Caso a ordem não seja cumprida, a Justiça pode determinar o pagamento de multa diária até que a decisão seja obedecida.</p>
+                        <p dir="ltr">A ACP está prevista na <a class="external-link" href="https://www.planalto.gov.br/ccivil_03/leis/l7347orig.htm" target="_self" title="">Lei nº 7.347/1985</a> e pode ser proposta pelo Ministério Público (MP), mas
+                          também por outras entidades públicas ou privadas. Apesar disso, o MP é o autor da maioria das ações civis públicas de grande repercussão que tramitam no Judiciário.</p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-acao-civil-publica" target="_self" title=""> Saiba mais em: Me explica, MPF: o
+                              que é ação civil pública?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-qual-a-lei-que-organiza-o-ministerio-publico-da-uniao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-qual-a-lei-que-organiza-o-ministerio-publico-da-uniao" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-qual-a-lei-que-organiza-o-ministerio-publico-da-uniao">
+
+                        Qual a lei que organiza o Ministério Público da União?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-qual-a-lei-que-organiza-o-ministerio-publico-da-uniao" class="collapse" aria-labelledby="acordeon-qual-a-lei-que-organiza-o-ministerio-publico-da-uniao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Embora o MPU tenha sido previsto na </span><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"><span>Constituição Federal de 1988</span></a><span>, foi a </span><a
+                            href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm"><span>Lei Complementar (LC) nº 75, de 20 de maio de 1993</span></a><span>, que regulamentou de forma detalhada sua organização, suas atribuições e o estatuto
+                            de seus membros. Essa norma é um marco fundamental para o funcionamento e a independência da instituição.</span></p>
+                        <p><span>A LC nº  75/1993 foi criada para definir as atribuições e a organização do MPU, além de prever princípios, garantias e direitos para que a instituição possa desempenhar seu papel. A norma também consolidou a autonomia
+                            administrativa, funcional e financeira do MPU, garantindo os meios necessários para que a instituição atue na defesa das normas jurídicas, do respeito ao sistema de Justiça, da democracia e dos direitos coletivos da
+                            sociedade.</span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-qual-a-lei-que-organiza-o-ministerio-publico-da-uniao" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: qual a lei que organiza o Ministério Público da União?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-quem-fiscaliza-empresas-que-combinam-precos">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-quem-fiscaliza-empresas-que-combinam-precos" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-quem-fiscaliza-empresas-que-combinam-precos">
+
+                        Quem fiscaliza empresas que combinam preços?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-quem-fiscaliza-empresas-que-combinam-precos" class="collapse" aria-labelledby="acordeon-quem-fiscaliza-empresas-que-combinam-precos" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Quando empresas tentam dominar o mercado de forma ilegal, isso reduz a competição e aumenta os preços. E quem sai prejudicado é o consumidor. Para evitar que isso aconteça, existe no Brasil o Conselho Administrativo
+                            de Defesa Econômica (Cade), que investiga e julga práticas contra a livre-concorrência. O Ministério Público Federal (MPF) atua juntamente com o Cade para fiscalizar a aplicação da lei e defender o interesse
+                            público.</span></p>
+                        <p dir="ltr"><span>Uma das funções principais do representante do MPF no conselho, tal como definida pela </span><strong><a href="https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12529.htm">Lei nº
+                              12.529/2011</a></strong><span>, que estrutura o Sistema Brasileiro de Defesa da Concorrência, é emitir pareceres nos processos administrativos para opinar de forma qualificada sobre a imposição de sanções administrativas
+                            por infrações cometidas por empresas contra a ordem econômica. Ele também participa dos julgamentos como fiscal da lei e pode pedir investigações.</span></p>
+                        <p dir="ltr"><span>Por exemplo, se o Cade descobre que postos de gasolina combinaram preços em uma cidade, o MPF pode atuar para responsabilizar os envolvidos e garantir que o mercado volte a funcionar de forma justa.</span>
+                        </p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-quem-fiscaliza-empresas-que-combinam-precos" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: quem fiscaliza empresas que combinam preços?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-o-ministerio-publico-pode-fazer-sem-ir-a-justica">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-o-ministerio-publico-pode-fazer-sem-ir-a-justica" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-o-ministerio-publico-pode-fazer-sem-ir-a-justica">
+
+                        O que o Ministério Público pode fazer sem ir à Justiça?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-o-ministerio-publico-pode-fazer-sem-ir-a-justica" class="collapse" aria-labelledby="acordeon-o-que-o-ministerio-publico-pode-fazer-sem-ir-a-justica" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">A atuação é extrajudicial quando os membros do Ministério Público(MP) realizam atos que independem da vinculação à Justiça, como a visita a uma prisão para verificar as condições das pessoas presas; as reuniões
+                          com os envolvidos em procedimentos administrativos para fechar acordos; e as vistorias a prédios públicos para verificar a acessibilidade a pessoas com deficiência.</p>
+                        <p dir="ltr">Uma das mais importantes contribuições do MP à sociedade ocorre nessa resolução extrajudicial de conflitos que envolvem interesses coletivos. Com isso, evita-se a necessidade de propor ações civis públicas ou de
+                          outra natureza, e as pessoas envolvidas ganham com a rapidez na solução do problema. </p>
+                        <p dir="ltr">Recomendações, termos de ajustamento de conduta e audiências públicas são os instrumentos administrativos mais utilizados nessa atuação preventiva. </p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-o-ministerio-publico-pode-fazer-sem-ir-a-justica" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: o que o Ministério Público pode fazer sem ir à Justiça?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-habeas-corpus">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-habeas-corpus" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-e-habeas-corpus">
+
+                        O que é habeas corpus?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-habeas-corpus" class="collapse" aria-labelledby="acordeon-o-que-e-habeas-corpus" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Habeas corpus é um instrumento jurídico que protege a liberdade de uma pessoa que está sofrendo ou prestes a sofrer alguma forma de prisão ilegal ou abuso de poder.</p>
+                        <p dir="ltr"><span>O habeas corpus impede que alguém seja preso sem justa causa, sem seguir os procedimentos legais ou por abuso de autoridade. Por isso, é considerado uma das ferramentas mais importantes da Justiça para
+                            defender os direitos fundamentais.</span></p>
+                        <p dir="ltr"><strong>Manifestação do Ministério Público</strong></p>
+                        <p dir="ltr"><span>Quando um pedido de habeas corpus chega à Justiça, normalmente o Ministério Público (de acordo com a instância na Justiça) é chamado para </span><span>apresentar um parecer</span><span> – ou seja, sua
+                            manifestação sobre o caso. Ele pode se posicionar a favor ou contra a concessão do habeas corpus, e a Justiça pode ou não seguir esse parecer. </span></p>
+                        <p dir="ltr"><span>Além disso, o MP também pode entrar com um pedido de habeas corpus quando identifica que alguém está sendo privado da liberdade de forma ilegal.</span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-habeas-corpus" target="_self" title="">Saiba mais em: Me explica, MPF: o que é
+                              habeas corpus?  </a></strong></p>
+                        <p><span> </span></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-por-que-o-ministerio-publico-processa-uma-pessoa-ou-uma-instituicao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-por-que-o-ministerio-publico-processa-uma-pessoa-ou-uma-instituicao" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-por-que-o-ministerio-publico-processa-uma-pessoa-ou-uma-instituicao">
+
+                        Por que o Ministério Público processa uma pessoa ou uma instituição?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-por-que-o-ministerio-publico-processa-uma-pessoa-ou-uma-instituicao" class="collapse" aria-labelledby="acordeon-por-que-o-ministerio-publico-processa-uma-pessoa-ou-uma-instituicao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>O Ministério Público (MP) é a instituição responsável pela defesa das normas jurídicas, do respeito ao sistema de Justiça, da democracia e dos direitos coletivos da sociedade. Dessa forma, quando esses princípios não
+                            são respeitados, o MP entra em ação. Ou seja, o Ministério Público pede a abertura de um processo (ação ingressada na Justiça após investigações) contra uma pessoa ou instituição quando há ameaça aos direitos previstos na
+                            Constituição e nas leis, por iniciativa própria ou após ser acionado por qualquer cidadão.</span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-por-que-o-ministerio-publico-processa-uma-pessoa-ou-uma-instituicao" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: por que o Ministério Público processa uma pessoa ou uma instituição? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-a-6a-camara-atua-em-defesa-dos-povos-indigenas-e-tradicionais">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-a-6a-camara-atua-em-defesa-dos-povos-indigenas-e-tradicionais" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-a-6a-camara-atua-em-defesa-dos-povos-indigenas-e-tradicionais">
+
+                        Como a 6ª Câmara atua em defesa dos povos indígenas e tradicionais?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-a-6a-camara-atua-em-defesa-dos-povos-indigenas-e-tradicionais" class="collapse" aria-labelledby="acordeon-como-a-6a-camara-atua-em-defesa-dos-povos-indigenas-e-tradicionais" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>A 6ª CCR - Populações Indígenas e Comunidades Tradicionais faz parte da atuação temática do Ministério Público Federal (MPF). <span>Ela trata dos temas relacionados aos grupos que compartilham modos de vida
+                              tradicionais, como indígenas, quilombolas, extrativistas, ribeirinhas e ciganos, entre outros. O trabalho da 6CCR busca garantir que os direitos desses povos e comunidades sejam respeitados e fortalecidos. </span></span>
+                        </p>
+                        <p><span>As principais atividades da 6CCR incluem revisão, promoção da pluralidade étnica e cultural, integração e mobilização, intercâmbio e cooperação. </span></p>
+                        <p><span><span>Um exemplo dessa atuação são as vistorias realizadas pelo MPF para verificar as condições de locais de acolhimento a indígenas.</span></span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-a-6a-camara-atua-em-defesa-dos-povos-indigenas-e-tradicionais" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: como a 6ª Câmara atua em defesa dos povos indígenas e tradicionais? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-mandado-de-injuncao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-mandado-de-injuncao" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-e-mandado-de-injuncao">
+
+                        O que é mandado de injunção?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-mandado-de-injuncao" class="collapse" aria-labelledby="acordeon-o-que-e-mandado-de-injuncao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Mandado de injunção é um instrumento constitucional que garante às pessoas o exercício de direitos que estão previstos na Constituição, mas não têm uma lei ou norma regulamentadora. <span>Ele está previsto no art. 5º
+                            da </span><a href="https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm"><span>Constituição</span></a><span> e foi regulamentado pela </span><a
+                            href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2016/lei/l13300.htm"><span>Lei nº 13.300/2016</span></a><span>. <span>Esse instrumento jurídico pode ser usado também sempre que o exercício dos direitos
+                              relacionados à nacionalidade, soberania ou cidadania for prejudicado pela falta da regulamentação. </span></span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-mandado-de-injuncao" target="_self" title="">Saiba mais em: Me explica, MPF: o
+                              que é mandado de injunção?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-fazer-solicitacoes-ao-mpf-de-forma-simples-e-online">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-fazer-solicitacoes-ao-mpf-de-forma-simples-e-online" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-fazer-solicitacoes-ao-mpf-de-forma-simples-e-online">
+
+                        Como fazer solicitações ao MPF de forma simples e online?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-fazer-solicitacoes-ao-mpf-de-forma-simples-e-online" class="collapse" aria-labelledby="acordeon-como-fazer-solicitacoes-ao-mpf-de-forma-simples-e-online" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>O Ministério Público Federal (MPF) possui um canal exclusivo de comunicação com a população. <span>No </span><a class="external-link" href="https://www.mpf.mp.br/servicos/mpf-servicos" target="_self" title=""><span>MPF
+                              Serviços</span></a><span>, que está disponível para acesso na página inicial do </span><a href="https://www.mpf.mp.br/"><span>site da instituição</span></a><span>, a cidadã e o cidadão conseguem registrar pedidos e
+                            solicitar a investigação de casos, por exemplo, além de outras demandas. <span>Confira as opções disponíveis no MPF Serviços:</span></span></p>
+                        <ul>
+                          <li><span>Denúncias e pedidos de informação;</span></li>
+                          <li><span>Protocolo; </span></li>
+                          <li><span>Petição e assinaturas; </span></li>
+                          <li><span>Pesquisa de processos e documentos; </span></li>
+                          <li><span>Ouvidoria;</span></li>
+                          <li><span>Certidão negativa eletrônica;</span></li>
+                          <li><span>Dados pessoais;</span></li>
+                          <li><span>Segurança da informação; </span></li>
+                          <li><span>Atendimento virtual; </span></li>
+                          <li><span>Sala de atendimento ao cidadão (SAC).</span></li>
+                        </ul>
+                        <p><span>O registro pode ser feito sem sair de casa, a qualquer momento, por meio da plataforma de autoatendimento. </span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-fazer-solicitacoes-ao-mpf-de-forma-simples-e-online" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: como fazer solicitações ao MPF de forma simples e online? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-funcionam-as-areas-especializadas-dentro-do-mpf">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-funcionam-as-areas-especializadas-dentro-do-mpf" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-funcionam-as-areas-especializadas-dentro-do-mpf">
+
+                        Como funcionam as áreas especializadas dentro do MPF?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-funcionam-as-areas-especializadas-dentro-do-mpf" class="collapse" aria-labelledby="acordeon-como-funcionam-as-areas-especializadas-dentro-do-mpf" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>O Ministério Público Federal (MPF) se organiza em áreas especializadas <span>para lidar melhor com os grandes problemas que afetam o país. É o que chamamos de atuação temática. Dividida em sete Câmaras de Coordenação e
+                            Revisão (CCRs), elas são </span>responsáveis por coordenar o trabalho em determinados temas e por revisar o exercício funcional dos membros do MPF. Conheça as áreas de atuação das sete CCRs: </p>
+                        <ul>
+                          <li><span><strong><a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr1/copy_of_sobre" target="_blank" title="">1ª Câmara - Direitos Sociais e Fiscalização de Atos Administrativos em geral</a></strong></span>
+                          </li>
+                          <li><strong><a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr2/copy_of_sobre" target="_blank" title="">2ª Câmara - Criminal</a></strong></li>
+                          <li><strong><a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr3/copy_of_sobre" target="_blank" title="">3ª Câmara - Consumidor e Ordem Econômica</a></strong></li>
+                          <li><strong><a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr4/copy_of_sobre" target="_blank" title="">4ª Câmara - Meio Ambiente e Patrimônio Cultural</a></strong></li>
+                          <li><strong><a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr5/sobre" target="_blank" title="">5ª Câmara - Combate à Corrupção</a></strong></li>
+                          <li><strong><a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr6/copy_of_sobre" target="_blank" title="">6ª Câmara - Populações Indígenas e Comunidades Tradicionais</a></strong></li>
+                          <li><strong><a class="external-link" href="https://www.mpf.mp.br/atuacao/ccr7/copy_of_sobre" target="_blank" title="">7ª Câmara - Controle Externo da Atividade Policial e Sistema Prisional</a></strong></li>
+                        </ul>
+                        <p><span> </span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-funcionam-as-areas-especializadas-dentro-da-instituicao" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: como funcionam as áreas especializadas dentro do MPF?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-e-mandado-de-seguranca">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-e-mandado-de-seguranca" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-o-que-e-mandado-de-seguranca">
+
+                        O que é mandado de segurança?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-e-mandado-de-seguranca" class="collapse" aria-labelledby="acordeon-o-que-e-mandado-de-seguranca" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>O mandado de segurança é um dos instrumentos jurídicos previstos na Constituição Federal, e tem o objetivo de impedir ou evitar ilegalidade ou abuso de poder. Esse mecanismo possibilita ao juiz determinar de imediato que o
+                          direito seja garantido, antes de julgar de forma definitiva o pedido feito no processo.</p>
+                        <p><span>Previsto no artigo 5º da Constituição e disciplinado pela</span><a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12016.htm"><span> lei nº 12.016 de 2009</span></a><span>, o mandado de segurança é
+                            concedido para proteger um direito líquido e certo, ou seja, um direito facilmente demonstrável. Para isso, esse direito precisa estar garantido por lei ou expresso em regulamento ou norma, que esteja sendo violado ou
+                            ameaçado, ilegalmente ou com abuso de poder, por parte de autoridade pública ou agente de pessoa jurídica (empresa) que exerça Poder Público. </span></p>
+                        <p><strong><span id="docs-internal-guid-0ac000b2-7fff-5175-a08c-2831b2d72b27"><span id="docs-internal-guid-29b5d5ad-7fff-9421-cf2f-d41f505c4f49"><a class="external-link"
+                                  href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-e-mandado-de-seguranca" target="_self" title="">Saiba mais em: Me explica, MPF: o que é mandado de
+                                  segurança? </a></span></span></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-fazer-uma-reclamacao-ou-sugestao-ao-mpf">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-fazer-uma-reclamacao-ou-sugestao-ao-mpf" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-fazer-uma-reclamacao-ou-sugestao-ao-mpf">
+
+                        Como fazer uma reclamação ou sugestão ao MPF?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-fazer-uma-reclamacao-ou-sugestao-ao-mpf" class="collapse" aria-labelledby="acordeon-como-fazer-uma-reclamacao-ou-sugestao-ao-mpf" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Para fazer elogios, sugestões, reclamações e críticas em relação aos serviços oferecidos por todas as unidades do Ministério Público Federal ou registrar representações<span> (denúncias de ato ilícito ou
+                              irregularidade praticada por membro, servidor, estagiário ou terceirizado do MPF), o cidadão deve entrar em contato com a Ouvidoria.</span> Ela pode ser acionada por meio de formulário eletrônico disponível no <a
+                              class="external-link" href="https://www.mpf.mp.br/servicos/mpf-servicos" target="_self" title="">MPF Serviços</a>. <span>É necessário ter uma conta no gov.br para fazer o registro na Ouvidoria. Na página, é possível
+                              encontrar um passo a passo explicando como criar a conta no gov.br.</span></span></p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-fazer-uma-reclamacao-ou-sugestao-ao-mpf" target="_self" title="">Saiba mais em: Me
+                              explica, MPF: como fazer uma reclamação ou sugestão ao MPF?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-ministerio-publico-da-uniao-julga-processos">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-ministerio-publico-da-uniao-julga-processos" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-ministerio-publico-da-uniao-julga-processos">
+
+                        O Ministério Público da União julga processos?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-ministerio-publico-da-uniao-julga-processos" class="collapse" aria-labelledby="acordeon-o-ministerio-publico-da-uniao-julga-processos" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>A <a href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm"><span>Lei Complementar 75/1993 </span></a><span>lista diversas responsabilidades do Ministério Público da União (MPU), mas julgar e aplicar penalidade não
+                            é uma delas. Na atividade jurisdicional, é o Judiciário que decide, com poder de punir em caso de descumprimento.</span></p>
+                        <p>Vale lembrar que o MPU não faz parte de nenhum dos Três Poderes (Executivo, Legislativo ou Judiciário), como você já viu aqui. Alguns procedimentos comuns de responsabilidade do MPU são inquérito civil; ação civil pública;
+                          ação penal pública; recomendação; e requisições. Vale destacar que a Justiça não é obrigada a atender os pedidos do Ministério Público em suas decisões. Ela pode negar o pedido, aceitá-lo na íntegra ou em parte.</p>
+                        <p class=" "><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-ministerio-publico-da-uniao-julga-processos" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: o Ministério Público da União julga processos? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-me-explica-mpf-como-o-ministerio-publico-atua-em-casos-de-feminicidio">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-me-explica-mpf-como-o-ministerio-publico-atua-em-casos-de-feminicidio" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-me-explica-mpf-como-o-ministerio-publico-atua-em-casos-de-feminicidio">
+
+                        Como o Ministério Público atua em casos de feminicídio?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-me-explica-mpf-como-o-ministerio-publico-atua-em-casos-de-feminicidio" class="collapse" aria-labelledby="acordeon-me-explica-mpf-como-o-ministerio-publico-atua-em-casos-de-feminicidio" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">A <a class="external-link" href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13104.htm" target="_self" title="">Lei do Feminicídio</a> (Lei nº 13.104/2015) completou 10 anos. Considera-se
+                          feminicídio quando o assassinato da mulher envolver violência doméstica e familiar, menosprezo ou discriminação à condição de mulher, ou seja, ocorreu apenas pelo fato de a vítima ser mulher. Em 2024, a <a
+                            href="https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14994.htm">Lei nº 14.994/2024</a> tornou o crime um tipo penal independente, aumentando o tempo de reclusão para 20 a 40 anos, maior do que a pena
+                          prevista sobre o crime de homicídio qualificado (12 a 30 anos de reclusão).</p>
+                        <p dir="ltr">O Ministério Público dos Estados tem atuação direta nos casos de feminicídio. Isso porque é o responsável pela ação penal pública nos crimes de competência estadual, ou seja, aqueles que ocorrem dentro de cada
+                          estado.</p>
+                        <p dir="ltr">Já o MPF atua nesses casos em contexto federal. Além disso, o MPF tem a atividade de fiscal da lei em todos os recursos e habeas corpus (medida que visa proteger o direito de ir e vir) de todos os processos
+                          criminais que chegam ao Superior Tribunal de Justiça (STJ) e ao Supremo Tribunal Federal (STF), vindos da Justiça Estadual dos 27 estados da Federação. Pode, ainda, realizar ações voltadas para a proteção das mulheres e a
+                          fiscalização de políticas públicas de enfrentamento do crime, como a implementação de programas federais.</p>
+                        <p class=" " dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-ministerio-publico-atua-em-casos-de-feminicidio"
+                              target="_self" title="">Saiba mais em: Me explica, MPF: como o Ministério Público atua em casos de feminicídio?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-o-que-acontece-quando-o-juiz-aceita-a-denuncia">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-o-que-acontece-quando-o-juiz-aceita-a-denuncia" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-o-que-acontece-quando-o-juiz-aceita-a-denuncia">
+
+                        O que acontece quando o juiz aceita a denúncia?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-o-que-acontece-quando-o-juiz-aceita-a-denuncia" class="collapse" aria-labelledby="acordeon-o-que-acontece-quando-o-juiz-aceita-a-denuncia" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">Após a Justiça receber a denúncia, o acusado vira réu e passa a responder o processo. A pessoa precisa contratar um advogado ou acionar a Defensoria Pública para defendê-la. A defesa do réu apresentará a
+                          contestação. Pode, então, apontar nulidades e até indicar que a acusação está equivocada (ou seja, adentrar o mérito da questão). </p>
+                        <p dir="ltr">Depois, começa a fase de instrução, ou seja, a produção de provas. A Justiça ouve partes, peritos, testemunhas ou verifica documentos apresentados. Após a Justiça aceitar as provas, defesa e acusação se manifestam
+                          mais uma vez, na alegação final. O Ministério Público apresenta seu parecer sobre o caso (documento no qual analisa os fatos, as provas e as legislações pertinentes), fornecendo elementos para a orientação do juiz, que pode
+                          concordar na íntegra, em parte ou não seguir.</p>
+                        <p dir="ltr">Após essas fases, ocorre o julgamento e é publicada a sentença, a decisão final do juiz. Qualquer uma das partes pode recorrer à instância superior se não concordar com a decisão, ou seja, apresentar recurso até
+                          que sejam esgotadas todas as possibilidades. Quando isso ocorre, considera-se que o processo transitou em julgado, portanto, não cabe mais recurso. Assim, começa o cumprimento da sentença.</p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-o-que-acontece-quando-o-juiz-aceita-a-denuncia" target="_self" title="">Saiba mais em:
+                              Me explica, MPF: o que acontece quando o juiz aceita a denúncia? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-me-explica-mpf-qual-e-o-papel-do-ministerio-publico-como-fiscal-da-lei">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-me-explica-mpf-qual-e-o-papel-do-ministerio-publico-como-fiscal-da-lei" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-me-explica-mpf-qual-e-o-papel-do-ministerio-publico-como-fiscal-da-lei">
+
+                        Qual é o papel do Ministério Público como fiscal da lei?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-me-explica-mpf-qual-e-o-papel-do-ministerio-publico-como-fiscal-da-lei" class="collapse" aria-labelledby="acordeon-me-explica-mpf-qual-e-o-papel-do-ministerio-publico-como-fiscal-da-lei" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Uma das competências do Ministério Público (MP), de acordo com a <a class="external-link" href="https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm" target="_self" title="">Lei Complementar 75 de 1993</a>, é a de
+                          custos legis, ou seja, de fiscal da lei. Isso quer dizer que o MP é responsável por fiscalizar o cumprimento das leis e garantir que as decisões tomadas pela Justiça estejam de acordo com a legislação. "Custos legis" é uma
+                          expressão em latim que significa "guardião da lei".</p>
+                        <p>O Ministério Público Federal (MPF), por exemplo, pode intervir nos processos cíveis, criminais e eleitorais. O MPF não faz parte da relação processual nem como autor, nem como réu, mas se manifesta sobre a ação. Os
+                          procuradores podem apresentar pareceres para garantir que os interesses públicos e sociais sejam atendidos corretamente. </p>
+                        <p><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-qual-e-o-papel-do-ministerio-publico-como-fiscal-da-lei" target="_self" title=""> Saiba
+                              mais em: <span id="docs-internal-guid-004f41d0-7fff-1f8d-d210-ccb2a2c78a72">Me explica, MPF: qual é o papel do Ministério Público como fiscal da lei?</span></a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-como-entrar-em-contato-com-o-ministerio-publico-federal">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-como-entrar-em-contato-com-o-ministerio-publico-federal" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-como-entrar-em-contato-com-o-ministerio-publico-federal">
+
+                        Como entrar em contato com o Ministério Público Federal?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-como-entrar-em-contato-com-o-ministerio-publico-federal" class="collapse" aria-labelledby="acordeon-como-entrar-em-contato-com-o-ministerio-publico-federal" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">O MPF mantém canais presenciais e virtuais para contato direto com o cidadão. Entretanto, cada canal possui uma finalidade específica. Há o MPF Serviços, que realiza atendimento online. Já a Sala de Atendimento ao
+                          Cidadão (SAC) atende pessoalmente em todo o país. A Ouvidoria do MPF também recebe demandas a distância. A Corregedoria possui formulário eletrônico, disponível no site do MPF, por meio do qual também é possível entrar em
+                          contato, por videoconferência, com o Atendimento Virtual para tirar dúvidas. </p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-entrar-em-contato-com-o-ministerio-publico-federal" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: como entrar em contato com o Ministério Público Federal?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-copy3_of_inteligencia-artificial">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-copy3_of_inteligencia-artificial" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-copy3_of_inteligencia-artificial">
+
+                        Procuradores da República podem ser chamados de procuradores federais?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-copy3_of_inteligencia-artificial" class="collapse" aria-labelledby="acordeon-copy3_of_inteligencia-artificial" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>Não. Os procuradores federais não pertencem ao MP e não possuem as mesmas atribuições que os procuradores da República.</span></p>
+                        <p dir="ltr"><span>Os procuradores da República são integrantes do Ministério Público Federal (MPF), um dos ramos do Ministério Público da União (MPU). Eles representam a sociedade em casos que envolvem bens, serviços ou
+                            interesses da União, que cabem à Justiça Federal julgar.</span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-procuradores-da-republica-podem-ser-chamados-de-procuradores-federais"
+                              target="_self" title="">Saiba mais em: Me explica, MPF: procuradores da República podem ser chamados de procuradores federais?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-copy2_of_inteligencia-artificial">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-copy2_of_inteligencia-artificial" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-copy2_of_inteligencia-artificial">
+
+                        Toda procuradoria é do MPF?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-copy2_of_inteligencia-artificial" class="collapse" aria-labelledby="acordeon-copy2_of_inteligencia-artificial" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Não. Além das procuradorias do MPF, existem também as procuradorias dos estados, que são órgãos do Executivo integrantes da advocacia pública, e as procuradorias na estrutura da Advocacia-Geral da União (AGU).</p>
+                        <p>As procuradorias relacionadas ao MPF atuam na primeira instância da Justiça, no nível federal, e são responsáveis por defender a ordem jurídica, o regime democrático e os interesses sociais em casos que envolvam a União,
+                          suas autarquias e empresas públicas.</p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-toda-procuradoria-e-do-mpf" target="_self" title="">Saiba mais em: Me
+                              explica, MPF: toda procuradoria é do MPF?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-copy_of_inteligencia-artificial">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-copy_of_inteligencia-artificial" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-copy_of_inteligencia-artificial">
+
+                        Quem fiscaliza o Ministério Público brasileiro?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-copy_of_inteligencia-artificial" class="collapse" aria-labelledby="acordeon-copy_of_inteligencia-artificial" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">O art. 127 da Constituição Federal (CF) garante ao Ministério Público autonomia funcional e independência. Isso significa que não existe hierarquia entre procuradores e promotores. Entretanto, isso não quer dizer
+                          que esse trabalho fique sem fiscalização. Corregedorias e conselhos têm importantes funções para a fiscalização do trabalho desempenhado pelos integrantes do MP brasileiro. </p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-quem-fiscaliza-o-ministerio-publico-brasileiro" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: quem fiscaliza o Ministério Público brasileiro? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-inteligencia-artificial">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-inteligencia-artificial" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-inteligencia-artificial">
+
+                        Como o Ministério Público defende a democracia?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-inteligencia-artificial" class="collapse" aria-labelledby="acordeon-inteligencia-artificial" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr">A defesa da democracia é uma das funções atribuídas ao Ministério Público (MP) pelo art. 127 da Constituição Federal. Também está previsto que cabe ao MP a defesa da ordem jurídica e dos interesses sociais e
+                          individuais indisponíveis (como o direito à vida, por exemplo), pilares do regime democrático. Isso significa que os integrantes do MP têm o papel de atuar em diferentes frentes, que são interligadas.</p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-ministerio-publico-defende-a-democracia" target="_self" title="">Saiba
+                              mais em: Me explica, MPF: como o Ministério Público defende a democracia? </a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-instancia">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-instancia" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-instancia">
+
+                        Em quais casos o Ministério Público pode apresentar denúncia?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-instancia" class="collapse" aria-labelledby="acordeon-instancia" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>O Ministério Público pode oferecer denúncia à Justiça contra pessoas ou instituições que praticaram determinado crime. O MP só denuncia alguém por um crime quando considera que a investigação reuniu
+                            informações e dados (provas) suficientes sobre a culpa. A investigação pode contar com a participação de outras instituições (Polícias Federal e Civil, INSS, Receita Federal, Banco Central etc.).</span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-em-quais-casos-o-ministerio-publico-pode-apresentar-denuncia" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: em quais casos o Ministério Público pode apresentar denúncia?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica">
+
+                        Quais órgãos fazem parte do Ministério Público Eleitoral?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica" class="collapse" aria-labelledby="acordeon-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>Apesar de muitas pessoas pensarem que o Ministério Público Eleitoral pertence à Justiça Eleitoral, a instituição não faz parte do Judiciário e não realiza julgamentos. Ele integra o Ministério Público
+                            brasileiro e, apesar de não ter sede física, é composto por membros do Ministério Público Federal (MPF) e dos MPs estaduais.</span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-quais-orgaos-fazem-parte-do-ministerio-publico-eleitoral" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: quais órgãos fazem parte do Ministério Público Eleitoral</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-boato">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-boato" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-boato">
+
+                        Como o procurador-geral da República é escolhido para o cargo?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-boato" class="collapse" aria-labelledby="acordeon-boato" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>De acordo com o art. 128 da Constituição Federal (CF), o procurador-geral da República é indicado pelo presidente da República. No entanto, só a indicação presidencial não basta. A pessoa escolhida deve ter
+                            o nome aprovado pela maioria absoluta dos integrantes do Senado Federal, isto é, ao menos 41 senadores devem aprovar a indicação.</span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-como-o-procurador-geral-da-republica-e-escolhido-para-o-cargo" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: como o procurador-geral da República é escolhido para o cargo?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="card-header" id="acordeon-acesso-a-informacao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-acesso-a-informacao" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-acesso-a-informacao">
+
+                        A PGR pertence a qual poder?
+
+                      </a>
+                    </div>
+
+
+                    <div id="collapse-acesso-a-informacao" class="collapse" aria-labelledby="acordeon-acesso-a-informacao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p dir="ltr"><span>A Procuradoria-Geral da República (PGR) é a sede administrativa do MPF e não integra o Executivo, o Legislativo ou o Judiciário, ou seja, não faz parte de nenhum Poder. No entanto, seus membros atuam perante
+                            as mais altas instâncias do Judiciário: o Supremo Tribunal Federal (STF), o Superior Tribunal de Justiça (STJ) e o Tribunal Superior Eleitoral (TSE).</span></p>
+                        <p dir="ltr"><strong><a class="external-link" href="https://www.mpf.mp.br/o-mpf/unidades/procuradoria-geral-da-republica-pgr/noticias/me-explica-mpf-a-procuradoria-geral-da-republica-pertence-a-qual-poder" target="_self"
+                              title="">Saiba mais em: Me explica, MPF: a Procuradoria-Geral da República pertence a qual poder?</a></strong></p>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+
+
+              </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </metal:main>
+</body>
+
+</html>

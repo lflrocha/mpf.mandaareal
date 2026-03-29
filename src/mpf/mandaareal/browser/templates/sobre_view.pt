@@ -1,0 +1,618 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+<body metal:use-macro="here/main_template/macros/master">
+
+  <metal:styles fill-slot="style_slot">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+    <style>
+
+      main {
+      margin: 0 2em !important;
+      }
+
+      h1 {
+          font-family: Inter !important;
+          color: #5E2F7E;
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 48px;
+          letter-spacing: -1px;
+        }
+
+
+      .sub-tit-main {
+        color: #5E2F7E !important;
+        max-width: 715px !important;
+        margin-left: 0 !important;
+        color: #5E2F7E;
+        font-size: 24px !important;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px !important;
+      }
+
+      #content #content-core {
+        margin-left: 2rem;
+      }
+
+      #content .documentFirstHeading {
+        margin-left: 2rem;
+      }
+    </style>
+
+    <!-- STYLE ACCORDION -->
+    <style>
+      details div {
+        padding: 1.5em;
+      }
+
+      details div>*+* {
+        margin-top: 1.5em;
+      }
+
+      details+details {
+        margin-top: .5rem;
+      }
+
+      summary {
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary {
+        padding: .75em 1em;
+        cursor: pointer;
+        position: relative;
+        padding-left: calc(1.75rem + .75rem + .75rem);
+        border-radius: 1.862px;
+        background: #8F75B5;
+        color: white;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+
+      summary:before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: .75rem;
+        content: url('setinha-accordion.png');
+        width: 1.75rem;
+        height: 1.75rem;
+        color: #FFF;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      details[open] summary {
+        background-color: #5E2F7E;
+        color: white;
+      }
+
+      details[open] summary:before {
+        transform: rotate(180deg) translateY(14px);
+
+      }
+
+      summary:hover {
+        background-color: #5E2F7E;
+        color: white;
+      }
+
+      a {
+        color: inherit;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      code {
+        font-family: monospace;
+        font-weight: 600;
+      }
+
+      .accordion {
+        max-width: 657px;
+        margin: 2rem auto;
+      }
+
+      .details-content {
+        background: #F5F5F5;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+
+      #content .details-content ul li a {
+        color: #5E2F7E !important;
+      }
+
+      .mpf-trabalha {
+        color: #5E2F7E;
+        text-align: center;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 46.3px;
+      }
+
+      .mpf-trabalha-sub {
+        color: #292929;
+        font-size: 20px;
+        text-align: center;
+        margin: auto !important;
+      }
+
+      .tit-o-mpf-accordion {
+        color: #5E2F7E;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+        margin: 0 !important;
+      }
+
+      .subtit-o-mpf-accordion {
+        color: #5E2F7E;
+        font-size: 14px;
+        margin: 0 !important;
+      }
+
+      .ilustra-ompf-pgr {
+        max-width: 395px;
+        width: 95%;
+      }
+
+      .conteudo_FAQ {
+        margin: 0 0 1.5rem 0;
+      }
+
+      .img-organo {
+        max-width: 1325px;
+        margin: 1rem auto;
+        border: 0;
+        width: 100%;
+      }
+
+      .img-organo-mob {
+        max-width: 320px;
+        margin: 1rem auto;
+        border: 0;
+        width: 100%;
+      }
+
+      #organograma-mob {
+        display: none;
+        text-align: center;
+      }
+
+      .legendinha {
+        color: #5E2F7E !important;
+        font-size: 14px !important;
+        font-style: normal;
+        font-weight: 900 !important;
+        letter-spacing: -0.266px;
+        margin-left: 0 !important;
+      }
+
+      #content .faca-teste {
+        margin-bottom: 0 !important;
+        border: 2px solid #5f2f7e !important;
+        border-radius: 50px !important;
+        padding: 0.6rem 1.5rem !important;
+        color: #5f2f7e !important;
+      }
+
+      #content .faca-teste:hover {
+        background-color: #5E2F7E !important;
+        color: white !important;
+      }
+
+
+      @media (max-width: 767px) {
+        #globalnav-wrapper {
+          font-size: 70% !important;
+        }
+
+        #organograma-mob {
+          display: block;
+          text-align: center;
+        }
+
+        #organograma {
+          display: none;
+        }
+
+      }
+
+      @media (max-width: 480px) {
+        #content #content-core {
+          margin-left: 1rem;
+        }
+
+        .sub-tit-main {
+          font-size: 22px !important;
+          line-height: 32px !important;
+        }
+
+        details div {
+          padding: 0.7rem !important;
+        }
+
+        #content ul,
+        .portletStaticText ul {
+          margin-left: 1.2rem !important;
+        }
+
+        .conteudo_FAQ {
+          margin: 0.5rem 0;
+        }
+
+        .img-organo-mob {
+          max-width: 320px;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      /* MODAL */
+
+      /* Estilos do botão */
+      #openModalBtn {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+
+      /* Estilos da janela modal */
+      .modal {
+        display: none;
+        /* Oculta a modal inicialmente */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+      }
+
+      /* Conteúdo da modal */
+      .modal-content {
+        max-width: 400px !important;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 4px;
+        position: relative;
+        max-height: 80vh;
+        overflow-y: auto;
+      }
+
+      /* Botão Fechar */
+
+      .closeBtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+    </style>
+
+  </metal:styles>
+
+
+
+
+
+  <metal:main fill-slot="main">
+
+        <h1>
+          Sobre o Ministério Público
+        </h1>
+
+            <div class="conteudo_FAQ">
+              <p class="sub-tit-main">Não caia em fake news sobre o Ministério Público! Entenda como o MP se organiza para defender seus direitos e como é a atuação dessa instituição essencial para a democracia.</p>
+              <p class="legendinha">MPF, MP Brasileiro e MPE são interativos, clique para saber mais</p>
+              <div id="organograma">
+                <img src="organo.png" class="img-organo" usemap="#image-map">
+                <map name="image-map">
+                  <area target="" alt="MP" title="" onclick="openModal(1)" coords="889,159,535,5" shape="rect" id="openModalBtn">
+                  <area target="" alt="MPU" title="" onclick="openModal(2)" coords="77,183,397,331" shape="rect" id="openModalBtn">
+                  <area target="" alt="MP nos ESTADOS" title="MP nos ESTADOS" onclick="openModal(5)" coords="1021,189,1323,325" shape="rect" id="openModalBtn">
+                  <area target="" alt="MPF" title="MPF" onclick="openModal(4)" coords="33,441,257,594" shape="rect" id="openModalBtn">
+                </map>
+              </div>
+              <div id="organograma-mob">
+                <img src="organo-mob.jpg" class="img-organo-mob" usemap="#image-map-mob">
+                <map name="image-map-mob">
+                  <img src="https://mandaareal.mpf.mp.br/sobre-o-mp/organo-mpb-mob.png" usemap="#image-map"
+                    tal:attributes="src string:${context/portal_url}/organo-mpb-mob.png">
+                  <area target="" alt="MP nos estados" title="MP nos estados" onclick="openModal(5)" coords="319,377,167,228" shape="rect">
+                  <area target="" alt="MPF" title="MPF" onclick="openModal(4)" coords="266,463,51,613" shape="rect">
+                  <area target="" alt="MP" title="MP" onclick="openModal(1)" coords="3,2,316,161" shape="rect">
+                  <area target="" alt="MPU" title="MPU" onclick="openModal(2)" coords="150,230,3,378" shape="rect">
+                </map>
+              </div>
+            </div>
+
+
+            <!-- MODAL MP -->
+            <div id="myModal1" class="modal">
+              <div class="modal-content">
+                <button class="closeBtn" onclick="closeModal(1)"><img src="fechar.png" alt=""
+                  tal:attributes="src string:${context/portal_url}/fechar.png"></button>
+                <h2 class="tit-o-mpf-accordion">Ministério Público</h2>
+
+                <ul>
+                  <li>Está previsto na Constituição Federal.</li>
+                  <li>É independente dos Três Poderes (Executivo, Legislativo, Judiciário).</li>
+                  <li>Tem autonomia e não pode ser extinto, nem ter suas atribuições transferidas.</li>
+                  <li>Atua como fiscal da lei, protege a democracia e os direitos coletivos da sociedade.</li>
+                  <li>É composto pelo Ministério Público da União (MPU) e pelos 26 Ministérios Públicos dos estados. </li>
+                  <li>Não é um órgão da Justiça, mas faz parte do sistema da Justiça. </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <!-- MODAL 2 MPU -->
+            <div id="myModal2" class="modal">
+              <div class="modal-content">
+                <button class="closeBtn" onclick="closeModal(2)"><img src="fechar.png" alt=""
+                  tal:attributes="src string:${context/portal_url}/fechar.png"></button>
+                <h2 class="tit-o-mpf-accordion">Ministério Público da União</h2>
+
+                <ul>
+                  <li>O MPU não existe fisicamente em determinado local. </li>
+                  <li>Na prática, MPU é apenas uma sigla que inclui Ministérios Públicos distintos.</li>
+                  <li>Divide-se em quatro ramos: o Ministério Público Federal (MPF), o Ministério Público do Trabalho (MPT), o Ministério Público Militar (MPM) e o Ministério Público do Distrito Federal e Territórios (MPDFT). Cada um deles tem
+                    organização própria.</li>
+                </ul>
+
+              </div>
+            </div>
+
+            <!-- MODAL 3 MPE -->
+            <div id="myModal3" class="modal">
+              <div class="modal-content">
+                <button class="closeBtn" onclick="closeModal(3)"><img src="fechar.png" alt=""
+                  tal:attributes="src string:${context/portal_url}/fechar.png"></button>
+                <h2 class="tit-o-mpf-accordion">Ministério Público Eleitoral</h2>
+
+                <ul>
+                  <li>Não tem sede própria. É composto por membros do MPF e do MP Estadual.</li>
+                  <li>O procurador-geral da República atua como procurador-geral eleitoral perante o Tribunal Superior Eleitoral (TSE). Ele indica membros para atuarem no TSE e nos Tribunais Regionais Eleitorais (TREs). Nos Ministérios Públicos
+                    estaduais, os promotores eleitorais são promotores de Justiça que exercem as funções eleitorais por delegação do MPF. </li>
+                  <li>O MP Eleitoral atua em todas as fases do processo eleitoral. Quanto aos promotores eleitorais, eles atuam em cada zona eleitoral dos estados. Os procuradores regionais eleitorais atuam na 2ª instância, nos Tribunais Regionais
+                    Eleitorais. Já o procurador-geral eleitoral e o vice-procurador-geral eleitoral atuam no Tribunal Superior Eleitoral. <a
+                      href="https://www.mpf.mp.br/pgr/noticias-pgr2/2024/me-explica-mpf-quais-orgaos-fazem-parte-do-ministerio-publico-eleitoral">Clique para saber mais sobre a estrutura do MP Eleitoral.</a></li>
+
+
+                </ul>
+
+              </div>
+            </div>
+
+            <!-- MODAL 4 MPF -->
+            <div id="myModal4" class="modal">
+              <div class="modal-content">
+                <button class="closeBtn" onclick="closeModal(4)"><img src="fechar.png" alt=""
+                  tal:attributes="src string:${context/portal_url}/fechar.png"></button>
+                <h2 class="tit-o-mpf-accordion">Ministério Público Federal</h2>
+                <p>O MPF está distribuído em todo o país, nas seguintes unidades administrativas:</p>
+                <ul>
+                  <li>Procuradorias da República junto às varas da Justiça Federal, presentes em todas as capitais e em muitos municípios brasileiros. Portanto, atua perante a 1ª instância do Poder Judiciário, mas em casos federais, regulamentados
+                    pela Constituição e pelas leis federais, sempre que a questão envolver interesse público.</li>
+                  <li>Procuradorias Regionais da República (PRRs), onde há sede dos Tribunais Regionais Federais (TRFs). Atualmente, há seis TRFs; portanto, para essa organização, o país está dividido em seis regiões. Desta forma, as PRRs atuam na 2ª
+                    instância, junto aos TRFs. </li>
+                  <li>Procuradoria-Geral da República (PGR), que atua junto ao Superior Tribunal de Justiça (STJ) e ao Supremo Tribunal Federal (STF). É onde também funciona a sede da Procuradoria-Geral Eleitoral, que tem atuação junto ao Tribunal
+                    Superior Eleitoral (TSE). Ou seja, age em instância superior. </li>
+                </ul>
+
+
+              </div>
+            </div>
+
+            <!-- MODAL 5 ESTADOS -->
+            <div id="myModal5" class="modal">
+              <div class="modal-content">
+                <button class="closeBtn" onclick="closeModal(5)"><img src="fechar.png" alt=""
+                  tal:attributes="src string:${context/portal_url}/fechar.png"></button>
+                <h2 class="tit-o-mpf-accordion">MP nos estados</h2>
+
+                <ul>
+                  <li>Os 26 Ministérios Públicos dos estados atuam por meio de suas promotorias de Justiça nos municípios da região que abrangem.</li>
+                  <li>Cada MP tem seu chefe institucional. A pessoa que comanda o MP é o procurador-geral de Justiça, escolhido pelo governador do estado a partir de lista tríplice elaborada por membros da instituição. </li>
+                  <li>Os promotores de Justiça são os representantes do MP na primeira instância, atuando em fóruns do estado. Já os procuradores de Justiça atuam na segunda instância, representando o MP perante o Tribunal de Justiça do estado.</li>
+                  <li>Os MPs atuam tanto na defesa de direitos quanto no combate a irregularidades. Áreas de atuação: cível; consumidor; criminal; educação; eleitoral; habitação e urbanismo; infância e juventude; inclusão social; meio ambiente;
+                    patrimônio público; pessoa com deficiência; pessoa idosa; saúde pública; e violência doméstica e familiar. </li>
+                </ul>
+
+              </div>
+            </div>
+
+
+
+            <div class="accordion">
+              <details open>
+                <summary>
+                  PGR
+                </summary>
+                <div class="details-content">
+                  <img src="../imagens/ilustra-ompf-pgr.png" alt="" class="ilustra-ompf-pgr"
+                    tal:attributes="src string:${context/portal_url}/ilustra-ompf-pgr.png">
+                  <h3 class="tit-o-mpf-accordion">PGR</h3>
+                  <p class="subtit-o-mpf-accordion">(Procuradoria-Geral da República):</p>
+                  <ul>
+                    <li>É o órgão central do MPF.</li>
+                    <li>Tem sede em Brasília.</li>
+                    <li>É chefiada pelo procurador-geral da República, indicado pelo presidente da República, com aprovação do Senado.</li>
+                    <li>MPF é uma instituição única e indivisível; Procuradoria da República é cada unidade administrativa do MPF, individualizada nas capitais dos estados, no Distrito Federal e em muitos municípios do interior onde existem <a
+                        href="../vocabulario/vara.html">varas</a> da Justiça Federal. Portanto, assim como você escuta no noticiário, tem MPF em São Paulo, MPF no Rio de Janeiro ...etc </li>
+                  </ul>
+
+                </div>
+              </details>
+              <details>
+                <summary>
+                  Áreas de atuação do MPF
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li>O trabalho do Ministério Público Federal interfere diretamente nas nossas vidas e aparece todos os dias no noticiário. </li>
+                    <li>Algumas das áreas em que o MPF atua são: educação, saúde, moradia, mobilidade urbana, previdência e assistência social, conflitos fundiários, defesa do consumidor, do meio ambiente e patrimônio cultural, de populações
+                      indígenas e comunidades tradicionais, além do combate à corrupção.</li>
+                    <li>A Procuradoria Federal dos Direitos do Cidadão (PFDC) é um órgão do MPF que, no âmbito extrajudicial (fora da Justiça), tem a missão de defender os direitos constitucionais do cidadão e zelar pelo seu efetivo respeito pelos
+                      Poderes públicos e prestadores de serviços de relevância pública. Atua em questões como: racismo; igualdade; reforma agrária; população LGBTQIAP+; medicamentos de alto custo etc. </li>
+                    <li>O MPF conta com sete Câmaras de Coordenação e Revisão (CCRs), que atuam nos seguintes temas: direitos sociais e fiscalização de atos administrativos em geral; criminal; consumidor e ordem econômica; meio ambiente e patrimônio
+                      cultural; combate à corrupção; populações indígenas e comunidades tradicionais; e controle externo da atividade policial e sistema prisional. </li>
+                    <li>Por meio da Secretaria de Cooperação Internacional (SCI), o MPF mantém contato com Ministérios Públicos de outros países e organismos internacionais. O objetivo é facilitar a troca de experiências e a atuação conjunta no
+                      combate à criminalidade entre países e outros delitos que não respeitam fronteiras.</li>
+                    <li>O Grupo de Atuação Especial de Combate ao Crime Organizado (Gaeco) auxilia membros do MPF responsáveis por grandes casos e investigações. Os MPs possuem também seus próprios Gaecos. </li>
+                  </ul>
+                </div>
+              </details>
+              <details>
+                <summary>
+                  Fiscalização da atuação
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li>O MPF conta com o Conselho Superior (CSMPF), que tem importantes atribuições institucionais, como a de elaborar e aprovar as normas para o concurso de ingresso na carreira de membro do MPF, por exemplo. O CSMPF é presidido
+                      pelo procurador-geral da República. </li>
+                    <li>Há ainda o Conselho Institucional do MPF (CIMPF) que é composto pelas Câmaras de Coordenação e Revisão e pela Procuradoria Federal dos Direitos do Cidadão. A função é decidir sobre conflitos de atribuições entre as câmaras do
+                      MPF. </li>
+                    <li>O Conselho Nacional do Ministério Público (CNMP) atua no fortalecimento e aprimoramento do MP brasileiro, assegurando um trabalho responsável e socialmente efetivo. O CNMP é composto por 14 conselheiros. Eles são indicados por
+                      suas instituições de origem e passam por aprovação do Senado Federal e da Presidência da República.</li>
+                    <li>A Corregedoria do MPF fiscaliza as atividades funcionais e a conduta dos membros do órgão. O corregedor-geral é nomeado pelo procurador-geral da República entre os subprocuradores-gerais integrantes de lista tríplice elaborada
+                      pelo CSMPF. </li>
+                  </ul>
+                </div>
+
+              </details>
+
+              <details>
+                <summary>
+                  Formas de atuação
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li>A atuação do MPF ocorre em diversas áreas para proteger os interesses da coletividade e a correta aplicação das leis. </li>
+                    <li>É importante destacar que o Ministério Público, tanto o Estadual quanto o Federal, não realiza julgamentos e não publica decisões. </li>
+                    <li>A participação do MP ocorre em todas as instâncias do Judiciário, e pode ser como parte (propondo ações) ou fiscal da lei (oferecendo parecer). Neste último caso, ainda que o MP não seja parte do processo, se houver interesse
+                      público envolvido, ele pode se manifestar.</li>
+                    <li>A instituição age por iniciativa própria ou por provocação de cidadãos. Essa atuação pode ser judicial ou extrajudicial.</li>
+                    <li>Atuação judicial: ocorre quando a Justiça é acionada para resolver uma irregularidade ou ameaça a direitos. Assim, é aberta uma ação civil pública ou uma ação penal pública, por exemplo.</li>
+                    <li>Atuação extrajudicial: recomendações, acordos por meio de termos de ajustamento de conduta e audiências públicas.</li>
+                    <li>Os órgãos que integram o Ministério Público podem ingressar com ações na Justiça, em suas esferas de atuação. Já o MPF atuará quando as denúncias envolverem órgãos, instituições e autarquias federais. </li>
+                    <li>O MPF deve ser ouvido sempre que um processo em andamento na Justiça Federal tenha relevância para a sociedade. </li>
+                  </ul>
+                </div>
+
+              </details>
+
+              <details>
+                <summary>
+                  O que é atribuição do MPF e dos Ministérios Públicos Estaduais?
+                </summary>
+                <div class="details-content">
+                  É preciso verificar se a irregularidade envolve bens, serviços ou interesses da União. Se cabe à Justiça Federal julgar, ou seja, se está relacionado ao art. 109 da Constituição Federal, a atuação será do MPF. Os demais casos,
+                  geralmente, são de competência dos Ministérios Públicos nos estados. Mas lembre-se de que existem outros ramos do Ministério Público para tratar de assuntos específicos, como direito do trabalho e direito militar.
+                </div>
+
+              </details>
+
+              <details>
+                <summary>
+                  Ministério Público Eleitoral
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li>Não tem sede própria. É composto por membros do MPF e do MP Estadual.</li>
+                    <li>O procurador-geral da República atua como procurador-geral eleitoral perante o Tribunal Superior Eleitoral (TSE). Ele indica membros para atuarem no TSE e nos Tribunais Regionais Eleitorais (TREs). Nos Ministérios Públicos
+                      estaduais, os promotores eleitorais são promotores de Justiça que exercem as funções eleitorais por delegação do MPF. </li>
+                    <li>O MP Eleitoral atua em todas as fases do processo eleitoral. Quanto aos promotores eleitorais, eles atuam em cada zona eleitoral dos estados. Os procuradores regionais eleitorais atuam na 2ª instância, nos TREs. Já o
+                      procurador-geral eleitoral e o vice-procurador-geral eleitoral atuam no TSE. <a href="https://www.mpf.mp.br/pgr/noticias-pgr2/2024/me-explica-mpf-quais-orgaos-fazem-parte-do-ministerio-publico-eleitoral">Clique para saber mais
+                        sobre a estrutura do MP Eleitoral. </a> </li>
+                  </ul>
+                </div>
+
+              </details>
+
+
+            </div>
+            <h4 class="mpf-trabalha">O MPF trabalha para o cidadão.</h4>
+            <p class="mpf-trabalha-sub">Por isso, tem canais diretos para atender a população. <br> Confira como entrar em contato sem sair de casa ou pessoalmente.
+            </p>
+            <div class="accordion">
+              <details open>
+                <summary>
+                  Como fazer uma denúncia ao MPF
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li>Para enviar uma denúncia ao Ministério Público Federal, como uma construção irregular em uma praia, por exemplo, você pode acessar o MPF Serviços pela internet, no endereço: <a
+                        href="http://www.mpf.mp.br/mpfservicos">http://www.mpf.mp.br/mpfservicos</a>.</li>
+                    <li>Pelo MPF Serviços, é possível apresentar denúncias, reclamações, críticas, sugestões e elogios, além de realizar pesquisa processual e acessar dados da Lei de Acesso à Informação (LAI). </li>
+                    <li>Pessoalmente, as procuradorias atendem nas Salas de Atendimento ao Cidadão nos estados e no Distrito Federal. <a href="https://www.mpf.mp.br/telefones-das-salas-de-atendimento-ao-cidadao-nos-estados-e-df">Confira os endereços
+                        em todo o país</a>.</li>
+                    <li>No site do MPF, há ainda o Atendimento Virtual, para tirar dúvidas sobre questões relacionadas, por exemplo, à competência da instituição e aos canais de denúncia. O atendimento ocorre por meio de videoconferência, de segunda
+                      a sexta, em horários específicos, de acordo com a unidade. <a href="https://www.mpf.mp.br/servicos/atendimento-virtual">Acesse o Atendimento Virtual</a>.</li>
+                  </ul>
+                </div>
+              </details>
+              <details>
+                <summary>
+                  O que acontece após o cidadão registrar uma denúncia de irregularidade?
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li>As denúncias são encaminhadas aos respectivos setores, onde é iniciado um procedimento administrativo. Se o caso for relativo a duas áreas, são iniciados dois procedimentos diferentes para a mesma informação. O procedimento
+                      administrativo é então distribuído a um procurador, que toma as medidas necessárias para a apuração dos fatos. </li>
+                    <li>Ao final da investigação, se houver elementos suficientes, o procurador pode enviar uma denúncia para a Justiça julgar o caso.</li>
+                    <li>Durante o procedimento, o procurador pode requisitar informações, determinar diligências, ou, se for o caso, encaminhar cópia do procedimento à Polícia Federal para a instauração de
+                      inquérito policial.</li>
+                  </ul>
+
+                </div>
+              </details>
+
+              <p style="text-align: center; margin: 2rem auto;">
+                <a href="../index.html#teste" class="faca-teste"
+                  tal:attributes="href string:${context/portal_url}#teste">Teste seus conhecimentos sobre o MP</a>
+              </p>
+
+            </div>
+
+
+
+  </metal:main>
+
+  <metal:scripts fill-slot="javascript_bottom_slot">
+    <script src="js/capa.js"
+      tal:attributes="src string:{context/portal_url}/js/sobre.js"></script>
+  </metal:scripts>
+
+
+</body>
+
+</html>

@@ -1,0 +1,465 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal" xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+<body metal:use-macro="here/main_template/macros/master">
+
+
+  <metal:styles fill-slot="style_slot">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+    <style type="text/css">
+
+      article {
+        margin: 0 5px;
+        margin-bottom: 20px !important;
+      }
+
+
+      .fonte-300 {
+        font-weight: 300;
+      }
+
+      .fonte-700 {
+        font-weight: 700 !important;
+      }
+
+      .fonte-32 {
+        font-size: 32px;
+        line-height: 38px;
+      }
+
+      .cor-roxa {
+        color: #5E2F7E !important;
+      }
+
+      .container-oprojeto {
+        background: #5E2F7E;
+        display: grid;
+        grid-template-columns: 0.8fr 0.5fr;
+        gap: 3rem;
+        padding: 3rem;
+      }
+
+      .container-oprojeto h1 {
+        color: #F5F5F5;
+        font-size: 48px;
+        font-weight: 900;
+        line-height: 50px;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.912px;
+      }
+
+      .container-oprojeto p {
+        color: #FFF !important;
+        font-size: 20px !important;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27px;
+      }
+
+      .img-oproj {
+        align-self: center;
+        justify-self: center;
+        max-width: 225px;
+      }
+
+      .h1-tarja1 {
+        padding: 0.5rem 1.5rem;
+        flex-shrink: 0;
+        color: white;
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 48px;
+        letter-spacing: -0.9px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        background: #5E2F7E;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-bottom: 10px;
+        width: fit-content;
+        margin: auto;
+      }
+
+      .h1-tarja2 {
+        padding: 0.5rem 1.5rem;
+        transform: rotate(0.953deg);
+        flex-shrink: 0;
+        color: #A6CE39;
+        text-align: center;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 48px;
+        letter-spacing: -0.9px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        background: #5E2F7E;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        width: fit-content;
+        margin: auto;
+      }
+
+      .cabeca-1 {
+        display: grid;
+        grid-template-columns: 125px 1fr 150px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .cabeca-1 img {
+        width: 100%;
+        height: 85%;
+      }
+
+      .blocao-como {
+        margin: 0 auto 2rem auto;
+        max-width: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        border-bottom: 1px #a7ce39 dashed;
+        padding-bottom: 1rem;
+      }
+
+      .listao-como-denunciar {
+        background-color: #5E2F7E;
+        margin: 0 auto;
+        padding: 5rem 0;
+      }
+
+      .blocao-como .textos-como p,
+      .blocao-como .textos-como ol {
+        color: white !important;
+        font-size: 20px !important;
+        font-weight: regular !important;
+        text-align: left !important;
+      }
+
+      .telas-como {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+      }
+
+      .telas-como img {
+        width: 215px;
+        height: 411px;
+      }
+
+      @media (max-width: 920px) {
+
+        .h1-tarja2,
+        .h1-tarja1 {
+          font-size: 42px;
+          line-height: 32px;
+          margin-bottom: 7px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        #globalnav-wrapper {
+          font-size: 70% !important;
+        }
+
+        .cabeca-1 {
+          grid-template-columns: 0.15fr 1fr 0.15fr;
+        }
+
+        .cabeca-1 img {
+          width: 80%;
+        }
+
+        .h1-tarja2,
+        .h1-tarja1 {
+          font-size: 32px;
+          line-height: 36px;
+          margin-bottom: 5px;
+        }
+
+        .fonte-32 {
+          font-size: 26px;
+          line-height: 30px;
+        }
+      }
+
+      @media (max-width: 460px) {
+        .cabeca-1 img {
+          width: 60%;
+        }
+
+        .listao-como-denunciar {
+          padding: 2rem 1rem;
+        }
+
+        .blocao-como>img {
+          width: 75%;
+        }
+
+        .h1-tarja2,
+        .h1-tarja1 {
+          font-size: 27px;
+          line-height: 33px;
+          margin-bottom: 5px;
+        }
+
+        .fonte-32 {
+          font-size: 23px;
+          line-height: 27px;
+        }
+      }
+
+      /* ANIMACAO FADEIN */
+      @media (prefers-reduced-motion: no-preference) {
+        .animafade {
+          scale: .8;
+          opacity: 0;
+          animation: fade-in linear forwards;
+          animation-timeline: view();
+          animation-range: 250px 500px;
+        }
+
+        @keyframes fade-in {
+          to {
+            scale: 1;
+            opacity: 1;
+          }
+        }
+      }
+    </style>
+
+  </metal:styles>
+
+
+
+
+
+  <metal:main fill-slot="main">
+
+    <div id="content-core">
+
+      <div id="parent-fieldname-text" class="plain">
+
+
+        <div class="cabeca-como-denunciar">
+          <div class="cabeca-1">
+            <img src="imagens/comodenuciar-ilustra1-left.svg" alt="">
+            <div>
+              <div class="h1-tarja1">Como denunciar conteúdo falso</div>
+              <div class="h1-tarja2">em cada plataforma digital</div>
+            </div>
+            <img src="imagens/ilustra-megafone-right.svg" alt="">
+          </div>
+          <div class="cabeca-1">
+            <img src="imagens/ilustra-megafone-left.svg" alt="">
+            <div style="max-width: 450px; margin: 0 auto; align-self: flex-start; " class="fonte-32 fonte-300 cor-roxa">Confira o <span class="fonte-700">passo a passo </span>
+              para denunciar um conteúdo
+              falso nas redes sociais.
+            </div>
+            <img src="imagens/comodenuncia-ilustra2-right.svg" alt="">
+          </div>
+
+
+        </div>
+        <div class="listao-como-denunciar">
+          <!-- INSGAGRAM -->
+          <div class="blocao-como">
+            <img src="imagens/como-insta-tit.png" alt="">
+            <div class="telas-como">
+              <img src="imagens/como-insta-1.png" alt="">
+              <img src="imagens/img-2-insta.png" class="animafade" />
+              <img src="imagens/img-3-insta.png" alt="">
+            </div>
+            <div class="textos-como">
+              <ol>
+                <li>No canto superior direito da postagem, clique nos três pontinhos</li>
+                <li>Selecione <span class="fonte-700">DENUNCIAR</span></li>
+                <li>Clique em <span class="fonte-700">INFORMAÇÃO FALSA</span></li>
+                <li>Marque o tema do conteúdo falso</li>
+              </ol>
+
+            </div>
+          </div>
+
+          <!-- FACEBOOK -->
+          <div class="blocao-como">
+            <img src="imagens/como-face-tit.png" alt="">
+            <div class="telas-como">
+              <img src="imagens/como-face-1.png" class="animascala">
+              <img class="revealing-image" src="imagens/como-face-2.png" alt="">
+              <!-- img src="imagens/como-face-3.png" alt="" class="animafade"/ -->
+            </div>
+            <div class="textos-como">
+              <ol>
+                <li>No canto superior direito da postagem, clique nos três pontinhos</li>
+                <li>Selecione <span class="fonte-700">DENUNCIAR PUBLICAÇÃO</span><br></li>
+                <li>Clique em <span class="fonte-700">INFORMAÇÃO FALSA</span></li>
+              </ol>
+
+            </div>
+          </div>
+          <!-- X TWITTER -->
+          <!-- div class="blocao-como">
+<img src="imagens/como-x-tit.png" alt="" id="progressbar">
+<div class="telas-como">
+<img src="imagens/como-x-1.png" alt="" class="animascala">
+<img src="imagens/como-x-2.png" alt="" class="animafade">
+</div>
+<div class="textos-como">
+<ol>
+<li>No canto superior do tweet, clique nos três pontinhos</li>
+<li>Selecione <span class="fonte-700">DENUNCIAR POST</span></li>
+<li>Marque o motivo da denúncia</li>
+</ol>
+</div>
+</div -->
+
+          <!-- WHATSAPP -->
+          <div class="blocao-como">
+            <img src="imagens/como-whats-tit.png" alt="">
+            <div class="telas-como">
+
+              <img src="imagens/como-whats-2.png" alt="" style="width: 215px; height: 411px;">
+              <img src="imagens/como-whats-1.png" alt="">
+            </div>
+            <div class="textos-como">
+              <ol>
+                <li>Para denunciar uma comunidade, grupo ou pessoa, clique no respectivo nome daquele grupo ou contato no canto superior da tela</li>
+                <li>Vá até o final da tela e selecione <span class="fonte-700">DENUNCIAR</span></li>
+                <li>Para denunciar uma mensagem, pressione e segure o texto, vídeo, foto, áudio ou figurinha até aparecer o menu com a opção <span class="fonte-700">DENUNCIAR</span></li>
+                <li>Marque novamente a opção <span class="fonte-700">DENUNCIAR</span></li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- TIK TOK -->
+          <div class="blocao-como">
+            <img src="imagens/como-tiktok-tit.png" alt="">
+            <div class="telas-como">
+              <img src="imagens/como-tiktok-1.png" alt="">
+              <img src="imagens/como-tiktok-2.png" alt="" style="width: 215px; height: 411px;">
+              <img src="imagens/como-tiktok-3.png" alt="" style="width: 215px; height: 411px;">
+            </div>
+            <div class="textos-como">
+              <ol>
+                <li>No canto inferior direito da tela, selecione a seta que funciona como botão para <span class="fonte-700">COMPARTILHAR</span></li>
+                <li>Selecione <span class="fonte-700">RELATAR</span></li>
+                <li>Marque <span class="fonte-700">INFORMAÇÕES INCORRETAS</span></li>
+                <li>Selecione o motivo da denúncia</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- YOUTUBE -->
+          <div class="blocao-como">
+            <img src="imagens/como-youtube-tit.png" alt="" class="revealing-image">
+            <div class="telas-como">
+              <img src="imagens/como-youtube-1.png" alt="">
+              <img src="imagens/como-youtube-2.png" alt="">
+            </div>
+            <div class="textos-como">
+              <ol>
+                <li>No computador, clique nos três pontinhos localizados ao lado do botão “clipe”, no canto inferior direito abaixo do vídeo</li>
+                <li>No celular, clique nos três pontinhos situados no canto inferior esquerdo, ao lado do ícone de compartilhar, representado por uma seta</li>
+                <li>Selecione <span class="fonte-700">DENUNCIAR</span> e marque o motivo da denúncia</li>
+              </ol>
+
+            </div>
+          </div>
+
+          <!-- LINKEDIN -->
+          <div class="blocao-como">
+            <img src="imagens/como-linkedin-tit.png" alt="">
+            <div class="telas-como">
+              <img src="imagens/como-linkedin-1.png" alt="">
+              <img src="imagens/como-linkedin-2.png" alt="">
+              <img src="imagens/como-linkedin-3.png" alt="">
+            </div>
+            <div class="textos-como">
+              <ol>
+                <li>Selecione os três pontinhos no canto superior direito da publicação</li>
+                <li>Marque <span class="fonte-700">DENUNCIAR PUBLICAÇÃO</span></li>
+                <li>Clique em <span class="fonte-700">DENUNCIAR CONTEÚDO PARA AVALIAÇÃO</span></li>
+                <li>Marque <span class="fonte-700">DESINFORMAÇÃO</span> e envie a denúncia</li>
+              </ol>
+
+            </div>
+          </div>
+
+          <!-- KWAI -->
+          <div class="blocao-como">
+            <img src="imagens/como-kwai-tit.png" alt="">
+            <div class="telas-como">
+              <img src="imagens/como-kwai-1.png" alt="">
+              <img src="imagens/como-kwai-2.png" alt="">
+
+            </div>
+            <div class="textos-como">
+              <ol>
+                <li>No canto inferior direito da tela, selecione a seta que funciona como botão para <span class="fonte-700">COMPARTILHAR</span></li>
+                <li>Selecione <span class="fonte-700">DENUNCIAR</span>, marque <span class="fonte-700">INFORMAÇÃO FALSA</span> e conclua a denúncia</li>
+              </ol>
+
+            </div>
+          </div>
+
+          <!-- TELEGRAM -->
+          <!-- div class="blocao-como">
+<img src="imagens/como-telegram-tit.png" alt="">
+<div class="telas-como">
+<img src="imagens/como-telegram-3.png" alt="">
+<img src="imagens/como-telegram-1.png" alt="">
+<img src="imagens/como-telegram-2.png" alt="">
+
+</div>
+<div class="textos-como">
+<p>No Telegram não é possível denunciar chats (conversas) individuais, apenas canais e grupos. Para fazer isso, siga os passos abaixo:</p>
+<ol>
+<li>Abra o canal ou grupo, pressione e segure a mensagem que deseja denunciar</li>
+<li>Clique em <span class="fonte-700">DENUNCIAR</span></li>
+<li>Selecione o motivo da denúncia</li>
+<li>Para denunciar o grupo ou o canal, clique no respectivo nome daquele grupo ou canal no canto superior da tela</li>
+<li>Selecione MAIS no canto superior direito e clique em <span class="fonte-700">DENUNCIAR</span></li>
+<li>Em seguida, selecione o motivo da denúncia </li>
+</ol>
+<p>Figurinhas, canais e bots também podem ser denunciados pelo e-mail <a href="mailto: abuse@telegram.org" style="border-bottom: 0 !important; color: white !important; text-decoration: underline !important;">abuse@telegram.org</a></p>
+</div>
+</div -->
+
+          <!-- DISCORD -->
+          <div class="blocao-como">
+            <img src="imagens/como-discord-tit.png" alt="">
+            <div class="telas-como">
+              <img src="imagens/como-discord-1.png" alt="">
+              <img src="imagens/como-discord-2.png" alt="">
+              <img src="imagens/como-discord-3.png" alt="">
+            </div>
+            <div class="textos-como">
+              <ol>
+                <li>Selecione a mensagem que deseja denunciar</li>
+                <li>Clique em <span class="fonte-700">DENUNCIAR</span></li>
+                <li>Selecione o motivo da denúncia</li>
+                <li>Confirme a denúncia no botão <span class="fonte-700">ENVIAR RELATÓRIO</span></li>
+              </ol>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+  </metal:main>
+</body>
+
+</html>

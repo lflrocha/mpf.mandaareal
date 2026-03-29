@@ -1,0 +1,10 @@
+<nav aria-label="Links">
+  <ul id="portal-globalnav" class="globalnav"
+      tal:define="items view/menu_tree">
+    <li tal:repeat="item items">
+      <a href=""
+         tal:attributes="href item/url"
+         tal:content="item/title"></a>
+    </li>
+  </ul>
+</nav>

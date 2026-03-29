@@ -1,0 +1,551 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal" xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+<body metal:use-macro="here/main_template/macros/master">
+  <metal:styles fill-slot="style_slot">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      tal:attributes="src string:${context/portal_url}/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      @media (max-width: 767px) {
+        #globalnav-wrapper {
+          font-size: 70% !important;
+        }
+      }
+
+      main {
+        background-color: #5f2f7e;
+        margin-top: -20px;
+      }
+
+      body #visual-portal-wrapper #portal-columns {
+        background-color: #5f2f7e !important;
+        font-family: 'Inter', sans-serif !important;
+      }
+
+      h1 {
+        color: white !important;
+        margin-bottom: 2rem;
+        margin-left: 2rem !important;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+
+      .card {
+        max-width: 1000px !important;
+        margin: 0 auto !important;
+        border: 0 !important;
+      }
+
+      #accordion .card .card-header {
+        background-color: #5f2f7e;
+        padding: 0;
+      }
+
+      #accordion .card .card-header .btn-link {
+        color: white !important;
+        font-size: 22px;
+        text-align: left;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        width: 97%;
+        font-weight: bold !important;
+      }
+
+      #accordion .card .card-header .btn-link:hover {
+        color: white !important;
+        text-decoration: none;
+        background-color: #39174f5c;
+        cursor: pointer;
+      }
+
+      #accordion .card .card-header a:before {
+        content: url(setinha-accordion.png);
+        scale: 0.6;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      .collapse .card-body p {
+        font-size: 20px !important;
+        color: #602f7e !important;
+      }
+
+      #content-core #parent-fieldname-text p {
+        font-size: 20px !important;
+        color: #602f7e !important;
+        margin-left: 1.5rem !important;
+      }
+
+      .in {
+        display: block !important;
+      }
+
+      a {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+      }
+    </style>
+  </metal:styles>
+
+
+  <metal:main fill-slot="main">
+        <div id="parent-fieldname-text" class="plain">
+          <div id="content-core">
+            <h1>
+              Vocabulário
+            </h1>
+
+          <div class="conteudo_FAQ">
+            <div id="resultado_busca">
+              <div id="accordion">
+                <div class="card">
+                  <div>
+                    <div class="card-header" id="acordeon-acesso-a-informacao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-acesso-a-informacao" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-acesso-a-informacao">
+                        Ação Direta de Inconstitucionalidade (ADI)
+                      </a>
+                    </div>
+                    <div id="collapse-acesso-a-informacao" class="collapse" aria-labelledby="acordeon-acesso-a-informacao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Processo judicial que tem como objetivo principal afirmar que lei ou normativo (uma resolução, por exemplo) contraria o que diz a Constituição Federal, por isso ela não deve valer. Ou seja, declarar a inconstitucionalidade
+                          de
+                          lei ou ato normativo.</p>
+                        <p>A ADI é enviada ao Supremo Tribunal Federal quando se tratar de inconstitucionalidade de norma ou ato normativo federal ou estadual perante a Constituição Federal. Será proposta aos Tribunais de Justiça dos Estados quando
+                          se
+                          tratar de inconstitucionalidade de norma ou ato normativo estadual ou municipal perante as Constituições Estaduais.</p>
+                        <p>A Corte declarará a constitucionalidade da norma ou ato caso a ADI seja julgada sem fundamento (improcedente).</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica">
+                        Argumento
+                      </a>
+                    </div>
+                    <div id="collapse-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica" class="collapse" aria-labelledby="acordeon-atuacao-gerencial-das-ouvidorias-para-melhoria-da-gestao-publica" data-parent="#accordion">
+                      <div class="card-body">
+                        <p class=" ">Raciocínio, razão ou indício por meio do qual se pretende provar ou refutar a procedência ou veracidade de uma afirmação.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-boato">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-boato" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-boato">
+                        Boato
+                      </a>
+                    </div>
+                    <div id="collapse-boato" class="collapse" aria-labelledby="acordeon-boato" data-parent="#accordion">
+                      <div class="card-body">
+                        <p class=" "> Informação anônima, geralmente com um conteúdo negativo sobre algo ou alguém, que se divulga sem confirmação. </p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-checagem-de-fatos-fact-checking">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-checagem-de-fatos-fact-checking" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-checagem-de-fatos-fact-checking">
+                        Checagem de fatos (fact-checking)
+                      </a>
+                    </div>
+                    <div id="collapse-checagem-de-fatos-fact-checking" class="collapse" aria-labelledby="acordeon-checagem-de-fatos-fact-checking" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Consiste em confrontar histórias, narrativas ou informações com dados, pesquisas e registros. O método identifica se a informação publicada foi obtida por meio de fontes confiáveis. Assim, é definido se é verdadeira ou se
+                          utiliza alguma forma de desinformação.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-clickbait">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-clickbait" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-clickbait">
+                        Clickbait
+                      </a>
+                    </div>
+                    <div id="collapse-clickbait" class="collapse" aria-labelledby="acordeon-clickbait" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Termo em inglês que significa “caça-cliques” ou “isca de cliques”. Utiliza títulos sensacionalistas para que mais pessoas cliquem em um determinado conteúdo, que pode ser um site ou uma rede social.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-crenca">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-crenca" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-crenca">
+                        Crença
+                      </a>
+                    </div>
+                    <div id="collapse-crenca" class="collapse" aria-labelledby="acordeon-crenca" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>É tudo aquilo que se acredita, seja uma verdade ou não.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-decisao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-decisao" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-decisao">
+                        Decisão
+                      </a>
+                    </div>
+                    <div id="collapse-decisao" class="collapse" aria-labelledby="acordeon-decisao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p> Denominação genérica para o pronunciamento do juiz que resolve a questão.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-deepfake">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-deepfake" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-deepfake">
+                        Deepfake
+                      </a>
+                    </div>
+                    <div id="collapse-deepfake" class="collapse" aria-labelledby="acordeon-deepfake" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Manipulação e criação de conteúdo falso de vídeo, imagem e áudio que se assemelha bastante ao original. O termo, em inglês, liga a palavra “deep” (aprofundado), que se origina da expressão “deep learning” (aprendizagem
+                          profunda), ao adjetivo “fake” (falso). O deep learning é um método de aprendizagem de máquina baseado em inteligência artificial (IA) que extrai, progressivamente, recursos a partir de dados brutos. O método ensina a máquina
+                          utilizando dados como o rosto humano para coletar movimentos físicos faciais, por exemplo.</p>
+                        <p>Outro tipo de sistema especializado em aprendizado de máquina é a criação de vídeos a partir da rede adversária generativa (GAN). Duas redes neurais são usadas para competirem entre si na aprendizagem das características de
+                          um conjunto de dados de treinamento, como rostos presentes em fotografias. Assim, elas geram novos dados com base nas características aprendidas, ou seja, novas imagens.</p>
+                        <p>Por conta do treinamento constante dessas redes neurais, as imagens falsas vão ficando cada vez mais reais. Esse método de aprendizado de máquina e sintetização utilizado pela IA, é capaz de falsificar outros dados, como
+                          vozes.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-denuncia">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-denuncia" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-denuncia">
+                        Denúncia
+                      </a>
+                    </div>
+                    <div id="collapse-denuncia" class="collapse" aria-labelledby="acordeon-denuncia" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Acusação formulada pelo Ministério Público contra pessoas que praticaram determinado crime. O objetivo é garantir a punição dos envolvidos. A denúncia dá início à ação penal pública.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-desinformacao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-desinformacao" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-desinformacao">
+                        Desinformação
+                      </a>
+                    </div>
+                    <div id="collapse-desinformacao" class="collapse" aria-labelledby="acordeon-desinformacao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-daaa530c-7fff-96b6-87e0-d8a3f3284781"><span>A desinformação é todo conteúdo falso (imagem, vídeo ou texto) que se utiliza de formas distintas para, intencionalmente, causar danos à imagem de uma
+                              pessoa, grupo ou instituição. Esse conteúdo falso pode ser fabricado, manipulado ou descontextualizado.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-diligencia">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-diligencia" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-diligencia">
+                        Diligência
+                      </a>
+                    </div>
+                    <div id="collapse-diligencia" class="collapse" aria-labelledby="acordeon-diligencia" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Providências a serem tomadas durante um processo<span>, procedimento ou inquérito policial para esclarecimento de questões relacionadas aos assuntos nele tratados. </span><span>Uma diligência pode ser decidida por
+                            iniciativa do juiz (de ofício) ou para atender requerimento do Ministério Público.</span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-direitos-coletivos">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-direitos-coletivos" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-direitos-coletivos">
+                        Direitos coletivos
+                      </a>
+                    </div>
+                    <div id="collapse-direitos-coletivos" class="collapse" aria-labelledby="acordeon-direitos-coletivos" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Todos aqueles que ultrapassam o que é direito individual e quando é possível definir um número total de pessoas atingidas pelo desrespeito a esse direito. São conquistas sociais reconhecidas em lei, como os direitos
+                            trabalhistas.</span></p>
+                        <p dir="ltr"><span>Quando um direito coletivo não é respeitado, muitas pessoas são prejudicadas, e o Ministério Público tem o dever de agir em defesa desse direito, inclusive acionando a Justiça, ainda que o violador seja o
+                            próprio poder público.</span></p>
+                        <p><span> </span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-direitos-difusos">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-direitos-difusos" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-direitos-difusos">
+                        Direitos difusos
+                      </a>
+                    </div>
+                    <div id="collapse-direitos-difusos" class="collapse" aria-labelledby="acordeon-direitos-difusos" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-110d3dcb-7fff-eb65-80cc-9c3ff816a286"><span>São os interesses que abrangem um número indeterminado de pessoas unidas pelo mesmo fato. Por exemplo, o direito ao meio ambiente ecologicamente
+                              equilibrado. No caso de uma eventual reparação de dano, isso não pode ser calculado individualmente.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-direitos-individuais-indisponiveis">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-direitos-individuais-indisponiveis" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-direitos-individuais-indisponiveis">
+                        Direitos individuais indisponíveis
+                      </a>
+                    </div>
+                    <div id="collapse-direitos-individuais-indisponiveis" class="collapse" aria-labelledby="acordeon-direitos-individuais-indisponiveis" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>São os direitos individuais dos quais o cidadão não pode abrir mão. Os principais são: direito à vida, à liberdade, à saúde e à dignidade.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-discurso-de-odio">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-discurso-de-odio" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-discurso-de-odio">
+                        Discurso de ódio
+                      </a>
+                    </div>
+                    <div id="collapse-discurso-de-odio" class="collapse" aria-labelledby="acordeon-discurso-de-odio" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Exposição de ideias com base na intolerância. Pode ser direcionado a uma pessoa ou a um grupo social. </p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-engajamento">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-engajamento" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-engajamento">
+                        Engajamento
+                      </a>
+                    </div>
+                    <div id="collapse-engajamento" class="collapse" aria-labelledby="acordeon-engajamento" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Ato de participar colaborando com alguma coisa. Envolvimento ativo com as circunstâncias políticas e sociais que alguém considera de extrema importância em determinado momento histórico, e que geralmente são debatidas nas
+                          diferentes esferas em que se costumam travar os embates ideológicos. </p>
+                        <p><span id="docs-internal-guid-33bcd12b-7fff-bc96-113b-6631cda832e4"><span>Nas redes sociais, o engajamento é a interação que o usuário realiza de forma ativa com um conteúdo, seja por meio de curtidas, compartilhamentos ou
+                              comentários.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-fake-news">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-fake-news" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-fake-news">
+                        Fake news
+                      </a>
+                    </div>
+                    <div id="collapse-fake-news" class="collapse" aria-labelledby="acordeon-fake-news" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Expressão em inglês que significa notícia falsa. Popularmente, é utilizada como sinônimo de desinformação. Em estudos acadêmicos, é considerada uma expressão inadequada, já que desinformação contempla diversos tipos de
+                          conteúdos falsos além das fake news.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-fato">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-fato" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-fato">
+                        Fato
+                      </a>
+                    </div>
+                    <div id="collapse-fato" class="collapse" aria-labelledby="acordeon-fato" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Algo cuja existência é inquestionável; realidade, verdade.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-instancia">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-instancia" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-instancia">
+                        Instância
+                      </a>
+                    </div>
+                    <div id="collapse-instancia" class="collapse" aria-labelledby="acordeon-instancia" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-7cffcdcf-7fff-ac5b-a172-8a6e1bde091c"><span>Divisão de hierarquia do Poder Judiciário. A primeira instância, em que geralmente começam os processos, é composta por juízes de direito em cada
+                              comarca (região onde o juiz é competente para atuar), seja federal, eleitoral ou do trabalho. A segunda instância, na qual são julgados recursos, é formada pelos tribunais de Justiça e pelos tribunais regionais federais,
+                              eleitorais e do trabalho. A terceira instância são os tribunais superiores (Supremo Tribunal Federal; Superior Tribunal de Justiça; Tribunal Superior do Trabalho; Tribunal Superior Eleitoral; e Superior Tribunal
+                              Militar),
+                              que julgam recursos contra decisões dos tribunais de segunda instância.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-inteligencia-artificial">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-inteligencia-artificial" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-inteligencia-artificial">
+                        Inteligência artificial
+                      </a>
+                    </div>
+                    <div id="collapse-inteligencia-artificial" class="collapse" aria-labelledby="acordeon-inteligencia-artificial" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Ramo da ciência da computação que teve origem na década de 1950. Concentra-se no desenvolvimento de sistemas e algoritmos que são capazes de realizar tarefas que geralmente são executadas pela inteligência humana. Com a
+                          evolução tecnológica das últimas décadas, a inteligência artificial (IA) teve avanços significativos nos métodos que utiliza para aprender. O volume de dados cada vez mais disponível na internet também possibilita que os
+                          resultados sejam cada vez mais rápidos.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-liminar">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-liminar" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-liminar">
+                        Liminar
+                      </a>
+                    </div>
+                    <div id="collapse-liminar" class="collapse" aria-labelledby="acordeon-liminar" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Pedido de antecipação dos efeitos da decisão, antes do seu julgamento. É concedida quando a demora da decisão causar prejuízos. Ao examinar a liminar, o ministro relator também avalia se o pedido apresentado tem fundamentos
+                          jurídicos aceitáveis.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-mandado">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-mandado" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-mandado">
+                        Mandado
+                      </a>
+                    </div>
+                    <div id="collapse-mandado" class="collapse" aria-labelledby="acordeon-mandado" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-9d4798b6-7fff-a4ce-3c15-d45ffde5e840"><span>Ordem escrita da autoridade. É chamado de mandado judicial quando expedido por juiz ou ministro de tribunal. Têm nomes específicos de acordo com o
+                              objetivo: prender, soltar, procurar e apreender bens ou documentos etc.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-mandato">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-mandato" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-mandato">
+                        Mandato
+                      </a>
+                    </div>
+                    <div id="collapse-mandato" class="collapse" aria-labelledby="acordeon-mandato" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-98b9e0b0-7fff-6581-e952-d968c7d503b2"><span>Autorização ou procuração que alguém confere a outra pessoa para agir em seu nome. Pode ser ainda o período de duração de um cargo eletivo, ou seja,
+                              do
+                              titular escolhido para exercer funções político-constitucionais.  </span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-ministerio-publico">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-ministerio-publico" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-ministerio-publico">
+                        Ministério Público
+                      </a>
+                    </div>
+                    <div id="collapse-ministerio-publico" class="collapse" aria-labelledby="acordeon-ministerio-publico" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>Instituição permanente, essencial à função jurisdicional do Estado. Defende a ordem jurídica, o regime democrático e os interesses sociais e individuais indisponíveis. O Ministério Público abrange o Ministério Público da
+                          União (Ministério Público Federal, Ministério Público do Trabalho, Ministério Público Militar e Ministério Público do Distrito Federal e Territórios) e os Ministérios Públicos Estaduais. </p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-ministerio-publico-da-uniao-mpu">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-ministerio-publico-da-uniao-mpu" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-ministerio-publico-da-uniao-mpu">
+                        Ministério Público da União (MPU)
+                      </a>
+                    </div>
+                    <div id="collapse-ministerio-publico-da-uniao-mpu" class="collapse" aria-labelledby="acordeon-ministerio-publico-da-uniao-mpu" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-61368465-7fff-a45d-49f9-113a9eea74fb"><span></span><span>Instituição que abrange quatro ramos com áreas de atuação, organização espacial e administração distintas, embora regidos pela mesma lei
+                              complementar, a de nº 75/1993. Divide-se em: Ministério Público Federal (MPF), Ministério Público do Trabalho (MPT), Ministério Público Militar (MPM) e Ministério Público do Distrito Federal e Territórios (MPDFT). Cada
+                              um
+                              deles tem organização própria.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-ministerio-publico-do-distrito-federal-e-territorios-mpdft">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-ministerio-publico-do-distrito-federal-e-territorios-mpdft" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-ministerio-publico-do-distrito-federal-e-territorios-mpdft">
+                        Ministério Público do Distrito Federal e Territórios (MPDFT)
+                      </a>
+                    </div>
+                    <div id="collapse-ministerio-publico-do-distrito-federal-e-territorios-mpdft" class="collapse" aria-labelledby="acordeon-ministerio-publico-do-distrito-federal-e-territorios-mpdft" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-2fffacfb-7fff-6a79-d99e-e6aa381808f4"><span>É o ramo do Ministério Público da União que fiscaliza as leis e defende os interesses da sociedade no Distrito Federal (DF) e Territórios. Ele é um
+                              órgão federal por ter a abrangência de atuação no DF.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-ministerio-publico-do-trabalho-mpt">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-ministerio-publico-do-trabalho-mpt" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-ministerio-publico-do-trabalho-mpt">
+                        Ministério Público do Trabalho (MPT)
+                      </a>
+                    </div>
+                    <div id="collapse-ministerio-publico-do-trabalho-mpt" class="collapse" aria-labelledby="acordeon-ministerio-publico-do-trabalho-mpt" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Trata de matérias decorrentes das relações de trabalho que envolvam interesse público, fiscalizando o cumprimento da legislação e procurando regularizar e mediar as relações entre empregados e empregadores. Além
+                            disso,
+                            o MPT também pode ser árbitro ou mediador em conflitos coletivos, fiscalizar o direito de greve nas atividades essenciais e propor ações pedindo para que sejam tornadas inválidas partes ilegais em contratos trabalhistas e
+                            acordos coletivos.</span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-ministerio-publico-eleitoral-mp-eleitoral">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-ministerio-publico-eleitoral-mp-eleitoral" aria-expanded="true" aria-controls="collapse-acordeon01"
+                        data-controls="collapse-ministerio-publico-eleitoral-mp-eleitoral">
+                        Ministério Público Eleitoral (MP Eleitoral)
+                      </a>
+                    </div>
+                    <div id="collapse-ministerio-publico-eleitoral-mp-eleitoral" class="collapse" aria-labelledby="acordeon-ministerio-publico-eleitoral-mp-eleitoral" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-f248973c-7fff-9f4a-5eab-7ff498d7c9b6"><span>O MP Eleitoral faz parte do Ministério Público brasileiro e é composto por membros do Ministério Público Federal (MPF) e dos Ministérios Públicos
+                              estaduais. Atua na fiscalização da integridade e da realização do processo eleitoral, zelando pela correta aplicação das leis eleitorais. Propõe a abertura de processos à Justiça contra candidatos e fiscaliza a lei nas
+                              ações eleitorais. </span><span><br /></span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-ministerio-publico-federal-mpf">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-ministerio-publico-federal-mpf" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-ministerio-publico-federal-mpf">
+                        Ministério Público Federal (MPF)
+                      </a>
+                    </div>
+                    <div id="collapse-ministerio-publico-federal-mpf" class="collapse" aria-labelledby="acordeon-ministerio-publico-federal-mpf" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>O MPF é o ramo do MPU que atua nas Justiças Federal e Eleitoral, representando a sociedade em diversas instâncias, como:</span></p>
+                        <p><span></span>- Nas varas da Justiça Federal (representações do Poder Judiciário em determinado território, que equivale à primeira instância);</p>
+                        <p>- Nos Tribunais Regionais Federais (segunda instância);</p>
+                        <p>- Perante tribunais superiores, como o STJ e o STF;</p>
+                        <p><span>- Junto aos Tribunais Regionais Eleitorais (TREs) e ao Tribunal Superior Eleitoral (TSE), no âmbito da Justiça Eleitoral.</span></p>
+                        <p><span>Assim como o MPU, o MPF é independente e não pertence a nenhum dos Três Poderes. Essa autonomia é essencial para garantir sua imparcialidade na defesa da Constituição e no respeito às leis.</span></p>
+                        <p> </p>
+                        <p><span> </span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-ministerio-publico-militar-mpm">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-ministerio-publico-militar-mpm" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-ministerio-publico-militar-mpm">
+                        Ministério Público Militar (MPM)
+                      </a>
+                    </div>
+                    <div id="collapse-ministerio-publico-militar-mpm" class="collapse" aria-labelledby="acordeon-ministerio-publico-militar-mpm" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-b9625776-7fff-f59a-8e6e-096e84cd0243"><span>Atua exclusivamente em matéria criminal, apurando e buscando a punição dos autores de crimes militares praticados por integrantes das Forças Armadas
+                              do
+                              Brasil no exercício de suas atividades, bem como todas as infrações cometidas contra o patrimônio das Forças Armadas.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-opiniao">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-opiniao" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-opiniao">
+                        Opinião
+                      </a>
+                    </div>
+                    <div id="collapse-opiniao" class="collapse" aria-labelledby="acordeon-opiniao" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-55158448-7fff-2f39-0c4f-714096e23699"><span></span><span>Ideia ou hipótese sem fundamento; aquilo que se presume sem certeza; presunção.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-parecer">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-parecer" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-parecer">
+                        Parecer
+                      </a>
+                    </div>
+                    <div id="collapse-parecer" class="collapse" aria-labelledby="acordeon-parecer" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-90976562-7fff-9a94-c814-f56a75e5546e"><span></span><span>É a manifestação do Ministério Público em uma ação, com base no que a lei estabelece sobre aquele assunto. O parecer do Ministério
+                              Público
+                              não obriga o juiz a decidir segundo esse parecer.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-procuradoria-geral-da-republica-pgr">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-procuradoria-geral-da-republica-pgr" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-procuradoria-geral-da-republica-pgr">
+                        Procuradoria-Geral da República (PGR)
+                      </a>
+                    </div>
+                    <div id="collapse-procuradoria-geral-da-republica-pgr" class="collapse" aria-labelledby="acordeon-procuradoria-geral-da-republica-pgr" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-51b7c1e2-7fff-03ca-1223-386e8fe89296"><span>Tem atribuição de atuar perante o Supremo Tribunal Federal (STF), o Superior Tribunal de Justiça (STJ) e o Tribunal Superior Eleitoral (TSE). É onde
+                              trabalham os subprocuradores-gerais da República, último nível da carreira de membro do MPF, incluindo o procurador-geral da República, chefe da instituição. Sediada em Brasília, é o centro administrativo-institucional
+                              do
+                              MPF.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-recurso">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-recurso" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-recurso">
+                        Recurso
+                      </a>
+                    </div>
+                    <div id="collapse-recurso" class="collapse" aria-labelledby="acordeon-recurso" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-5a18b315-7fff-3c7c-59b2-7d1393083eea"><span><span id="docs-internal-guid-834c8cae-7fff-527d-c150-78addcceb7b9"><span>Peça processual que pede</span></span> a mudança de uma decisão, na mesma
+                              instância ou em instância superior.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-segredo-de-justica">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-segredo-de-justica" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-segredo-de-justica">
+                        Segredo de Justiça
+                      </a>
+                    </div>
+                    <div id="collapse-segredo-de-justica" class="collapse" aria-labelledby="acordeon-segredo-de-justica" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span id="docs-internal-guid-a5d79fb1-7fff-7a33-17e6-58bbd8185c51"><span></span><span>Medida utilizada para proteger a confidencialidade de informações no processo judicial. Nesses casos, a divulgação pública das
+                              informações
+                              pode prejudicar a privacidade das partes envolvidas, comprometer a investigação ou causar outros danos. Quando acontece, o direito de consultar o processo e pedir certidão fica restrito às partes e a seus
+                              advogados.</span></span></p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-url">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-url" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-url">
+                        URL
+                      </a>
+                    </div>
+                    <div id="collapse-url" class="collapse" aria-labelledby="acordeon-url" data-parent="#accordion">
+                      <div class="card-body">
+                        <p>URL é a sigla para uniform resource locator, em tradução livre, localizador uniforme de recursos. É o endereço eletrônico que permite que um site seja encontrado na internet. Por exemplo, quando você digita www.mpf.mp.br no
+                          seu navegador, você está usando a URL para encontrar o site do MPF.</p>
+                      </div>
+                    </div>
+                    <div class="card-header" id="acordeon-vara">
+                      <a class="btn btn-link" data-toggle="collapse" data-target="#collapse-vara" aria-expanded="true" aria-controls="collapse-acordeon01" data-controls="collapse-vara">
+                        Vara
+                      </a>
+                    </div>
+                    <div id="collapse-vara" class="collapse" aria-labelledby="acordeon-vara" data-parent="#accordion">
+                      <div class="card-body">
+                        <p><span>Representações físicas do Poder Judiciário em determinado território, que equivalem à primeira instância. </span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </metal:main>
+</body>
+
+</html>

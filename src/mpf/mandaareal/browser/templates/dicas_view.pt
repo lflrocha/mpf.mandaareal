@@ -1,0 +1,697 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+<body metal:use-macro="here/main_template/macros/master">
+
+
+  <metal:styles fill-slot="style_slot">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+    <style>
+
+      article {
+        margin: 0 5px;
+        margin-bottom: 20px !important;
+      }
+
+      h1 {
+          font-family: Inter !important;
+          color: #5E2F7E;
+          font-size: 2rem;
+          font-style: normal;
+          font-weight: 900;
+          line-height: 48px;
+          letter-spacing: -1px;
+          margin-left: 0 px;
+        }
+
+      .o-q-e {
+        color: #5E2F7E;
+        font-size: 24px;
+        letter-spacing: -0.7px;
+        margin: 0.2rem 0 0.5rem 0;
+        font-weight: 400 !important;
+      }
+
+      .sub-o-q-e {
+        color: #5E2F7E;
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 30px;
+        max-width: 720px;
+      }
+
+      .corpo-topo {
+        background: #A6CE39;
+        margin: 0;
+        padding: 5rem;
+      }
+
+      .backg-roxo {
+        background-color: #5E2F7E;
+        color: white;
+        padding-bottom: 3rem;
+      }
+
+      .cor-roxa {
+        color: #5E2F7E !important;
+      }
+
+      .cor-verde {
+        color: #A6CE39 !important;
+      }
+
+      .fonte-w600 {
+        font-weight: 600 !important;
+      }
+
+      .atencao-msg {
+        display: flex;
+        gap: 0.6rem;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 550px;
+        margin: 2rem auto 5rem auto;
+      }
+
+      .atencao-msg p {
+        color: #A6CE39;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 23px;
+        letter-spacing: -0.38px;
+        margin: 0 !important;
+      }
+
+      .title-dica {
+        color: #5E2F7E;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: -0.45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: uppercase;
+      }
+
+      .tipos-desinf {
+        color: #F5F5F5;
+        text-align: center;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 26px;
+        letter-spacing: -1.2x;
+        margin: 0px auto 1rem auto;
+        padding-top: 3rem;
+      }
+
+      .tipos-desinf-p {
+        color: #F5F5F5;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27px;
+        margin: 1.5rem auto;
+        max-width: 450px;
+      }
+
+      .text-in {
+        color: #5E2F7E;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35.623px;
+        letter-spacing: -0.45px;
+      }
+
+      .traco-oqe {
+        max-width: 295px;
+        width: 100%;
+        margin: 0.5rem 0 1.5rem 0;
+        height: 6px;
+      }
+
+      .termo-fakenews {
+        color: #F7F6F2;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 58px;
+        letter-spacing: -0.9px;
+      }
+
+      .subtit-36 {
+        color: #F7F6F2;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 40px;
+        letter-spacing: -0.7px;
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
+      }
+
+      .conteudo-interno {
+        padding-left: 5rem;
+        max-width: 1224px;
+      }
+
+      .accordion {
+        max-width: 1300px;
+        margin: 2rem auto 3rem auto;
+      }
+
+      #content .details-content ul li,
+      .details-content ul li {
+        margin-bottom: 1.2em !important;
+      }
+
+      @media (max-width: 767px) {
+        #globalnav-wrapper {
+          font-size: 70% !important;
+        }
+      }
+
+      @media only screen and (max-width: 460px) {
+        .atencao-msg {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .conteudo-interno {
+          padding-left: 1.5rem;
+        }
+
+        .corpo-topo {
+          padding: 1.5rem;
+        }
+
+        .accordion {
+          margin: 0 1.5rem;
+        }
+
+        .sub-o-q-e {
+          font-size: 18px;
+        }
+
+        #content #content-core {
+          margin-left: 1rem;
+        }
+
+        .sub-tit-main {
+          font-size: 22px !important;
+          line-height: 32px !important;
+        }
+
+        details div {
+          padding: 0.7rem !important;
+        }
+
+        #content ul,
+        .portletStaticText ul {
+          margin-left: 1.2rem !important;
+        }
+
+        .conteudo_FAQ {
+          margin: 0.5rem 0;
+        }
+
+        .img-organo-mob {
+          max-width: 320px;
+          width: 100%;
+          height: auto;
+        }
+      }
+
+
+      /* ESTILO ACORDION FINAL */
+
+      details div {
+        padding: 1.5em;
+      }
+
+      .details-content {
+        background: white;
+        color: #5E2F7E;
+        font-size: 1.2rem;
+      }
+
+      details div>*+* {
+        margin-top: 1.5em;
+      }
+
+      details+details {
+        margin-top: .5rem;
+      }
+
+      summary {
+        list-style: none;
+      }
+
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary {
+        padding: .75em 1em;
+        cursor: pointer;
+        position: relative;
+        padding-left: calc(1.75rem + .75rem + .75rem);
+        border-radius: 1.862px;
+        background: #461f60;
+        color: white;
+        font-size: 1.25rem;
+        font-weight: bold;
+      }
+
+      summary:before {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: .75rem;
+        content: url('setinha-branca-acordion.png');
+        scale: 0.8;
+        width: 1.75rem;
+        height: 1.75rem;
+        color: #FFF;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+      }
+
+      details[open] summary {
+        background-color: #a6ce39;
+        color: #5e2f7e;
+      }
+
+      details[open] summary:before {
+        transform: rotate(180deg) translateY(14px);
+
+      }
+
+      summary:hover {
+        background-color: #5E2F7E;
+        outline: #A6CE39 2px solid;
+        color: white;
+      }
+
+      /* CSS ACORDION MEIO  */
+
+      .accordion-container {
+        width: 100%;
+        max-width: 850px;
+        margin-bottom: 20px;
+        margin: auto;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      .button-container button {
+        max-width: 284px;
+      }
+
+
+      .accordion-btn
+       {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8px 12px;
+        gap: 10px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 25px;
+        flex: 1;
+        letter-spacing: -0.45px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        background-color: transparent !important;
+        white-space: wrap;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        outline: 0px !important;
+        box-shadow: none !important;
+      }
+
+      .accordion-btn img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .accordion-btn:hover {
+        background: #4a2065 !important;
+        color: #A6CE39 !important;
+      }
+
+      .accordion-btn.active {
+        color: #fff;
+
+      }
+
+      .accordion-content {
+        overflow: hidden;
+
+        border-radius: 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 3em;
+        height: 0px;
+        /* Altura mínima fixa */
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        opacity: 0;
+        /* Inicialmente invisível */
+        transition: opacity 0.3s ease, height 0.3s ease;
+        font-size: 24px;
+        padding: 3rem;
+      }
+
+      .accordion-content.visible {
+        opacity: 1;
+        /* Aparece suavemente */
+        height: 180px;
+        background-color: #A6CE39;
+        color: #5E2F7E;
+        margin-bottom: 1rem;
+        padding: 3em;
+      }
+
+      h3 .title-dica {
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #5E2F7E !important;
+      }
+
+      .accordion-content p {
+        margin: 0;
+        color: #5E2F7E;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27px;
+        letter-spacing: -0.45px;
+      }
+
+      @media only screen and (max-width: 660px) {
+        .button-container button span {
+          display: none;
+        }
+
+        .accordion-content.visible {
+          height: 250px;
+        }
+
+      }
+
+      h3 {
+      margin: 0px
+      }
+    </style>
+
+  </metal:styles>
+
+
+
+
+
+  <metal:main fill-slot="main">
+
+
+
+        <div class="corpo-topo">
+          <h1>
+            Dicas de Combate à Desinformação
+          </h1>
+
+          <h3 class="o-q-e">O que é?</h3>
+          <p><img src="traco-o-que-e.png" alt="" class="traco-oqe"
+            tal:attributes="src string:${context/portal_url}/traco-o-que-e.png"></p>
+          <p class="sub-o-q-e">Desinformação é o conteúdo intencionalmente falso criado para causar danos a uma pessoa, grupo social, organização ou país. Pode ser motivado por fatores políticos ou econômicos, ou apenas para causar alvoroço e
+            pânico. </p>
+        </div>
+        <div class="content">
+          <!-- main id="content" class="mainMaster discursoOdio" -->
+
+          <section id="section2" class="secMaster backg-roxo fontColorWhite">
+            <h2 class="tipos-desinf">Tipos de Desinformação</h2>
+            <p class="tipos-desinf-p">A desinformação pode assumir muitas formas, confundindo e manipulando o público de diferentes maneiras. Conheça alguns tipos de desinformação:</p>
+
+            <!-- ACORDION MIOLO -->
+
+            <div class="accordion-container">
+              <!-- Primeira seção de botões -->
+              <div class="button-container">
+                <button class="accordion-btn" data-content="content1">
+                  <img class="icon" src="icon-dica1-off.png" alt=""
+                    tal:attributes="src string:${context/portal_url}/icon-dica1-off.png">
+                  <span>Informação descontextualizada</span>
+                  <img src="ico-04b.svg" alt=""
+                    tal:attributes="src string:${context/portal_url}/ico-04b.svg">
+                </button>
+                <button class="accordion-btn" data-content="content2">
+                  <img class="icon" src="icon-dica2-off.png" alt=""
+                    tal:attributes="src string:${context/portal_url}/icon-dica2-off.png">
+                  <span>Conexão falsa</span>
+                  <img src="ico-04b.svg" alt=""
+                    tal:attributes="src string:${context/portal_url}/ico-04b.svg">
+                </button>
+                <button class="accordion-btn" data-content="content3">
+                  <img class="icon" src="icon-dica3-off.png" alt=""
+                    tal:attributes="src string:${context/portal_url}/icon-dica3-off.png">
+                  <span>Conteúdo fabricado</span>
+                  <img src="ico-04b.svg" alt=""
+                    tal:attributes="src string:${context/portal_url}/ico-04b.svg">
+                </button>
+              </div>
+              <!-- Contêiner de conteúdo 1 -->
+              <div class="accordion-content" id="content-container-1">
+                <p>Selecione um botão acima para visualizar o conteúdo.</p>
+              </div>
+            </div>
+
+            <div class="accordion-container">
+              <!-- Segunda seção de botões -->
+              <div class="button-container">
+                <button class="accordion-btn secondary-btn" data-content="content4">
+                  <img class="icon" src="icon-dica4-off.png" alt=""
+                    tal:attributes="src string:${context/portal_url}/icon-dica4-off.png">
+                  <span>Conteúdo manipulado</span>
+                  <img src="ico-04b.svg" alt=""
+                    tal:attributes="src string:${context/portal_url}/ico-04b.svg">
+                </button>
+                <button class="accordion-btn secondary-btn" data-content="content5">
+                  <img class="icon" src="icon-dica5-off.png" alt="" /
+                    tal:attributes="src string:${context/portal_url}/icon-dica5-off.png">
+                  <span>Conteúdo impostor</span>
+                  <img src="ico-04b.svg" alt=""
+                    tal:attributes="src string:${context/portal_url}/ico-04b.svg">
+                </button>
+              </div>
+              <!-- Contêiner de conteúdo 2 -->
+              <div class="accordion-content" id="content-container-2">
+                <p>Selecione um botão abaixo para visualizar o conteúdo.</p>
+              </div>
+            </div>
+
+            <!-- FIM ACORDION MEIO -->
+
+            <div class="atencao-msg">
+              <img src="icone-atencao.png" alt=""
+                tal:attributes="src string:${context/portal_url}/icone-atencao.png">
+              <p>Um conteúdo falso pode utilizar mais de um dos recursos acima e ser classificado em mais de uma das categorias.</p>
+            </div>
+            <div class="conteudo-interno">
+              <h3 class="termo-fakenews">O termo FAKE NEWS</h3>
+              <img src="traco-verde.png" alt="" class="traco-oqe"
+                tal:attributes="src string:${context/portal_url}/traco-verde.png">
+              <p class="sub-o-q-e" style="color: #ffffffcc !important; max-width: none;">O termo “fake news” (notícia falsa) tornou-se bastante popular em 2016. A expressão passou a ser amplamente utilizada em todo o mundo para se referir a
+                todo e qualquer tipo de desinformação. Entretanto, especialistas afirmam que o uso da expressão é errado.</p>
+              <h4 class="subtit-36">E qual é a diferença entre desinformação e fake news?</h4>
+              <p class="sub-o-q-e" style="color: #ffffffcc !important; max-width: none; ">Desinformação é o termo mais abrangente e adequado para se referir a informações falsas compartilhadas com más intenções. Essa expressão inclui todo
+                tipo de conteúdo - descontextualizado, falso, fabricado, manipulado ou impostor. Por isso, é melhor utilizar “desinformação” para se referir a informações falsas compartilhadas de forma consciente em vez de “fake news”. </p>
+              <p class="sub-o-q-e" style="color: #ffffffcc !important; max-width: none; ">Contudo, aqui no projeto Manda a Real, a expressão “fake news” também será utilizada em alguns casos para facilitar a compreensão dos conteúdos, uma vez
+                que é popularmente conhecida e mais utilizada pelas pessoas.</p>
+              <h4 class="subtit-36">Como identificar conteúdos falsos? </h4>
+              <p class="sub-o-q-e" style="color: #ffffffcc !important; max-width: none; ">As mídias sociais facilitam bastante a disseminação de desinformação, e esta acontece de formas diferentes, a depender da plataforma e do formato em que
+                circula.</p>
+            </div>
+
+            <div class="accordion">
+              <details>
+                <summary>
+                  SITE: indicativos de que você pode estar navegando em uma página falsa
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><span class="fonte-w600">Olhe com atenção a URL (endereço eletrônico que permite que um site seja encontrado na internet. Por exemplo, quando você digita <span class="fonte-w600">www.mpf.mp.br</span> no seu navegador, você
+                        está usando a URL para encontrar o site do MPF). </span> É comum que páginas enganosas tenham URLs semelhantes a sites confiáveis, mas com acréscimo de
+                      letras, números ou símbolos. </li>
+                    <li><span class="fonte-w600">Seja crítico quanto ao título da matéria.</span> Chamadas bombásticas e apelativas são um dos recursos utilizados pelos propagadores de conteúdo falso. </li>
+                    <li><span class="fonte-w600">Verifique quem é o autor do conteúdo.</span> Você o reconhece de outros artigos e veículos de credibilidade?</li>
+                    <li><span class="fonte-w600">Verifique a data de publicação.</span> Se essa informação não constar na página, faça uma busca na internet para saber quando o fato aconteceu. </li>
+                    <li><span class="fonte-w600">Ao desconfiar se uma imagem é real ou não, faça a busca no Google Imagens (Google Lens).</span> Você encontrará onde foi originalmente publicada ou se já existe um desmentido que a envolve. A
+                      ferramenta permite que você faça a busca utilizando tanto imagens salvas como links de imagens que estão na internet. </li>
+                    <li><span class="fonte-w600">Não se limite à leitura do título</span>. Leia toda a matéria e observe se há erros ortográficos ou gramaticais. Veículos profissionais costumam ter equipes de revisão textual, que corrigem
+                      eventuais erros. Isso também vale para as redes sociais, ok? Sempre leia a notícia completa, seja clicando no link ou conferindo a legenda da imagem. </li>
+                    <li><span class="fonte-w600">Não confunda!</span> Confira se o texto trata-se de uma sátira, paródia ou se contém tom de ironia. Alguns veículos mantêm editorias voltadas para esse tipo de conteúdo.</li>
+                    <li><span class="fonte-w600">Pesquise pela notícia</span> em portais da mídia tradicional ou em agências de checagem.</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary id="deepfake">
+                  DEEPFAKE: como identificar?
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li><span class="fonte-w600">Em imagens, observe com atenção mãos e orelhas.</span> Como deepfakes são criadas a partir de materiais já existentes, mãos e orelhas podem ficar distorcidas ou com aparência não humana, já que
+                      são partes do corpo que não aparecem com frequência. </li>
+                    <li><span class="fonte-w600">Em vídeos, fique atento para quebras na imagem.</span> Se algum detalhe aparentar sair do lugar muito rapidamente, desconfie.</li>
+                    <li><span class="fonte-w600">Observe se a leitura labial bate com o texto falado.</span> Edições forçadas podem cortar palavras ou sobrepor áudios, deixando os movimentos labiais sem sincronização com o que está sendo
+                      dito.</li>
+                    <li><span class="fonte-w600">Fique atento à movimentação dos olhos da pessoa.</span> Se ela não piscar ou fizer isso com grandes intervalos, ou em excesso, pode ser um indicativo de manipulação. </li>
+                    <li><span class="fonte-w600">Se a sobrancelha não mexer, desconfie.</span> Ela faz parte da expressão facial, e não deve ficar estática. </li>
+                    <li><span class="fonte-w600">Observe se a cor da pele do rosto bate com a do resto do corpo.</span> Diferenças no tom de pele podem ser observadas quando o rosto de alguém é colocado sobre o corpo de outra pessoa. </li>
+                    <li><span class="fonte-w600">Avalie se há mudanças bruscas de luminosidade ao longo do vídeo ou descontinuação de elementos ao fundo.</span> Problemas de iluminação que prejudicam a nitidez da imagem podem ser um
+                      indicativo de conteúdo manipulado. </li>
+                    <li> <span class="fonte-w600">É possível criar áudios com voz parecida com a fornecida para a imitação utilizando inteligência artificial.</span> Atente-se a mudanças bruscas na ênfase das falas e a áudios de baixa
+                      qualidade. </li>
+                    <li><span class="fonte-w600">Ainda que pareça real, pesquise a mensagem do vídeo ou áudio em algum buscador (Google, Yahoo, Bing, entre outros) para verificar se, de fato, aquilo foi dito (e dentro daquele contexto
+                        apontado).</span></li>
+                    <li><span class="fonte-w600">Fique atento ao rótulo de IA que muitas redes sociais já adotam.</span> Ele indica que houve uso de inteligência artificial para criar aquele conteúdo.</li>
+                  </ul>
+                  <div class="atencao-msg" style="max-width: 850px; gap: 2rem; margin-bottom: 2rem;">
+                    <img src="icone-atencao-roxo.png" alt="" style="height: 60px;"
+                      tal:attributes="src string:${context/portal_url}/icone-atencao-roxo.png">
+                    <p style="color: #5E2F7E; font-size: 17px; line-height: 20px;">Com o aprimoramento da inteligência artificial, será cada vez mais difícil diferenciar uma deepfake de um conteúdo genuíno. Por isso, pesquise também em
+                      veículos de credibilidade se o conteúdo daquele vídeo é verdadeiro.</p>
+                  </div>
+                </div>
+              </details>
+
+              <details>
+                <summary>
+                  Indicativos de que você recebeu uma mensagem ou um áudio manipulados
+                </summary>
+                <div class="details-content">
+                  <ul>
+                    <li>Não se deixe levar pelas emoções! Manchetes apelativas e que convocam para alguma ação são estratégias para acelerar o compartilhamento das mensagens. </li>
+                    <li>Observe se há excesso de pontos de exclamação e interrogação ao longo do texto.</li>
+                    <li>Erros ortográficos, gramaticais ou de digitação podem indicar que aquele conteúdo é falso. </li>
+                    <li>Há excesso de letras maiúsculas no texto? Acenda o alerta. Este é mais um sinal de apelo sensacionalista para destacar uma ideia. </li>
+                    <li>Se a mensagem cita uma fonte confiável sem detalhar trechos do documento original, por exemplo, fique atento. Procure pela informação no site da instituição ou órgão, em outras fontes oficiais e em veículos de
+                      comunicação de credibilidade.</li>
+                    <li>Analise a data da mensagem. É importante saber quando aconteceu o fato e pesquisar em outras fontes a verdade da informação.</li>
+                    <li>Se a mensagem apresentar palavras de baixo calão e juízos de valor, desconfie. Estes são indicativos de que o texto é opinativo, e não informativo. </li>
+                    <li>Ao receber um áudio, cheque as informações em fontes oficiais e veículos de comunicação de credibilidade. Fique atento ao tom utilizado na mensagem, se é de convocação, opinativo ou conspiratório, incitando pânico ou
+                      ódio.</li>
+                    <li> Ao receber um e-mail,verifique o domínio do remetente, ou seja, observe o que vem depois do arroba (@). Instituições confiáveis usam e-mails que correspondem ao site oficial. Logo, o @ deve vir acompanhado do endereço
+                      da página da organização. Exemplo: contato@mpf.mp.br.</li>
+                  </ul>
+                </div>
+              </details>
+
+              <details>
+                <summary>
+                  Como evitar a disseminação de desinformação?
+                </summary>
+                <div class="details-content">
+                  <p> Confira algumas dicas que ajudam a reduzir os danos de conteúdos falsos. </p>
+                  <ul>
+                    <li><span class="fonte-w600">Não engaje!</span> Pode ser tentador comentar ou compartilhar informação incorreta para mostrar o quão errada ela é ou até mesmo clicar em um link para descobrir como aquela narrativa falsa
+                      está indo longe, mas não faça isso. Cada comentário, compartilhamento e clique contribui para melhorar o engajamento. As redes sociais levam em conta essas interações para considerar um conteúdo como interessante e,
+                      assim, entregá-lo para mais pessoas.</li>
+                    <li>
+                      <p><span class="fonte-w600">Certifique-se de que o perfil é o oficial.</span> Nas redes sociais, muitos se passam por empresas, organizações ou personalidades para disseminar informações mentirosas ou posicionamentos
+                        falsos. Portanto, confira se o perfil em que você viu determinada notícia ou nota é o mesmo indicado no site oficial.</p>
+                      <p>Lembre-se de que o selo de perfil verificado nas redes sociais pode ser comprado, então qualquer pessoa pode tê-lo para se passar por uma conta oficial ou celebridade.</p>
+                    </li>
+                    <li><span class="fonte-w600">Denuncie.</span> Ao identificar um conteúdo falso nas mídias sociais, denuncie para a plataforma. WhatsApp, Facebook, Instagram, X (Twitter) e TikTok permitem que o usuário reporte um conteúdo.
+                    </li>
+                  </ul>
+                </div>
+              </details>
+
+            </div>
+
+          </section>
+
+          <!-- /main -->
+
+          <script>
+            const buttons = document.querySelectorAll('.accordion-btn');
+            const contentContainers = {
+              content1: document.getElementById('content-container-1'),
+              content2: document.getElementById('content-container-1'),
+              content3: document.getElementById('content-container-1'),
+              content4: document.getElementById('content-container-2'),
+              content5: document.getElementById('content-container-2')
+            };
+
+            const contentMap = {
+              content1: `<h3 class="title-dica">Informação descontextualizada</h3><p>Conteúdo verdadeiro que tem o seu contexto distorcido com a intenção de enganar. Também pode acontecer quando duas ou mais informações verdadeiras são associadas da maneira que convém, induzindo o público a conclusões falsas.</p>`,
+              content2: `<h3 class="title-dica">Conexão falsa</h3><p>Quando manchetes, imagens ou legendas não condizem com o conteúdo. Costumam ser sensacionalistas, e o exemplo mais comum são os <a href="../vocabulario/clickbait.html" style="color: #5E2F7E !important; font-weight: bold !important; text-decoration: underline !important; border-bottom: none !important;">clickbaits</a> (caça-clique, em português, é uma estratégia de marketing digital utilizada para atrair mais cliques para um conteúdo).</p>`,
+              content3: `<h3 class="title-dica">Conteúdo fabricado</h3><p>Conteúdo completamente falso produzido com o propósito de enganar e causar danos. Imagens e vídeos gerados por inteligência artificial, popularmente conhecidos como <a href="../vocabulario/deepfake.html" style="color: #5E2F7E !important; font-weight: bold !important; text-decoration: underline !important; border-bottom: none !important;">deepfakes</a>, são os principais exemplos.</p>`,
+              content4: `<h3 class="title-dica">Conteúdo manipulado</h3><p>Quando imagens ou informações verdadeiras são alteradas para enganar. Inclui manipulação de algum aspecto de uma imagem, vídeo ou texto, modificando o contexto.</p>`,
+              content5: `<h3 class="title-dica">Conteúdo impostor</h3><p>Conteúdo que imita fontes genuínas e confiáveis de informação. É a prática de utilizar a marca ou a identidade visual de instituições renomadas, ou nomes de jornalistas conhecidos, para falsificar a autoria de um conteúdo.</p>`
+            };
+
+            // Estado de botões ativos e controle de animação
+            let activeButtons = {
+              content1: null,
+              content4: null
+            };
+
+            // Função para alternar o conteúdo e aplicar animações
+            function toggleContent(button) {
+              const contentKey = button.getAttribute('data-content');
+              const contentContainer = contentContainers[contentKey];
+              const newContent = contentMap[contentKey];
+
+              // Atualizar estado dos botões
+              if (activeButtons[contentKey]) {
+                activeButtons[contentKey].classList.remove('active');
+              }
+              button.classList.add('active');
+              activeButtons[contentKey] = button;
+
+              // Recolher o conteúdo atual
+              contentContainer.classList.remove('visible');
+
+              // Aguarda o término do fade-out para trocar o conteúdo
+              setTimeout(() => {
+                contentContainer.innerHTML = newContent;
+
+                // Exibir o novo conteúdo com fade-in
+                contentContainer.classList.add('visible');
+              }, 300);
+            }
+
+            // Adiciona eventos de clique nos botões
+            buttons.forEach(button => {
+              button.addEventListener('click', () => toggleContent(button));
+            });
+          </script>
+
+
+        </div>
+
+  </metal:main>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="mpf.mandaareal">
+
+  <!-- Set overrides folder for Just-a-Bunch-Of-Templates product -->
+  <include package="z3c.jbot" file="meta.zcml" />
+  <browser:jbot
+      directory="overrides"
+      layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
+      />
+
+  <!-- Publish static files -->
+  <plone:static
+      name="mpf.mandaareal"
+      type="plone"
+      directory="static"
+      />
+
+
+  <browser:viewlet
+      name="mpf.mandaareal.footer"
+      manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+      class="mpf.mandaareal.browser.viewlets.FooterViewlet"
+      template="templates/footer.pt"
+      permission="zope2.View"
+      />
+
+  <browser:page
+      name="capa_view"
+      for="*"
+      class=".capa_view.CapaView"
+      template="templates/capa_view.pt"
+      permission="zope2.View"
+  />
+
+  <browser:page
+      name="oprojeto_view"
+      for="*"
+      template="templates/oprojeto_view.pt"
+      permission="zope2.View"
+  />
+
+  <browser:page
+      name="sobre_view"
+      for="*"
+      template="templates/sobre_view.pt"
+      permission="zope2.View"
+  />
+
+  <browser:page
+      name="dicas_view"
+      for="*"
+      template="templates/dicas_view.pt"
+      permission="zope2.View"
+  />
+
+  <browser:page
+      name="noticias_view"
+      for="*"
+      class=".noticias_view.ListaNoticiasView"
+      template="templates/noticias_view.pt"
+      permission="zope2.View"
+  />
+
+  <browser:page
+      name="comodenunciar_view"
+      for="*"
+      template="templates/comodenunciar_view.pt"
+      permission="zope2.View"
+  />
+
+  <browser:page
+      name="vocabulario_view"
+      for="*"
+      template="templates/vocabulario_view.pt"
+      permission="zope2.View"
+  />
+
+  <browser:page
+      name="meexplica_view"
+      for="*"
+      template="templates/meexplica_view.pt"
+      permission="zope2.View"
+  />
+
+  <browser:page
+      name="referencias"
+      for="*"
+      template="templates/referencias.pt"
+      permission="zope2.View"
+  />
+
+</configure>

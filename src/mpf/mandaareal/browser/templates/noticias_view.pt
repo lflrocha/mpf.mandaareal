@@ -1,0 +1,121 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal" xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+<body metal:use-macro="here/main_template/macros/master">
+
+
+  <metal:styles fill-slot="style_slot">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+
+      <style type="text/css">
+
+        article {
+          padding: 2em;
+        }
+
+        h1 {
+          color: #5f2f7e;
+          margin-bottom: 2rem;
+          font-size: 2rem;
+          font-weight: 900;
+        }
+
+        h2 {
+          font-weight: bold;
+        }
+
+        .tileItem {
+          margin-bottom: 2em;
+        }
+        
+        .description {
+            font-size: 1.15rem;
+            color: #565656;
+            line-height: 1.5rem;
+            max-width: 1100px;
+        }
+
+        .tileImage {
+          margin-right: 1em;
+        }
+
+        .tileFooter {
+          clear: unset !important;
+          margin-top: 5px;
+        }
+
+        .visualClear {
+          clear:both;
+        }
+
+      </style>
+
+  </metal:styles>
+
+
+
+
+
+  <metal:main fill-slot="main">
+
+
+    <div id="content-core">
+
+      <h1>
+          Notícias
+      </h1>
+
+      <tal:def define="noticias view/noticias">
+        <tal:rep repeat="item noticias">
+
+
+          <div class="tileItem visualIEFloatFix">
+              <div class="tileImage">
+                <a href="#"
+                  tal:attributes="href python:item['url']">
+                <img src=""
+                  alt="alt"
+                  title="title"
+                  height="200"
+                  width="200"
+                  class="tileImage"
+                  tal:attributes="src python:item['image'];
+                                  title python:item['title'];
+                                  alt python:item['title']" />
+                </a>
+              </div>
+
+            <h2 class="tileHeadline">
+              <a href=""
+                class="summary url"
+                tal:attributes="href python:item['url']"
+                tal:content="python:item['title']"></a>
+            </h2>
+
+            <p class="tileBody">
+              <span class="description"
+                tal:content="python:item['description']"></span>
+            </p>
+
+            <p class="tileFooter">
+              <a href="#"
+                tal:attributes="href python:item['url']">
+                <span>Leia mais…</span>
+              </a>
+            </p>
+
+            <div class="visualClear"><!-- --></div>
+          </div>
+
+        </tal:rep>
+      </tal:def>
+
+    </div>
+
+
+  </metal:main>
+</body>
+
+</html>

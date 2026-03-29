@@ -1,0 +1,150 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal" xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+<body metal:use-macro="here/main_template/macros/master">
+  <metal:styles fill-slot="style_slot">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      tal:attributes="src string:${context/portal_url}/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      main {
+        background-color: #5f2f7e;
+        margin-top: -20px;
+      }
+
+      body #visual-portal-wrapper #portal-columns {
+        background-color: #5f2f7e !important;
+        font-family: 'Inter', sans-serif !important;
+      }
+
+      h1 {
+        color: white !important;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: 900;
+      }
+
+
+      .container-oprojeto {
+        background: #5E2F7E;
+        background-image: url(bg-o-projeto.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 2rem 5rem 5rem 5rem;
+        min-height: 60vh;
+      }
+
+      .container-oprojeto h1 {
+        color: #F5F5F5;
+        font-weight: 900;
+        line-height: 50px;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.912px;
+      }
+
+      .container-oprojeto p {
+        color: #FFF !important;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5em !important;
+        margin-left: 0 !important;
+        font-size: 18px !important;
+        margin-bottom: 1.5em;
+      }
+
+      .img-oproj {
+        align-self: center;
+        justify-self: center;
+        max-width: 225px;
+      }
+      @media (max-width: 767px) {
+      #globalnav-wrapper { font-size: 70% !important;}
+      .container-oprojeto { grid-template-columns: 1fr;  }
+      }
+      @media (max-width: 460px) {
+      .container-oprojeto {  gap: 2rem; padding: 2rem 1rem 5rem 2rem; }
+      .container-oprojeto p { font-size: 22px; line-height: 25px;  background: #5e2f7ebd !important; }
+      }
+      .tarja-verde { background-color: #A6CE39; width: 100%; height: 35px; padding: 0; margin: 0; }
+
+      main {
+        border-bottom: 4rem solid #a7ce39;
+      }
+
+    </style>
+  </metal:styles>
+
+
+  <metal:main fill-slot="main">
+
+    <div id="parent-fieldname-text" class="plain">
+
+
+<div class="container-oprojeto">
+
+<h1>Referências</h1>
+
+<p>ARCHEGAS, João Victor. Deepfake: entenda sobre técnica de manipulação de vídeos e saiba identificar. [Entrevista concedida a] Fernanda Nardo. Associação das Emissoras de Radiodifusão do Paraná (AERP), 2024. Disponível em https://aerp.org.br/redeaerp/deepfake-entenda-sobre-tecnica-de-manipulacao-de-videos-e-saiba-identificar/. Acesso em julho de 2024. </p>
+
+<p>BRASIL. Conselho Nacional de Justiça. Pacto Nacional do Judiciário pela Linguagem Simples. CNJ, 2023. Disponível em: https://www.cnj.jus.br/wp-content/uploads/2023/11/pacto-nacional-do-judiciario-pela-linguagem-simples.pdf. Acesso em agosto de 2024. </p>
+
+<p>BRASIL. Conselho Nacional de Justiça. Painel de checagem de fake news: guia prático. Disponível em: https://www.cnj.jus.br/programas-e-acoes/painel-de-checagem-de-fake-news/guia-pratico/. Acesso em julho de 2024. </p>
+
+<p>BRASIL. Conselho Nacional do Ministério Público. Apresentação. Disponível em: https://www.cnmp.mp.br/portal/institucional/o-cnmp/apresentacao. Acesso em agosto de 2024. </p>
+
+<p>BRASIL. Conselho Nacional do Ministério Público. Glossário. Disponível em: https://www.cnmp.mp.br/portal/glossario. Acesso em agosto de 2024. </p>
+
+<p>BRASIL. Ministério da Saúde. Saúde com Ciência. Disponível em: https://www.gov.br/saude/pt-br/assuntos/saude-com-ciencia. Acesso em agosto de 2024.</p>
+
+<p>BRASIL. Ministério Público Federal. Glossário Jurídico. Disponível em:  https://www.mpf.mp.br/sala-de-imprensa/atendimento-a-jornalistas/glossario-juridico. Acesso em julho de 2024.</p>
+
+<p>BRASIL. Ministério Público Federal. Por dentro das eleições 2024: atuação do Ministério Público Eleitoral. – 4 ed. Brasília: MPF, 2024. Disponível em: https://www.mpf.mp.br/pge/publicacoes/por-dentro-das-eleicoes-2024/view. Acesso em julho de 2024. </p>
+
+<p>BRASIL. Ministério Público Federal. MPF em Defesa da Sociedade. Brasília, 2022. Disponível em https://defesadasociedade.mpf.mp.br/www/index.html. Acesso em julho de 2024. </p>
+
+<p>BRASIL. Ministério Público Federal. Ser diferente é legal. Disponível em: https://respeiteadiferenca.mpf.mp.br/ser_diferente_e_legal/www/index.html. Acesso em julho de 2024. </p>
+
+<p>BRASIL. Ministério Público Federal. Sobre o MPF. Disponível em:  https://www.mpf.mp.br/o-mpf. Acesso em julho de 2024. </p>
+
+<p>BRASIL. Ministério Público da União. MPU de A a Z. Brasília, 2023. Disponível em: https://www.mpu.mp.br/institucional/30-anos-da-lei-complementar-75-93/MPU-de-A-a-Z.pdf. Acesso em agosto de 2024. </p>
+
+<p>BRASIL. Supremo Tribunal Federal; Data Privacy Brasil. Guia Ilustrado Contra as Deepfakes. Brasília: STF, Coordenadoria de Combate à Desinformação, 2024. https://portal.stf.jus.br/desinformacao/doc/Guia%20ilustrado%20Contra%20DeepFakes_ebook%20(1).pdf. Acesso em outubro de 2024. </p>
+
+<p>BRASIL. Tribunal Regional Eleitoral do Goiás. Fake news x desinformação: entenda qual é a diferença entre os termos. Tribunal Regional Eleitoral, 2023. Disponível em https://www.tre-go.jus.br/comunicacao/noticias/2023/Agosto/fake-news-x-desinformacao-entenda-qual-e-a-diferenca-entre-os-termos. Acesso em julho de 2024. </p>
+
+<p>BRASIL. Tribunal Regional Eleitoral do Paraná. Como identificar fake news: na dúvida, não compartilhe. Tribunal Regional Eleitoral, 2023. Disponível em https://www.tre-pr.jus.br/comunicacao/noticias/2023/Setembro/como-identificar-fake-news-na-duvida-nao-compartilhe-1. Acesso em junho de 2024.</p>
+
+<p>BRASIL. Tribunal Superior Eleitoral. Guia Básico de Enfrentamento à Desinformação. Disponível em: https://www.justicaeleitoral.jus.br/desinformacao/arquivos/Anexo_2177865_Guia_basico_de_enfrentamento_a_desinformacao_WEB_SEPREVOK.pdf. Acesso em julho de 2024. </p>
+
+<p>GOOGLE. Refinar pesquisas no Google. Disponível em: https://support.google.com/websearch/answer/2466433?hl=pt. Acesso em setembro de 2024. </p>
+
+<p>GOOGLE. Pesquisar com uma imagem no Google. Disponível em: https://support.google.com/websearch/answer/1325808?hl=pt-br&co;=GENIE.Platform%3DDesktop. Acesso em setembro de 2024.</p>
+
+<p>JORGE, THAÏS DE MENDONÇA (Org.). Desinformação: o mal do século: distorções, inverdades, fake news: a democracia ameaçada. Brasília: Supremo Tribunal Federal; Faculdade de Comunicação da Universidade de Brasília, 2023. 367 p. Disponível em: https://www.stf.jus.br/arquivo/cms/campanha/anexo/combate/ebook_desinformacao_o_mal_do_seculo.pdf. Acesso em junho de 2024. </p>
+
+<p>MCGEE, Lilly. Your Guide to Mis- and Desinformation. League of Women Voters Education Fund, 2021. Disponível em: https://www.lwv.org/blog/your-guide-mis-and-disinformation. Acesso em julho de 2024. </p>
+<p>    MICHAELIS. Dicionário Brasileiro da Língua Portuguesa. Editora Melhoramentos, 2024. Disponível em: https://michaelis.uol.com.br/moderno-portugues/. Acesso em agosto de 2024. </p>
+<p>MOLINA, A. C.; BERENGUEL , O. L. Deepfake: The Evolution of fake news . Research, Society and Development, [S. l.], v. 11, n. 6, p. e56211629533, 2022. DOI: 10.33448/rsd-v11i6.29533. Disponível em: https://rsdjournal.org/index.php/rsd/article/view/29533. Acesso em agosto de 2024. </p>
+<p>OLIVEIRA, Maria Célia Néri de. Por dentro do MPF: conceitos, estrutura e atribuições. Ministério Público Federal. Secretaria de Comunicação Social. – 7. ed. – Brasília: MPF, 2021. Disponível em: https://www.mpf.mp.br/sala-de-imprensa/atendimento-a-jornalistas/por-dentro-do-mpf. Acesso em julho de 2024. </p>
+
+<p>ORGANIZAÇÃO DAS NAÇÕES UNIDAS PARA A EDUCAÇÃO, A CIÊNCIA E A CULTURA. Jornalismo, fake news & desinformação: manual para educação e treinamento em jornalismo. UNESCO, 2019. 130p. Disponível em https://unesdoc.unesco.org/ark:/48223/pf0000368647/PDF/368647por.pdf.multi. Acesso em junho de 2024.</p>
+
+<p>ORGANIZAÇÃO DAS NAÇÕES UNIDAS PARA A EDUCAÇÃO, A CIÊNCIA E A CULTURA. Recomendação sobre a Ética da Inteligência Artificial. UNESCO, 2021. Disponível em: https://unesdoc.unesco.org/ark:/48223/pf0000381137_por/PDF/381137por.pdf.multi. Acesso em setembro de 2024. </p>
+
+<p>SEIBT, Taís. Postar ou não: guia para entender e combater a desinformação. Porto Alegre, 2021. E-book. 41p. Disponível em https://www.postarounao.com.br/ebook/. Acesso em junho de 2024. </p>
+
+<p>SLIPCZUK, Martín; SMAL, Leticia; SOHR, Olivia. Guía para contrarrestar la desinformación: Herramientas para detectar posibles contenidos falsos en redes sociales. Chequeado, 2023. Disponível em: https://chequeado.com/wp-content/uploads/2023/02/Gui%CC%81a-para-contrarrestar-la-desinformacio%CC%81n.pdf. Acesso em setembro de 2024.</p>
+
+<p>WENDLING, Mike. Como o termo ‘fake news’ virou arma nos dois lados da batalha política mundial. BBC News Brasil, 2018. Disponível em https://www.bbc.com/portuguese/internacional-42779796. Acesso em agosto de 2024.</p>
+
+
+
+</div>
+<!-- div class="tarja-verde">&nbsp;</div -->
+
+
+      </div>
+  </metal:main>
+</body>
+
+</html>

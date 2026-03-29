@@ -1,0 +1,126 @@
+<html xmlns:metal="http://xml.zope.org/namespaces/metal" xmlns:tal="http://xml.zope.org/namespaces/tal">
+
+<body metal:use-macro="here/main_template/macros/master">
+
+
+  <metal:styles fill-slot="style_slot">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+
+
+    <style type="text/css">
+      body #visual-portal-wrapper #portal-columns {
+        background-color: #5f2f7e !important;
+        font-family: 'Inter', sans-serif !important;
+        border-bottom: 4rem solid #a7ce39;
+      }
+
+      body main {
+        background-color: #5f2f7e !important;
+        font-family: 'Inter', sans-serif !important;
+        border-bottom: 4rem solid #a7ce39;
+      }
+
+      main {
+        margin-top: -20px;
+      }
+
+
+      .container {
+        max-width: 1440px;
+      }
+
+      .container-oprojeto {
+        background: #5E2F7E;
+        background-image: url(bg-o-projeto.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 2rem 0 5rem 5rem;
+        min-height: 60vh;
+      }
+
+      .container-oprojeto h1 {
+        color: #F5F5F5;
+        line-height: 50px;
+        margin-bottom: 1.5rem;
+        letter-spacing: -0.912px;
+        font-weight: 700;
+      }
+
+      .container-oprojeto p {
+        color: #FFF !important;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 27px;
+        margin-left: 0 !important;
+        font-size: 18px !important;
+        max-width: 620px !important;
+        font-weight: 400;
+      }
+
+      .img-oproj {
+        align-self: center;
+        justify-self: center;
+        max-width: 225px;
+      }
+
+      @media (max-width: 767px) {
+        #globalnav-wrapper {
+          font-size: 70% !important;
+        }
+
+        .container-oprojeto {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 460px) {
+        .container-oprojeto {
+          gap: 2rem;
+          padding: 2rem 1rem 5rem 2rem;
+        }
+
+        .container-oprojeto p {
+          font-size: 22px;
+          line-height: 25px;
+          background: #5e2f7ebd !important;
+        }
+      }
+
+      .tarja-verde {
+        background-color: #A6CE39;
+        width: 100%;
+        height: 35px;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+
+
+  </metal:styles>
+
+
+
+
+
+  <metal:main fill-slot="main">
+
+        <div class="container-oprojeto">
+
+          <h1>O Projeto</h1>
+          <p>Manda a Real é uma iniciativa da Secretaria de Comunicação Social do Ministério Público Federal (Secom/MPF). O projeto tem como objetivo a conscientização da sociedade sobre a importância de checar informações antes de compartilhar para
+            evitar a disseminação de conteúdos falsos ou tirados de contexto. A ideia é sensibilizar as cidadãs e os cidadãos sobre os efeitos nocivos da desinformação para a democracia e para o acesso aos direitos individuais e coletivos.</p>
+          <p>Confira dicas e ferramentas que te auxiliam na checagem de notícias em geral. Além disso, por aqui, você encontra explicações sobre a atuação e a estrutura do MPF. Aprenda como a instituição trabalha diariamente para defender os direitos
+            de todos. Assim, você não cairá em fake news que envolvam o MPF e a Procuradoria-Geral da República (PGR). </p>
+          <p>A página Manda a Real integra o Projeto de Combate à Desinformação do MPF, idealizado pela SECOM da instituição. O combate à desinformação é permanente e acontece por meio do fornecimento de conteúdo de credibilidade e acessível a toda a
+            população brasileira. Para tanto, a iniciativa conta com a participação e o apoio da sociedade civil organizada, de instituições públicas e privadas e da imprensa.</p>
+
+        </div>
+
+
+  </metal:main>
+</body>
+
+</html>
