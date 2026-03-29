@@ -1536,11 +1536,13 @@
 
 
         <!-- SECAO O PROJETO -->
-        <section class="ss-o-projeto sessao-home" id="o-projeto">
+        <section class="ss-o-projeto sessao-home" id="o-projeto"
+          tal:attributes="style string:background-image: url(${context/portal_url}/secao-bg-o-projeto-illustra.svg)">
           <h2 class="tit-seccion" style="margin-bottom: 1rem !important; color: white !important"> O projeto</h2>
           <p class="sessao-conteudo cor-white max-w-550">Manda a Real é uma iniciativa da Secretaria de Comunicação Social do Ministério Público Federal (Secom/MPF) voltada para o combate à desinformação. Aprenda a identificar conteúdo falso e saiba
             mais sobre o MPF, a instituição que defende os seus direitos.</p>
-          <a href="o-projeto.html" alt="O Projeto" class="link-botao-branco cor-roxa">Saiba mais</a>
+          <a href="o-projeto.html" alt="O Projeto" class="link-botao-branco cor-roxa"
+            tal:attributes="href string:${context/portal_url}/o-projeto">Saiba mais</a>
         </section>
         <div class="tarja-verde">&nbsp;</div>
 
@@ -1550,7 +1552,8 @@
           <div class="align-self-center carousel-inner">
             <h2 class="tit-seccion cor-roxa"> O MPF</h2>
             <p class="sessao-conteudo cor-roxa max-w-550">Você sabe o que o MPF faz? Como o Ministério Público faz diferença no seu dia a dia? Entenda as áreas de atuação e a relevância da instituição para a democracia brasileira.</p>
-            <a href="sobre-o-mp.html" class="link-botao-branco cor-roxa">Conheça o MPF</a>
+            <a href="sobre-o-mp.html" class="link-botao-branco cor-roxa"
+              tal:attributes="href string:${context/portal_url}/sobre-o-mp">Conheça o MPF</a>
           </div>
           <img src="o-mpf-ilustra.svg" alt="Ilustração com diferentes personagens representando os diferentes publicos do MPF, entre os quais homens, mulheres, idosos, um cadeirante e uma criança" class="img-o-mpf align-self-center"
             tal:attributes="src string:${context/portal_url}/o-mpf-ilustra.svg">
@@ -1969,6 +1972,8 @@
       </button>
   </div -->
 
+
+
         <script>
           //<![CDATA[
           /* focusin/out event polyfill (firefox) */
@@ -2043,10 +2048,10 @@
 
               ctrls.className = 'controls';
               ctrls.innerHTML = '<li>' +
-                '<button type="button" class="btn-prev"><img src="seta-esquerda.png" alt="Anterior"></button>' +
+                '<button type="button" class="btn-prev"><img src="' + PORTAL_URL + '/seta-esquerda.png" alt="Anterior"></button>' +
                 '</li>' +
                 '<li>' +
-                '<button type="button" class="btn-next"><img src="seta-direita.png" alt="Próximo"></button>' +
+                '<button type="button" class="btn-next"><img src="' + PORTAL_URL + '/seta-direita.png" alt="Próximo"></button>' +
                 '</li>';
 
               ctrls.querySelector('.btn-prev')

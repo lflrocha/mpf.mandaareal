@@ -83,14 +83,17 @@
       name="vocabulario_view"
       for="*"
       layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
+      class=".vocabulario_view.VocabularioView"
       template="templates/vocabulario_view.pt"
       permission="zope2.View"
   />
+
 
   <browser:page
       name="meexplica_view"
       for="*"
       layer="mpf.mandaareal.interfaces.IMpfMandaarealLayer"
+      class=".meexplica_view.MeExplicaView"
       template="templates/meexplica_view.pt"
       permission="zope2.View"
   />

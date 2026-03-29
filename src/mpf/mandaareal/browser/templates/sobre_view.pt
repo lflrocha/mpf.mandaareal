@@ -317,8 +317,34 @@
       }
     </style>
 
-    <script src="js/capa.js"
-      tal:attributes="src string:${context/portal_url}/js/sobre.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+    function openModal(modalNumber) {
+      document.getElementById('myModal' + modalNumber).style.display = 'flex';
+    }
+
+    function closeModal(modalNumber) {
+      document.getElementById('myModal' + modalNumber).style.display = 'none';
+    }
+
+    window.addEventListener('click', function(event) {
+      for (var i = 1; i <= 10; i++) {
+        var modal = document.getElementById('myModal' + i);
+        if (event.target === modal) {
+          closeModal(i);
+        }
+      }
+    });
+
+    window.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+        for (var i = 1; i <= 10; i++) {
+          closeModal(i);
+        }
+      }
+    });
+    //]]>
+    </script>
 
 
   </metal:styles>
