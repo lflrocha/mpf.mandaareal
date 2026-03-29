@@ -152,7 +152,7 @@
 
       .tit-o-mpf-accordion {
         color: #5E2F7E;
-        font-size: 28px;
+        font-size: 26px;
         font-style: normal;
         font-weight: 900;
         line-height: 40px;
@@ -317,6 +317,10 @@
       }
     </style>
 
+    <script src="js/capa.js"
+      tal:attributes="src string:${context/portal_url}/js/sobre.js"></script>
+
+
   </metal:styles>
 
 
@@ -361,7 +365,6 @@
                 <button class="closeBtn" onclick="closeModal(1)"><img src="fechar.png" alt=""
                   tal:attributes="src string:${context/portal_url}/fechar.png"></button>
                 <h2 class="tit-o-mpf-accordion">Ministério Público</h2>
-
                 <ul>
                   <li>Está previsto na Constituição Federal.</li>
                   <li>É independente dos Três Poderes (Executivo, Legislativo, Judiciário).</li>
@@ -370,7 +373,6 @@
                   <li>É composto pelo Ministério Público da União (MPU) e pelos 26 Ministérios Públicos dos estados. </li>
                   <li>Não é um órgão da Justiça, mas faz parte do sistema da Justiça. </li>
                 </ul>
-
               </div>
             </div>
 
@@ -380,14 +382,12 @@
                 <button class="closeBtn" onclick="closeModal(2)"><img src="fechar.png" alt=""
                   tal:attributes="src string:${context/portal_url}/fechar.png"></button>
                 <h2 class="tit-o-mpf-accordion">Ministério Público da União</h2>
-
                 <ul>
                   <li>O MPU não existe fisicamente em determinado local. </li>
                   <li>Na prática, MPU é apenas uma sigla que inclui Ministérios Públicos distintos.</li>
                   <li>Divide-se em quatro ramos: o Ministério Público Federal (MPF), o Ministério Público do Trabalho (MPT), o Ministério Público Militar (MPM) e o Ministério Público do Distrito Federal e Territórios (MPDFT). Cada um deles tem
                     organização própria.</li>
                 </ul>
-
               </div>
             </div>
 
@@ -397,7 +397,6 @@
                 <button class="closeBtn" onclick="closeModal(3)"><img src="fechar.png" alt=""
                   tal:attributes="src string:${context/portal_url}/fechar.png"></button>
                 <h2 class="tit-o-mpf-accordion">Ministério Público Eleitoral</h2>
-
                 <ul>
                   <li>Não tem sede própria. É composto por membros do MPF e do MP Estadual.</li>
                   <li>O procurador-geral da República atua como procurador-geral eleitoral perante o Tribunal Superior Eleitoral (TSE). Ele indica membros para atuarem no TSE e nos Tribunais Regionais Eleitorais (TREs). Nos Ministérios Públicos
@@ -405,8 +404,6 @@
                   <li>O MP Eleitoral atua em todas as fases do processo eleitoral. Quanto aos promotores eleitorais, eles atuam em cada zona eleitoral dos estados. Os procuradores regionais eleitorais atuam na 2ª instância, nos Tribunais Regionais
                     Eleitorais. Já o procurador-geral eleitoral e o vice-procurador-geral eleitoral atuam no Tribunal Superior Eleitoral. <a
                       href="https://www.mpf.mp.br/pgr/noticias-pgr2/2024/me-explica-mpf-quais-orgaos-fazem-parte-do-ministerio-publico-eleitoral">Clique para saber mais sobre a estrutura do MP Eleitoral.</a></li>
-
-
                 </ul>
 
               </div>
@@ -427,8 +424,6 @@
                   <li>Procuradoria-Geral da República (PGR), que atua junto ao Superior Tribunal de Justiça (STJ) e ao Supremo Tribunal Federal (STF). É onde também funciona a sede da Procuradoria-Geral Eleitoral, que tem atuação junto ao Tribunal
                     Superior Eleitoral (TSE). Ou seja, age em instância superior. </li>
                 </ul>
-
-
               </div>
             </div>
 
@@ -438,7 +433,6 @@
                 <button class="closeBtn" onclick="closeModal(5)"><img src="fechar.png" alt=""
                   tal:attributes="src string:${context/portal_url}/fechar.png"></button>
                 <h2 class="tit-o-mpf-accordion">MP nos estados</h2>
-
                 <ul>
                   <li>Os 26 Ministérios Públicos dos estados atuam por meio de suas promotorias de Justiça nos municípios da região que abrangem.</li>
                   <li>Cada MP tem seu chefe institucional. A pessoa que comanda o MP é o procurador-geral de Justiça, escolhido pelo governador do estado a partir de lista tríplice elaborada por membros da instituição. </li>
@@ -446,7 +440,6 @@
                   <li>Os MPs atuam tanto na defesa de direitos quanto no combate a irregularidades. Áreas de atuação: cível; consumidor; criminal; educação; eleitoral; habitação e urbanismo; infância e juventude; inclusão social; meio ambiente;
                     patrimônio público; pessoa com deficiência; pessoa idosa; saúde pública; e violência doméstica e familiar. </li>
                 </ul>
-
               </div>
             </div>
 
@@ -466,8 +459,7 @@
                     <li>É o órgão central do MPF.</li>
                     <li>Tem sede em Brasília.</li>
                     <li>É chefiada pelo procurador-geral da República, indicado pelo presidente da República, com aprovação do Senado.</li>
-                    <li>MPF é uma instituição única e indivisível; Procuradoria da República é cada unidade administrativa do MPF, individualizada nas capitais dos estados, no Distrito Federal e em muitos municípios do interior onde existem <a
-                        href="../vocabulario/vara.html">varas</a> da Justiça Federal. Portanto, assim como você escuta no noticiário, tem MPF em São Paulo, MPF no Rio de Janeiro ...etc </li>
+                    <li>MPF é uma instituição única e indivisível; Procuradoria da República é cada unidade administrativa do MPF, individualizada nas capitais dos estados, no Distrito Federal e em muitos municípios do interior onde existem varas da Justiça Federal. Portanto, assim como você escuta no noticiário, tem MPF em São Paulo, MPF no Rio de Janeiro ...etc </li>
                   </ul>
 
                 </div>
@@ -606,12 +598,6 @@
 
 
   </metal:main>
-
-  <metal:scripts fill-slot="javascript_bottom_slot">
-    <script src="js/capa.js"
-      tal:attributes="src string:{context/portal_url}/js/sobre.js"></script>
-  </metal:scripts>
-
 
 </body>
 
