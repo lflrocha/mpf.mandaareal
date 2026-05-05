@@ -180,6 +180,7 @@
         margin: 1rem auto;
         border: 0;
         width: 100%;
+        display: block;
       }
 
       .img-organo-mob {
@@ -346,7 +347,7 @@
     //]]>
     </script>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/image-map-resizer@1.0.10/js/imageMapResizer.min.js"></script>
   </metal:styles>
 
 
@@ -361,21 +362,36 @@
 
             <div class="conteudo_FAQ">
               <p class="sub-tit-main">Não caia em fake news sobre o Ministério Público! Entenda como o MP se organiza para defender seus direitos e como é a atuação dessa instituição essencial para a democracia.</p>
-              <p class="legendinha">MPF, MP Brasileiro e MPE são interativos, clique para saber mais</p>
+              <p class="legendinha">MPU e MPF são interativos, clique para saber mais</p>
               <div id="organograma">
-                <img src="organo.png" class="img-organo" usemap="#image-map">
-                <map name="image-map">
-                  <area target="" alt="MP" title="" onclick="openModal(1)" coords="889,159,535,5" shape="rect" id="openModalBtn">
-                  <area target="" alt="MPU" title="" onclick="openModal(2)" coords="77,183,397,331" shape="rect" id="openModalBtn">
-                  <area target="" alt="MP nos ESTADOS" title="MP nos ESTADOS" onclick="openModal(5)" coords="1021,189,1323,325" shape="rect" id="openModalBtn">
-                  <area target="" alt="MPF" title="MPF" onclick="openModal(4)" coords="33,441,257,594" shape="rect" id="openModalBtn">
-                </map>
+                <img src="mpu.png" class="img-organo" usemap="#image-map">
+
+                  <map  name="image-map">
+                    <area
+                      shape="rect"
+                      coords="96,106,338,282"
+                      href="#mpu"
+                      alt="MPU - Ministério Público da União"
+                      title="MPU - Ministério Público da União"
+                      onclick="openModal(2)"
+                      id="openModalBtn"
+                    />
+
+                    <area
+                      shape="rect"
+                      coords="80,394,286,551"
+                      href="#mpf"
+                      alt="MPF - Ministério Público Federal"
+                      title="MPF - Ministério Público Federal"
+                      onclick="openModal(4)"
+                      id="openModalBtn"
+                    />
+
+                  </map>
               </div>
               <div id="organograma-mob">
                 <img src="organo-mob.jpg" class="img-organo-mob" usemap="#image-map-mob">
                 <map name="image-map-mob">
-                  <img src="https://mandaareal.mpf.mp.br/sobre-o-mp/organo-mpb-mob.png" usemap="#image-map"
-                    tal:attributes="src string:${context/portal_url}/organo-mpb-mob.png">
                   <area target="" alt="MP nos estados" title="MP nos estados" onclick="openModal(5)" coords="319,377,167,228" shape="rect">
                   <area target="" alt="MPF" title="MPF" onclick="openModal(4)" coords="266,463,51,613" shape="rect">
                   <area target="" alt="MP" title="MP" onclick="openModal(1)" coords="3,2,316,161" shape="rect">
@@ -621,7 +637,9 @@
 
             </div>
 
-
+            <script>
+              imageMapResize();
+            </script>
 
   </metal:main>
 

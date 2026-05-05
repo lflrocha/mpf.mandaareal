@@ -109,6 +109,115 @@
         list-style-type: none !important;
       }
 
+      .sessao-produtos {
+        width: 100%;
+        background: #f5f5f5;
+        padding: 40px 0 60px;
+        border-top: 1px solid #dcdcdc;
+        border-bottom: 1px solid #dcdcdc;
+      }
+
+
+      .sessao-produtos h2 {
+        text-align: center;
+        font-size: 52px;
+        font-weight: 700;
+        color: #5a2483;
+        margin: 0;
+      }
+
+      .produtos-conteudo {
+        margin-top: 40px;
+        padding-top: 60px;
+        border-top: 1px solid #d6d6d6;
+      }
+
+      .produtos-grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        flex-wrap: wrap;
+      }
+
+      .produto {
+        flex: 1;
+        min-width: 220px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .produto img {
+        max-width: 100%;
+        max-height: 180px;
+        object-fit: contain;
+        display: block;
+      }
+
+
+      .botao-area {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+      }
+
+      .botao-saiba-mais {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        min-width: 280px;
+        height: 70px;
+
+        background: #ffffff;
+        color: #5a2483;
+
+        font-size: 20px;
+        font-weight: 400;
+        text-decoration: none;
+
+        border: 3px solid #b6db52;
+        border-radius: 999px;
+
+        box-shadow: 0 8px 0 #9bc53d;
+
+        transition: 0.2s ease;
+      }
+
+      .botao-saiba-mais:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 0 #9bc53d;
+      }
+
+
+      @media (max-width: 1024px) {
+        .produtos-grid {
+          justify-content: center;
+        }
+
+        .produto {
+          flex: 0 0 calc(50% - 40px);
+        }
+      }
+
+      @media (max-width: 600px) {
+        .produtos h2 {
+          font-size: 36px;
+        }
+
+        .produto {
+          flex: 0 0 100%;
+        }
+
+        .botao-saiba-mais {
+          min-width: 220px;
+          height: 60px;
+          font-size: 24px;
+        }
+      }
+
+
       .card-noticia {
         background-color: #E5DBF4;
         max-width: 500px;
@@ -689,7 +798,7 @@
                /* svg #ilustracao1:hover #Vector { transition-duration: 0.5s; transform: scale(1.3); transform-origin:4rem 26rem; } */
                .slide-ani-1:hover svg #ilustracao1 #braco { transition-duration: 0.5s; transform: rotate(30deg); transform-origin:537px 134px;  }
                .slide-ani-1:hover svg #ilustracao1 #left-arm {transition-duration: 1s; transform: rotate(-20deg); transform-origin:279px 353px; transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); transition-delay: 0.2s;}
-               .slide-ani-1:hover svg #ilustracao1 #right-arm {transition-duration: 0.5s; transform: rotate(80deg); transform-origin:23rem 21.3rem; transition-delay: 0.2s; }
+               .slide-ani-1:hover svg #ilustracao1 #right-arm {transition-duration: 0.5s; transform: rotate(40deg); transform-origin:21.3rem 20.5rem; transition-delay: 0.1s; }
                .slide-ani-1:hover svg #ilustracao1 #cell-phone {transition-duration: 1s; transform: rotate(-21deg); transform-origin:17rem 22rem; transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); transition-delay: 0.2s; }
                .slide-ani-1:hover svg #ilustracao1 #cabeca-her { transition-duration: 0.5s; transform: rotate(-7deg); transform-origin: 20rem 20rem;   }
                .slide-ani-1:hover svg #ilustracao1 #corpo { transition-duration: 0.5s; transform: rotate(-6deg); transform-origin: 34rem 11rem; }
@@ -714,7 +823,7 @@
 
                svg #dstk3-headhim { transition-duration: 0.2s; transform: rotate(0deg); transform-origin:28rem 6rem; }
                .slide-ani-3:hover svg #ilustra3 #dstk3-headhim { transition-duration: 0.5s; transform: rotate(-22deg); transform-origin:28rem 6rem;  }
-               svg #dstk3-elebraco { transition-duration: 0.4s; transform: rotate(0deg); transform-origin:30.5rem 7.5rem; }
+               svg #dstk3-elebraco { transition-duration: 0.4s; transform: rotate(20deg); transform-origin:28.5rem 7.2rem; }
                .slide-ani-3:hover svg #ilustra3 #dstk3-elebraco { transition-duration: 0.8s; transform: rotate(25deg);  }
                svg #dstk3-bracao { transition-duration: 0.4s; transform: rotate(0deg); transform-origin:20.5rem 15.5rem; }
                .slide-ani-3:hover svg #ilustra3 #dstk3-bracao { transition-duration: 0.8s; transform: rotate(20deg); transform-origin:20.5rem 15.5rem; animation-timing-function:ease-in-out ; }
@@ -751,7 +860,8 @@
                   <p class="carousel-p-1 cor-roxa">Não caia em fake news sobre o MPF. <br>
                     Acesse informações, dicas e ferramentas para
                     reconhecer e combater a desinformação.</p>
-                  <a href="dicas.html" class="link-botao-branco outline-roxo" style="box-shadow: 0px 3.379px 3.379px 0px #5f2f7e, 0px 3.379px 3.379px 0px #5f2f7e !important;">Aprenda a identificar</a>
+                  <a href="dicas.html" class="link-botao-branco outline-roxo" style="box-shadow: 0px 3.379px 3.379px 0px #5f2f7e, 0px 3.379px 3.379px 0px #5f2f7e !important;"
+                  tal:attributes="href string:${context/portal_url}/dicas">Aprenda a identificar</a>
                 </div>
                 <!-- img src="carousel-ilustra-1.svg" alt="" class="carousel-img-1" -->
                 <!-- ILUSTRA 1 -->
@@ -1201,7 +1311,8 @@
                 <div class="carousel-inner m-top-5">
                   <!-- img src="carousel-2-tit.png" alt="Saiba como denunciar um conteúdo falso nas redes sociais" class="carousel-tit-img-2" -->
                   <p class="carousel-p-3 cor-roxa" style="text-transform: uppercase;">Saiba <span class="f-weight-900">como denunciar</span> um <span class="f-weight-900">conteúdo falso</span> nas redes sociais</p>
-                  <a href="como-denunciar.html" class="link-botao-branco outline-roxo" style="box-shadow: 0px 3.379px 3.379px 0px #5f2f7e, 0px 3.379px 3.379px 0px #5f2f7e !important;">Confira aqui</a>
+                  <a href="como-denunciar.html" class="link-botao-branco outline-roxo" style="box-shadow: 0px 3.379px 3.379px 0px #5f2f7e, 0px 3.379px 3.379px 0px #5f2f7e !important;"
+                  tal:attributes="href string:${context/portal_url}/como-denunciar">Confira aqui</a>
                 </div>
               </div>
             </li>
@@ -1524,8 +1635,8 @@
                 </div>
                 <div>
                   <p class="carousel-p-3 cor-roxa">Acenda o <strong> alerta</strong> para<strong> vídeos manipulados</strong></p> <br><br>
-                  <a href="dicas/index.html#deepfake" class="link-botao-branco align-self-center  outline-roxo" style="position: relative; top: -20px; box-shadow: 0px 3.379px 3.379px 0px #5f2f7e, 0px 3.379px 3.379px 0px #5f2f7e !important;">Saiba
-                    mais</a>
+                  <a href="dicas#deepfake" class="link-botao-branco align-self-center  outline-roxo" style="position: relative; top: -20px; box-shadow: 0px 3.379px 3.379px 0px #5f2f7e, 0px 3.379px 3.379px 0px #5f2f7e !important;"
+                  tal:attributes="href string:${context/portal_url}/dicas#deepfake">Saiba mais</a>
                 </div>
 
               </div>
@@ -1533,6 +1644,54 @@
           </ul>
         </div>
 
+
+
+        <!-- NOSSOS PRODUTOS -->
+        <section class="sessao-produtos sessao-home" id="produtos">
+          <div class="container-produtos">
+            <h2>Nossos produtos</h2>
+
+            <div class="produtos-conteudo">
+
+              <div class="produtos-grid">
+
+                <p class="produto">
+                  <img src="img/giro-da-verdade.png" alt="Giro da Verdade"
+                  tal:attributes="src string:${context/portal_url}/nossos-produtos/giro_da_verdade_home.png">
+                </p>
+
+                <p class="produto">
+                  <img src="img/entre-fatos.png" alt="Entre Fatos"
+                  tal:attributes="src string:${context/portal_url}/nossos-produtos/entre_fatos_home.png">
+                </p>
+
+                <p class="produto">
+                  <img src="img/combate-desinformacao.png" alt="Programa de Combate à Desinformação"
+                  tal:attributes="src string:${context/portal_url}/nossos-produtos/protocolo_home.png">
+                </p>
+
+                <p class="produto">
+                  <img src="img/me-explica-mpf.png" alt="Me Explica MPF"
+                  tal:attributes="src string:${context/portal_url}/nossos-produtos/me-explica-home.png">
+                </p>
+
+              </div>
+              <div class="botao-area">
+                  <a href="#" class="botao-saiba-mais"
+                    tal:attributes="href string:${context/portal_url}/nossos-produtos">
+                    Saiba mais
+                  </a>
+                </div>
+
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+        <div class="tarja-verde">&nbsp;</div>
 
 
         <!-- SECAO O PROJETO -->

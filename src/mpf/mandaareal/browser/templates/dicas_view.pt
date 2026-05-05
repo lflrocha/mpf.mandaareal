@@ -147,7 +147,7 @@
       }
 
       .subtit-36 {
-        color: #F7F6F2;
+        color: #F7F6F2 !important;
         font-size: 32px;
         font-style: normal;
         font-weight: 800;
