@@ -139,7 +139,7 @@
       }
 
       .termo-fakenews {
-        color: #F7F6F2;
+        color: #F7F6F2 !important;
         font-size: 28px;
         font-weight: 700;
         line-height: 58px;
